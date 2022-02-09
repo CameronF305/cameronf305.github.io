@@ -1,1 +1,1 @@
-alert("This is an alert I created in index.js!");
+alert("This website is still being worked on. Please wait!");
