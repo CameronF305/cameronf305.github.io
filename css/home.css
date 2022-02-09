@@ -1,6 +1,6 @@
 .homehead {
     background-color: coral;
-    background-image: url(images/OrangeHeading.png);
+    background-image: url("images/OrangeHeading.png");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover cover;
