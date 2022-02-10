@@ -33,7 +33,18 @@ h1{
     font-size: 50px;
 }
 
-p {
+.error h1{
+    font-family: "MARKPRO-BOLD";
+    font-weight: bold;
+    font-style: normal;
+    color: maroon;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.error p {
     font-family: "BAHNSCHRIFT";
     font-weight: normal;
     font-size: 20px;
