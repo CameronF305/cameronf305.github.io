@@ -73,6 +73,24 @@ body {
     top: 0px;
     width: 100%;
     left: 50%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  #navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  #navbar li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @font-face {
@@ -84,7 +102,7 @@ body {
 
   }
 
-  #navbar a {
+  #navbar ul li a {
     float: left;
     font-family: "facile_sansregular";
     font-weight: normal;
@@ -97,7 +115,7 @@ body {
     font-size: 20px;
   }
   @media screen and (max-width: 600px) {
-    #navbar a {
+    #navbar ul li a {
     position: relative;
     top: 0;
     left: 0;
@@ -105,12 +123,12 @@ body {
    }
   }
   
-  #navbar a:hover {
+  #navbar ul li a:hover {
     background-color: white;
     color: black;
   }
   
-  #navbar a.active {
+  #navbar ul li a.active {
     background-color: rgb(31,31,31);
     color: white;
   }
