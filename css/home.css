@@ -72,9 +72,8 @@ body {
     position: -webkit-sticky;
     top: 0px;
     width: 100%;
-    left: 50%;
     display: -webkit-flex;
-    display:flex;
+    display: flex;
     -webkit-justify-content: center;
     justify-content: center;
   }
@@ -107,9 +106,12 @@ body {
     font-family: "facile_sansregular";
     font-weight: normal;
     font-style: normal;
+    display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px 20px;
     text-decoration: none;
     font-size: 20px;
   }
