@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "facile_sansregular";
+    src: url("fonts/facile_sans-webfont.woff") format("woff"),
+    url("/fonts/facile_sans-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+  }
+  @font-face {
+    font-family: "MARKPRO-BOLD";
+    src: url("fonts/MARKPRO-BOLD.woff") format("woff"),
+    url("/fonts/MARKPRO-BOLD.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+
+  }
+h1{
+    font-family: "MARKPRO-BOLD";
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 50px;
+}
