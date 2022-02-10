@@ -46,9 +46,11 @@ body {
     float: left;
     margin:absolute;
   }
-  #footer a {
-      font-family:Arial;
-      font-size: normal;
+  #footer a p{
+    font-family: "BAHNSCHRIFT";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
       color: white;
       text-align: center;
   }

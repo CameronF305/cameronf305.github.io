@@ -26,33 +26,6 @@ body {
     margin-top: auto;
   }
 
-  .footer {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: auto;
-  }
-
-  img.logofoot{
-    width: 369px;
-    height: 115px;
-    max-height: 50%;
-    max-width: 50%;
-    position: left;
-    top: 0;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    float: left;
-    margin:absolute;
-  }
-  #footer a {
-      font-family:Arial;
-      font-size: normal;
-      color: white;
-      text-align: center;
-  }
-
   @font-face {
     font-family: "facile_sansregular";
     src: url("fonts/facile_sans-webfont.woff") format("woff"),
