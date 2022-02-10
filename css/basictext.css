@@ -44,11 +44,13 @@ h1{
     font-size: 50px;
 }
 
-p {
+p{
     font-family: "BAHNSCHRIFT";
     font-weight: normal;
+    font-style: normal;
     font-size: 20px;
     text-decoration : none;
+    padding: 0px 10px;
     color: black;
     text-align: center;
 
