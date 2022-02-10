@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404 - Not Found</title>
+        <link rel="icon" href="images/Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-language" content="en-us">
+        <meta name="DC.Language" content="en-us">
+        <meta property="og:image" content="https://www.cameronf305.com/images/Icon.png">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/basictext.css">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+    </head>
+
+    <body>
+        <div id="navbar">
+            <ul>
+                <li><a class="btn" href="home">Home</a></li>
+                <li><a class="btn" href="about">About</a></li>
+                <li><a class="btn" href="https://www.youtube.com/CameronF305/Videos">Videos</a></li>
+                <li><a class="btn" href="music">Music</a></li>
+                <li><a class="btn" href="channels">Channels</a></li>
+                <li><a class="btn" href="content">Content</a></li>
+                <li><a class="btn" href="shop">Shop</a></li>
+            </ul>  
+        </div>
+
+        <content>
+
+            <h1>404 - Not Found</h1>
+            <div class="error">
+                <p>The page you were looking for does not exist. If you think this is an error check for errors in the URL.</p>
+            </div>
+        </content>        
+        <script>
+          window.onscroll = function() {stickNavBar()};
+          
+          var navbar = document.getElementById("navbar");
+//          var sticky = navbar.offsetTop;
+          
+          function stickNavBar() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+        </script>
+    </body>
+</html>
