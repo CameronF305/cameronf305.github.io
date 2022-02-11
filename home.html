@@ -43,6 +43,7 @@
           </a>
         </div>   
       </div>
+      <header id="navbar">
         <nav class="navbar">
           <ul class="nav-menu">
             <li class="nav-item"><a class="activebtn" href="home">Home</a></li>
@@ -59,10 +60,14 @@
             <span class="bar"></span>
           </div>
         </nav>
+      </header>
         <content>
             <h1 id="welcome">WELCOME</h1>
             <section id="section1">
               <h1>Who is CameronF305</h1>
+              <p>
+                CameronF305 is a bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey bababooey
+              </p>
             </section>
             <div>
                 <p>TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
@@ -91,6 +96,7 @@
                 <p>TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
                 <p>TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
                 <p>TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                
             </div>
         </content>        
         <div class="footer">
@@ -104,19 +110,19 @@
         </div>
         <script src="/js/mobilenav.js"></script>
         <script src="js/navbar.js"></script>
-        <script>// When the user scrolls the page, execute myFunction
-          window.onscroll = function() {stickyNav()};
+        <script>
+                    window.onscroll = function() {stickNavBar()};
           
-          var navbar = document.querySelector("#navbar");
+          var navbar = document.getElementById("navbar");
           var sticky = navbar.offsetTop;
           
-          // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-          function stickyNav() {
+          function stickNavBar() {
             if (window.pageYOffset >= sticky) {
               navbar.classList.add("sticky")
             } else {
               navbar.classList.remove("sticky");
             }
-          }</script>
+          }
+          </script>
     </body>
 </html>
