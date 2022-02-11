@@ -36,14 +36,13 @@
     </head>
 
     <body>
-      <div class="homehead">
+      <div class="homehead" id="homehead">
         <div class="frame">
           <a href="#">
             <img src= "images/CameronF305HomeLogo.png" alt="CameronF305" class="logo">
           </a>
         </div>   
       </div>
-      <header id="navbar">
         <nav class="navbar">
           <ul class="nav-menu">
             <li class="nav-item"><a class="activebtn" href="home">Home</a></li>
@@ -60,7 +59,6 @@
             <span class="bar"></span>
           </div>
         </nav>
-      </header>
         <content>
 
             <h1>WELCOME</h1>
@@ -107,19 +105,20 @@
           </div>
         </div>
         <script src="/js/mobilenav.js"></script>
-        <script>
-          window.onscroll = function() {stickNavBar()};
+        <script src="js/navbar.js"></script>
+        <script>// When the user scrolls the page, execute myFunction
+          window.onscroll = function() {stickyNav()};
           
-          var navbar = document.getElementById("navbar");
+          var navbar = document.querySelector("#navbar");
           var sticky = navbar.offsetTop;
           
-          function stickNavBar() {
+          // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function stickyNav() {
             if (window.pageYOffset >= sticky) {
               navbar.classList.add("sticky")
             } else {
               navbar.classList.remove("sticky");
             }
-          }
-        </script>
+          }</script>
     </body>
 </html>
