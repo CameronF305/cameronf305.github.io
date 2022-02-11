@@ -19,9 +19,6 @@ img.logo {
     right: 0;
     margin: auto;
     }
-body {
-    margin: 0;
-  }
   
   .header {
     background-color: #f1f1f1;
@@ -79,8 +76,6 @@ body {
   font-style: normal;
   color: black;
   text-align: center;
-  border: violet;
-  border-style: ridge;
 }
 #section1 {
   background-color: whitesmoke;
