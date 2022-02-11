@@ -111,6 +111,23 @@ img.logo {
     margin-right: 10%;
     padding: 10px;
   }
+  #section2 {
+    padding: 10px 50px;
+    width: 100%;
+  }
+  #section2 h1 {
+    text-align: left;
+    margin-left: 25%;
+    font-family: "MARKPRO-BOLD";
+    font-size: 40px;
+    padding: 10px;
+  }
+  #section2 p {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 10%;
+    padding: 10px;
+  }
 }
 
 /*/ Mobile Content /*/
