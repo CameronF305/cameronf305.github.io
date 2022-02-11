@@ -17,6 +17,16 @@ li{
   align-items: center;
   padding: 0 24px;
 }
+.navbar ul li a {
+  font-family: "facile_sansregular";
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
 .nav-menu{
   display: flex;
   justify-content: space-between;
@@ -27,7 +37,26 @@ li{
   font-size: 2rem;
 }
 .btn{
-  transition: 0.7s ease;
+  background-color: rgb(0, 0, 0);
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #5c5c5c;
+  color: white;
+}
+.activebtn {
+  background-color: rgb(31,31,31);
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.activebtn:hover {
+  background-color: #5c5c5c;
+  color: white;
 }
 .hamburger{
   display: none;
@@ -84,34 +113,16 @@ li{
     font-size: 20px;
   }
   .btn {
-    background-color: rgb(0, 0, 0);
     border: none;
-    color: black;
     padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
     margin: 4px 2px;
-    transition: 0.3s;
-  }
-  .btn:hover {
-    background-color: #5c5c5c;
-    color: white;
   }
   .activebtn {
-    background-color: rgb(31,31,31);
     border: none;
-    color: black;
     padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
     margin: 4px 2px;
-    transition: 0.3s;
   }
-  
-  .activebtn:hover {
-    background-color: #5c5c5c;
-    color: white;
-  }
+
 
 }
 @media only screen and (max-width: 887px){
