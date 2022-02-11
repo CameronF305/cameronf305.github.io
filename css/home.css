@@ -72,41 +72,82 @@ img.logo {
 
 /* Content */
 
-#welcome {
+@media only screen and (min-width: 888px){
+  #welcome {
     background-color: whitesmoke;
-  padding: 25px 10px;
-  max-width: auto;
-  text-decoration: none;
-  font-size: 50px;
-  font-family: "MARKPRO-BOLD";
-  font-weight: bold;
-  font-style: normal;
-  color: black;
-  text-align: center;
-}
-.float-container {
-  padding: 1px;
-  margin: auto;
+    padding: 25px 10px;
+    max-width: auto;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "MARKPRO-BOLD";
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    text-align: center;
+  }
+  .float-container {
+    padding: 1px;
+    margin: auto;
+  }
+
+  .float-child {
+    width: 50%;
+    float: left;
+  }
+  #section1 {
+    padding: 10px 50px;
+    width: 100%;
+  }
+  #section1 h1 {
+    text-align: left;
+    margin-left: 25%;
+    font-family: "MARKPRO-BOLD";
+    font-size: 40px;
+    padding: 10px;
+  }
+  #section1 p {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 10%;
+    padding: 10px;
+  }
 }
 
-.float-child {
-  width: 50%;
-  float: left;
-}
-#section1 {
-  padding: 10px 50px;
-  width: 100%;
-}
-#section1 h1 {
-  text-align: left;
-  margin-left: 25%;
-  font-family: "MARKPRO-BOLD";
-  font-size: 40px;
-  padding: 10px;
-}
-#section1 p {
-  text-align: left;
-  margin-left: 5%;
-  margin-right: 10%;
-  padding: 10px;
+/*/ Mobile Content /*/
+@media only screen and (max-width: 887px){
+  #welcome {
+    background-color: whitesmoke;
+    padding: 25px 10px;
+    max-width: auto;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "MARKPRO-BOLD";
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    text-align: center;
+  }
+  .float-container {
+    padding: 1px;
+  }
+
+  .float-child {
+    width: 100%;
+  }
+  #section1 {
+    padding: 10px 25px;
+    width: 100%;
+  }
+  #section1 h1 {
+    text-align: center;
+    margin: 5%;
+    font-family: "MARKPRO-BOLD";
+    font-size: 40px;
+    padding: 10px;
+  }
+  #section1 p {
+    text-align: center;
+    margin: 5%;
+    padding: 10px;
+  }
 }
