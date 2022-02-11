@@ -1,5 +1,49 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: black;
+}
+li{
+  list-style: none;
+}
+.navbar{
+  min-height: 70px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-branding{
+  font-size: 2rem;
+}
+.btn{
+  transition: 0.7s ease;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
 @media only screen and (min-width: 888px){
-  #navbar {
+  .navbar {
     overflow: hidden;
     background-color: black;
     float: none;
@@ -9,26 +53,23 @@
     width: 100%;
     min-width: 887px;
     max-width: auto;
-    display: -webkit-flex;
-    display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-  }
-  
-  #navbar ul {
+  }  
+ .nav-menu {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
+    gap: 10px;
   }
   
-  #navbar li {
+  .nav-item {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #navbar ul li a {
+  .navbar ul li a {
     float: left;
     font-family: "facile_sansregular";
     font-weight: normal;
@@ -71,16 +112,45 @@
     background-color: #5c5c5c;
     color: white;
   }
+
 }
 @media only screen and (max-width: 887px){
-  
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active{
+    left: 0;
+  }
 }
-#navbar ul li a:hover {
+.navbar ul li a:hover {
   background-color: white;
   color: black;
 }
   
-#navbar ul li a.active {
+.navbar ul li a.active {
   background-color: rgb(31,31,31);
   color: white;
 }
