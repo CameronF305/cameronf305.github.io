@@ -22,16 +22,6 @@
     font-style: normal;
 
   }
-h1{
-    font-family: "MARKPRO-BOLD";
-    font-weight: bold;
-    font-style: normal;
-    color: black;
-    text-align: center;
-    padding: 0px 10px;
-    text-decoration: none;
-    font-size: 50px;
-}
 
 .error h1{
     font-family: "MARKPRO-BOLD";

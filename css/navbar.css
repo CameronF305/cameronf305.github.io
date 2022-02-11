@@ -1,4 +1,8 @@
-
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
 header{
   background-color: black;
 }
@@ -118,7 +122,11 @@ li{
     padding: 16px 32px;
     margin: 4px 2px;
   }
-
+  
+  .activebtn:hover {
+    background-color: #5c5c5c;
+    color: white;
+  }
 
 }
 @media only screen and (max-width: 887px){

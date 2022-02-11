@@ -2,6 +2,7 @@
     height: 300px;
     margin: 10px;
     position: relative;
+    max-width: auto;
   }
 img.logo {
     width: 497px;
@@ -29,6 +30,7 @@ body {
     padding: 30px;
     text-align: center;
     margin-top: auto;
+    max-width: auto;
   }
 
   .footer {
