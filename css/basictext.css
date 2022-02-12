@@ -42,3 +42,27 @@ p{
     text-decoration : none;
     color: black;
 }
+.buglist {
+  font-size: large;
+  padding: 25px;
+}
+.buglist h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
+  font-family: "MARKPRO-BOLD";
+}
+.buglist ul li
+{
+  text-align: left;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  list-style:disc;
+}
+.buglist li {
+  margin-top: 20px;
+}
