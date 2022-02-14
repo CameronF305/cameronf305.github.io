@@ -98,19 +98,317 @@ img.logo {
     padding: 10px 50px;
     width: 100%;
   }
-  #section1 h1 {
-    text-align: left;
-    margin-left: 25%;
-    font-family: "MARKPRO-BOLD";
-    font-size: 40px;
-    padding: 10px;
-  }
   #section1 p {
     text-align: left;
     margin-left: 5%;
     margin-right: 10%;
     padding: 10px;
   }
+  .projectHead {
+    margin: 10;
+    font-family: "MARKPRO-BOLD";
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+  .album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 5%;
+  }
+  .album{
+    padding: 10px 10px;
+  }
+  .album img {
+    width: 250px;
+    height: 250px;
+    display: block;
+  }
+
+  /*/ Album Title Reveal /*/
+
+  .albumCol#albumCap {
+    position: relative;
+    border-color: black;
+  }
+
+  .albumCol#albumCap .title {
+    display: flex;
+    position: absolute;
+    margin: auto auto;
+    min-width: 245px;
+    min-height: 245px;
+    max-width: 250px;
+    max-height: 250px;				
+    width: fit-content;
+    height: fit-content;
+		z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+    font-family: "MARKPRO-BOLD";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .album a {
+    width: 250px;
+    height:250px;
+  }
+
+  .albumCol#albumCap .title h1{
+    margin: 0;		
+		color: white;
+    text-align: center;
+  }
+
+  .albumCol#albumCap:hover .title{
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    opacity: 1;
+  }
+
+  .albumCol#albumCap:hover img{
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    /*/I'd like to do a nice gradient overlay that swipes up, but I can take care of that once the website is done, first it needs to fully function/*/
+   -webkit-filter: blur(3px)hue-rotate(10deg)grayscale(25%);
+    box-shadow: 0 0 15px 3px #333333;
+  }
+
+  /*/ Slideshow /*/
+  #slider {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+  }
+  #slider a {
+    position:absolute;
+  }
+  #slider a img {
+    width: 250px;
+    height: 250px;
+  }
+  #slider a:nth-of-type(1) {
+    animation-name: slideFade;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #slider a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #slider a:nth-of-type(n+3) {
+    display: none;
+  }
+  @keyframes slideFade {
+    from{opacity: 1.0;}
+    to{opacity: 0.0;}
+  }
+
+  /*/ Reveal Slideshow on Hover /*/
+  .slides {
+    display :inline-block;
+    width: 250px;
+    height: 250px;
+    padding: 10px 10px;
+  }
+  #slideCover {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 30;
+    opacity: 100%;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+  }
+  #slideCover a {
+    position:absolute;
+    width: 250px;
+    height: 250px;
+  }
+  #slideCover a img {
+    width: 250px;
+    height: 250px;
+  }
+  #slideCover a img:hover {
+    opacity: 20%;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+  }
+  #slideCover a:hover {
+    box-shadow: 0 0 15px 3px #333333;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+  }
+
+  /*/ Smaller Albums for bigger screens /*/
+
+  @media only screen and (max-width: 1063px){
+    .projectHead {
+      margin: 7;
+      font-family: "MARKPRO-BOLD";
+      font-size: 30px;
+      padding: 5px;
+      text-align: center;
+    }
+    .album-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 3% 5%;
+    }
+    .album{
+      padding: 5px 5px;
+    }
+    .album img {
+      width: 200px;
+      height: 200px;
+      display: block;
+    }
+  
+    /*/ Album Title Reveal /*/
+  
+    .albumCol#albumCap {
+      position: relative;
+      border-color: black;
+    }
+  
+    .albumCol#albumCap .title {
+      display: flex;
+      position: absolute;
+      margin: auto auto;
+      min-width: 175px;
+      min-height: 175px;
+      max-width: 200px;
+      max-height: 200px;				
+      width: fit-content;
+      height: fit-content;
+      z-index: 10;
+      opacity: 0;
+      transition: all 0.8s ease;
+      font-family: "MARKPRO-BOLD";
+      font-weight: bold;
+      font-style: normal;
+      text-align: center;
+      text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+      align-items: center;
+      vertical-align: middle;
+    }
+    .album a {
+      width: 200px;
+      height:200px;
+    }
+  
+    .albumCol#albumCap .title h1{
+      margin: 0;		
+      color: white;
+      text-align: center;
+    }
+  
+    .albumCol#albumCap:hover .title{
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
+      opacity: 1;
+    }
+  
+    .albumCol#albumCap:hover img{
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
+      /*/I'd like to do a nice gradient overlay that swipes up, but I can take care of that once the website is done, first it needs to fully function/*/
+     -webkit-filter: blur(3px)hue-rotate(10deg)grayscale(25%);
+      box-shadow: 0 0 15px 3px #333333;
+    }
+  
+    /*/ Slideshow /*/
+    #slider {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      
+    }
+    #slider a {
+      position:absolute;
+    }
+    #slider a img {
+      width: 200px;
+      height: 200px;
+    }
+    #slider a:nth-of-type(1) {
+      animation-name: slideFade;
+      animation-delay: 4s;
+      animation-duration: 1s;
+      z-index: 20;
+    }
+    #slider a:nth-of-type(2) {
+      z-index: 10;
+    }
+    #slider a:nth-of-type(n+3) {
+      display: none;
+    }
+    @keyframes slideFade {
+      from{opacity: 1.0;}
+      to{opacity: 0.0;}
+    }
+  
+    /*/ Reveal Slideshow on Hover /*/
+    .slides {
+      display :inline-block;
+      width: 200px;
+      height: 200px;
+      padding: 5px 5px;
+    }
+    #slideCover {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      z-index: 30;
+      opacity: 100%;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
+    }
+    #slideCover a {
+      position:absolute;
+      width: 200px;
+      height: 200px;
+    }
+    #slideCover a img {
+      width: 200px;
+      height: 200px;
+    }
+    #slideCover a img:hover {
+      opacity: 20%;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
+    }
+    #slideCover a:hover {
+      box-shadow: 0 0 15px 3px #333333;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
+    }
+  
+  }
+  
+  /*/ Section 2 /*/
+
   #section2 {
     padding: 10px 50px;
     width: 100%;
@@ -156,11 +454,154 @@ img.logo {
     width: 100%;
   }
   #section1 h1 {
-    text-align: center;
-    margin: 5%;
     font-family: "MARKPRO-BOLD";
-    font-size: 40px;
-    padding: 10px;
+    font-size: 20px;
+  }
+  .projectHead {
+    font-family: "MARKPRO-BOLD";
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+  .album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3% 5%;
+  }
+  .album{
+    padding: 5px 5px;
+  }
+  .album img {
+    width: 175px;
+    height: 175px;
+    display: block;
+  }
+
+  /*/ Album Title Reveal /*/
+
+  .albumCol#albumCap {
+    position: relative;
+    border-color: black;
+  }
+
+  .albumCol#albumCap .title {
+    display: flex;
+    position: absolute;
+    min-width: 174px;
+    min-height: 174px;
+    max-width: 175px;
+    max-height: 175px;				
+    width: fit-content;
+    height: fit-content;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+    font-family: "MARKPRO-BOLD";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .album a {
+    width: 175px;
+    height:175px;
+  }
+
+  .albumCol#albumCap .title h1{
+    margin: 0;		
+    color: white;
+    text-align: center;
+  }
+
+  .albumCol#albumCap:hover .title{
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    opacity: 1;
+  }
+
+  .albumCol#albumCap:hover img{
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    /*/I'd like to do a nice gradient overlay that swipes up, but I can take care of that once the website is done, first it needs to fully function/*/
+   -webkit-filter: blur(3px)hue-rotate(10deg)grayscale(25%);
+    box-shadow: 0 0 15px 3px #333333;
+  }
+
+  /*/ Slideshow /*/
+  #slider {
+    margin: auto;
+    width: 175px;
+    height: 175px;
+    position: relative;
+    
+  }
+  #slider a {
+    position:absolute;
+  }
+  #slider a img {
+    width: 175px;
+    height: 175px;
+  }
+  #slider a:nth-of-type(1) {
+    animation-name: slideFade;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #slider a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #slider a:nth-of-type(n+3) {
+    display: none;
+  }
+  @keyframes slideFade {
+    from{opacity: 1.0;}
+    to{opacity: 0.0;}
+  }
+
+  /*/ Reveal Slideshow on Hover /*/
+  .slides {
+    display :inline-block;
+    width: 175px;
+    height: 175px;
+    padding: 5px 5px;
+  }
+  #slideCover {
+    margin: auto;
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    z-index: 30;
+    opacity: 100%;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+  }
+  #slideCover a {
+    position:absolute;
+    width: 175px;
+    height: 175px;
+  }
+  #slideCover a img {
+    width: 175px;
+    height: 175px;
+  }
+  #slideCover a img:hover {
+    opacity: 20%;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+  }
+  #slideCover a:hover {
+    box-shadow: 0 0 15px 3px #333333;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
   }
   #section1 p {
     text-align: center;

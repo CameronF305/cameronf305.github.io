@@ -9,6 +9,9 @@ header{
 li{
   list-style: none;
 }
+#navbar {
+  z-index: 9999;
+}
 .navbar{
   min-height: 70px;
   display: -webkit-flex;
@@ -78,6 +81,7 @@ li{
     float: none;
     position: sticky;
     position: -webkit-sticky;
+    z-index: 9999;
     top: 0px;
     width: 100%;
     min-width: 887px;
