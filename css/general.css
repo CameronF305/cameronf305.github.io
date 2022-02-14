@@ -146,7 +146,7 @@ hr {
   text-align: center;
   padding-bottom: 5px;
 }
-
+/* give more room on the "projCover" class so that text fits snug and the grid looks proper. */
 .projHead p {
   text-align: center;
 }
