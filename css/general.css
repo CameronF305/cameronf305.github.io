@@ -132,3 +132,46 @@ hr {
     height: 3px;
     background-color: #202020;
 }
+
+/*/ Projects Page /*/
+.projHead {
+  margin: 2%;
+}
+
+.projHead h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "MARKPRO-BOLD";
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.projHead p {
+  text-align: center;
+}
+.projCover{
+  padding: 10px 20px;
+}
+.albumGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px 5%;
+}
+.projTitle {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "MARKPRO-BOLD";
+  text-align: center;
+}
+.projCover img {
+  width: 400px;
+  height: 400px;
+  display: block;
+}
+
+.projCol#projCap {
+  position: relative;
+}

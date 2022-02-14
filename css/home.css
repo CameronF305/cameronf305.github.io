@@ -130,7 +130,6 @@ img.logo {
 
   .albumCol#albumCap {
     position: relative;
-    border-color: black;
   }
 
   .albumCol#albumCap .title {
@@ -282,7 +281,6 @@ img.logo {
   
     .albumCol#albumCap {
       position: relative;
-      border-color: black;
     }
   
     .albumCol#albumCap .title {
