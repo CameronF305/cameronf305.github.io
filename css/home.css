@@ -769,3 +769,8 @@ img.logo {
     padding: 10px;
   }
 }
+#scrollText {
+  margin: auto auto;
+  padding: 10px 10px;
+  word-wrap: normal;
+}
