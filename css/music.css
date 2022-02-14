@@ -25,22 +25,47 @@
     align-items: center;
     justify-content: center;
   }
-  .projCover{
+  .projArt{
     padding: 10px 10px;
     width: 550px;
     height: 550px;
+    margin: 15px 15px;
+    display: inline-block;
   }
-  .projCover a{
+  .projCover {
     width: 550px;
     height: 550px;
+    z-index: 20;
+    margin: auto;
+    position: absolute;
+  }
+  .vinyl {
+      z-index: 1;
+      position: relative;
+      margin: auto;
+      width: 550px;
+      height: 550px;
+  }
+  .vinyl img {
+    width: 100%;
+    height: 100%;
+    padding: 5% 5%;
+    position: absolute;
+    right: 0px;
+    transform:scale(0.9) rotate(270deg);
   }
   .projCover img {
+      padding: 5% 5%;
     width: 100%;
+    height: 100%;
     position: relative;
     display: block;
+    right: 0px;
   }
   .projInfo {
-    width: 550px;
+    width: 100%;
+    height: 60%;
+    padding-bottom: 10px;
   }
   .projTitle {
     font-size: 20px;
@@ -56,3 +81,22 @@
     font-size: 15px;
     color: #686868
   }
+
+  /*/ Record Spin on Hover /*/
+.projArt a:hover .projCover img {
+    right: 15px;
+    margin-left: -15%;
+    transform:scale(0.8);
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+}
+
+.projArt a:hover .vinyl img {
+    margin-right: -23%;
+    transform: scale(0.77) rotate(5deg);
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+}
+
