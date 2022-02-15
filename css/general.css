@@ -44,17 +44,9 @@ img.logo {
     margin: auto;
     }
 body {
-    margin: 0;
     width: 100%;
   }
   
-  .header {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-    margin-top: auto;
-    max-width: auto;
-  }
 
   .footer {
     background-color: black;

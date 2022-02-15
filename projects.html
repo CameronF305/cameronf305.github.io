@@ -37,6 +37,7 @@
             </nav>
           </div>
           </header>
+      <div class="content">
         <content>
           <section class=projHead>
             <div>
@@ -194,7 +195,8 @@
               </div>
             </div>
           </section>
-        </content>        
+        </content>
+      </div>        
         <div class="footer">
           <div id="footer">
             <a>
@@ -203,27 +205,13 @@
           </div>
         </div>
         <script src="/js/mobilenav.js"></script>
-        <script src="/js/navbar.js"></script>
         <script src="/js/loadSeq.js"></script>
+        <!--Below is the loadSeq script in here for testing, can removed when published-->
         <script>
           document.addEventListener("DOMContentLoaded", () => {
   fadin('.albumElement', { delay: 100 })
 });
         </script>
         <script src="https://unpkg.com/fadin"></script>
-        <script>
-          window.onscroll = function() {stickNavBar()};
-          
-          var navbar = document.getElementById("navbar");
-          var sticky = navbar.offsetTop;
-          
-          function stickNavBar() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-            } else {
-              navbar.classList.remove("sticky");
-            }
-          }
-        </script>
     </body>
 </html>

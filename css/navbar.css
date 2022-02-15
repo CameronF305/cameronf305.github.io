@@ -11,15 +11,28 @@ li{
 }
 #navbar {
   z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbar{
+  top: 0px;
+  padding: 0 24px;
   min-height: 70px;
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: black;
 }
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 .navbar ul li a {
   font-family: "facile_sansregular";
     font-weight: normal;
@@ -29,12 +42,6 @@ li{
     border-radius: 5px;
     font-size: 20px;
     text-decoration: none;
-}
-.nav-menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
 }
 .nav-branding{
   font-size: 2rem;
@@ -61,6 +68,23 @@ li{
   background-color: #5c5c5c;
   color: white;
 }
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+    
+  .navbar ul li a.active {
+    background-color: rgb(31,31,31);
+    color: white;
+  }
+  .navlogo img {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin-top: auto;
+    margin-left: 15px;
+    float: left;
+  }
 .hamburger{
   display: none;
   cursor: pointer;
@@ -74,15 +98,12 @@ li{
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+.content {
+    padding-top: 70px;
+  }
 @media only screen and (min-width: 888px){
   .navbar {
-    overflow: hidden;
-    background-color: black;
     float: none;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 9999;
-    top: 0px;
     width: 100%;
     min-width: 887px;
     max-width: auto;
@@ -104,17 +125,10 @@ li{
   }
   .navbar ul li a {
     float: left;
-    font-family: "facile_sansregular";
-    font-weight: normal;
-    font-style: normal;
     display: block;
     color: white;
-    text-align: center;
-    border-radius: 5px;
     margin: 5px;
     padding: 15px 20px;
-    text-decoration: none;
-    font-size: 20px;
   }
   .btn {
     border: none;
@@ -125,11 +139,6 @@ li{
     border: none;
     padding: 16px 32px;
     margin: 4px 2px;
-  }
-  
-  .activebtn:hover {
-    background-color: #5c5c5c;
-    color: white;
   }
 
 }
@@ -164,17 +173,6 @@ li{
     left: 0;
   }
 }
-.navbar ul li a:hover {
-  background-color: white;
-  color: black;
-}
-  
-.navbar ul li a.active {
-  background-color: rgb(31,31,31);
-  color: white;
-}
-
-
 
 @font-face {
   font-family: "facile_sansregular";
@@ -183,34 +181,6 @@ li{
   font-weight: normal;
   font-style: normal;
 
-}
-
-.navlogo img {
-  width: 300px;
-  height: 100px;
-  position: absolute;
-  margin-top: auto;
-  margin-left: 15px;
-  float: left;
-}
-
-
-.content {
-  padding: 16px;
-  margin: auto auto 0 auto;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-section.headwtext {
-  height: 1275px;
 }
 
 @-webkit-keyframes fadeOut {

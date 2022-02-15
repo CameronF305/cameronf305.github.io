@@ -1,216 +1,82 @@
-h1, h2 {
-    margin: 0;
-  }
-  h1 {
-    padding: 50px 0;
-  }
-  h2 {
-    padding: 25px 0;
-  }
-  h3 {
-    padding-top: 20px;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Nunito', sans serif;
-    color: white;
-  }
-  
-  .content {
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: black;
+}
+li{
+  list-style: none;
+}
+#navbar {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar{
+  top: 0px;
+  padding: 0 24px;
+  min-height: 70px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: black;
+}
+.nav-menu{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 1000px;
-    position: absolute;
-    top: 225px;
-    width: 100%;
-    z-index: -1;
   }
   
-  .main-header {
-    display: flex;
-    justify-content: center;
-    background: #43b29d;
-    position: relative;
-    top: 0;
-  }
-  
-  .nav-bar {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: darkcyan;
-    transition: background .5s
-  }
-  
-  .nav-1 {
-    transition: margin-right .5s ease;
-  }
-  
-  .content {
-    background: #c0c0c3;
-    color: #414041;
-  }
-  
-  .fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: darkslategrey;
-  }
-  
-  .toleft {
-    margin-right: 50%;
-  }
-
-
-/*/ *{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .nav-wrapper {
-      height: 70px;
-  }
-  #navbar {
-    z-index: 9999;
-    background-color: black;
-  }
-nav {
-    min-height: 70px;
-    min-width: 100%;
-    max-width: auto;
-    display: -webkit-flex;
-    display: flex;
-    position: sticky;
-    position: -webkit-sticky;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    float: none;
-    top: 0px;
-    width: 100%;
-  }
-nav ul li a {
-    font-family: "facile_sansregular";
-      font-weight: normal;
-      font-style: normal;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 20px;
-      float: left;
-      display: block;
-      margin: 5px;
-  }
-  .nav-menu{
-    width:750px;
-    margin:0 auto;
-      list-style: none;
-      gap: 10px;
-  }
-  .nav-branding{
-    font-size: 2rem;
-  }
-  .btn{
-    background-color: rgb(0, 0, 0);
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    transition: 0.3s;
-    border: none;
-    padding: 16px 32px;
-    margin: 4px 2px;
-  }
-  .btn:hover {
-    background-color: #5c5c5c;
-    color: white;
-  }
-  .activebtn {
-    background-color: rgb(31,31,31);
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    transition: 0.3s;
-    border: none;
-    padding: 16px 32px;
-    margin: 4px 2px;
-  }
-  .activebtn:hover {
-    background-color: #5c5c5c;
-    color: white;
-  }
-  .hamburger{
-    display: none;
-    cursor: pointer;
-  }
-  .bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-  }
-  @media only screen and (min-width: 888px){
-    
-  
-  }
-  @media only screen and (max-width: 887px){
-    .hamburger{
-      display: block;
-    }
-    .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: black;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-    .nav-item {
-      margin: 16px 0;
-    }
-    .nav-menu.active{
-      left: 0;
-    }
-  }
-nav ul li a:hover {
-    background-color: white;
-    color: black;
-  }
-    
-nav ul li a.active {
-    background-color: rgb(31,31,31);
-    color: white;
-  }
-  
-  
-  
-  @font-face {
-    font-family: "facile_sansregular";
-    src: url("fonts/facile_sans-webfont.woff") format("woff"),
-    url("/fonts/facile_sans-webfont.woff") format("woff");
+.navbar ul li a {
+  font-family: "facile_sansregular";
     font-weight: normal;
     font-style: normal;
-  
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-branding{
+  font-size: 2rem;
+}
+.btn{
+  background-color: rgb(0, 0, 0);
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #5c5c5c;
+  color: white;
+}
+.activebtn {
+  background-color: rgb(31,31,31);
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.activebtn:hover {
+  background-color: #5c5c5c;
+  color: white;
+}
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
   }
-  
+    
+  .navbar ul li a.active {
+    background-color: rgb(31,31,31);
+    color: white;
+  }
   .navlogo img {
     width: 300px;
     height: 100px;
@@ -219,41 +85,118 @@ nav ul li a.active {
     margin-left: 15px;
     float: left;
   }
-  
-  
-  .content {
-    padding: 16px;
-    margin: auto auto 0 auto;
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+.content {
+    padding-top: 70px;
   }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
+@media only screen and (min-width: 888px){
+  .navbar {
+    float: none;
     width: 100%;
+    min-width: 887px;
+    max-width: auto;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }  
+ .nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
   }
   
-  .sticky + .content {
-    padding-top: 60px;
+  .nav-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  section.headwtext {
-    height: 1275px;
+  .navbar ul li a {
+    float: left;
+    display: block;
+    color: white;
+    margin: 5px;
+    padding: 15px 20px;
   }
-  
-  @-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  .btn {
+    border: none;
+    padding: 16px 32px;
+    margin: 4px 2px;
   }
-  
-  @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  .activebtn {
+    border: none;
+    padding: 16px 32px;
+    margin: 4px 2px;
   }
-  /*/
+
+}
+@media only screen and (max-width: 887px){
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active{
+    left: 0;
+  }
+}
+
+@font-face {
+  font-family: "facile_sansregular";
+  src: url("fonts/facile_sans-webfont.woff") format("woff"),
+  url("/fonts/facile_sans-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}

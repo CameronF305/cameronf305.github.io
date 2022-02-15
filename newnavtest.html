@@ -19,19 +19,26 @@
         <link rel="stylesheet" type="text/css" href="css/music.css">
     </head>
     <body>
-      <div class="main-header">
-	      <h1>Header</h1>
-	    </div>
-      <section class="nav-bar">
-	      <h2 class="nav-1">Home</h2>
-	      <h2 class="nav-2">About</h2>
-	      <h2 class="nav-3">Contact</h2>
-	      <h2 class="nav-4">Log in</h2>
-	      <h2 class="nav-5">Sign in</h2>
-	    </section>
-      
+        <header id="navbar">
+            <nav class="navbar">
+              <ul class="nav-menu">
+                <li class="nav-item"><a class="btn" href="home">Home</a></li>
+                <li class="nav-item"><a class="btn" href="about">About</a></li>
+                <li class="nav-item"><a class="activebtn" href="music">Music</a></li>
+                <li class="nav-item"><a class="btn" href="videos">Videos</a></li>
+                <li class="nav-item"><a class="btn" href="shop">Shop</a></li>
+                <li class="nav-item"><a class="btn" href="contact">Contact</a></li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+          </header>
+      <div class="content">
         <content>
-          <h1>music</h1>
+          <p>baba</p>baba
           <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
           <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
           <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
@@ -92,7 +99,7 @@
           <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
           <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
           <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
-
+      </div>
         </content>        
         <div class="footer">
           <div id="footer">
@@ -102,24 +109,5 @@
           </div>
         </div>
         <script src="/js/mobilenav.js"></script>
-
-        <script type="text/javascript" src="javascript/jquery-2.2.4.js"></script>
-        <script>
-          
-$(document).ready(function(){
-	$(window).bind('scroll', function() {
-		var navHeight = $('.main-header').height();
-		if ($(window).scrollTop() > navHeight) {
-			$('.nav-bar').addClass('fixed');
-			$('.nav-1').addClass('toleft');
-		 }
-		else {
-			$('.nav-bar').removeClass('fixed');
-			$('.nav-1').removeClass('toleft');
-		 }
-	});
-});
-  
-        </script>
     </body>
 </html>

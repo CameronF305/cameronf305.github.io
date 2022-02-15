@@ -31,6 +31,7 @@
               </div>
             </nav>
           </header>
+      <div class="content">
         <content>
             <section class="buglist">
                 <h1>Known Bugs</h1>
@@ -38,12 +39,22 @@
             <section class="buglist">
                 <ul>
                     <li>On the home page, when you scroll past the navagation menu, the page auto-scrolls down a bit. I know what causes this bug, however the fix only works on desktop and breaks the navagation bar on mobile devices/smaller displays. For right now, it will have to be this way until I finalize the more important parts of the website. Contact me if you know a fix.</li>
-                    <li>There are some slight navagation bar errors that might have to do with scrolling on other pages. Might end up revamping the system entirely</li>
+                    <li>Some pages (mainly the Projects page) have not been optimized for mobile yet</li>
                     <li>Contact me if you find other bugs. Be specific on what display/device you're on, what page you're on, and what it involves.</li>
                 </ul>
             </section>
-        </content>        
+
+            <section class="buglist">
+              <h1>Fixed Bugs</h1>
+          </section>
+          <section class="buglist">
+              <ul>
+                  <li>Except for the home page, the navagation bar no longer covers content on the top of the page and no longer skips down the page on scroll.</li>
+                  <li>The giant "Text Text Text" block would go out of bounds on some displays (this wasn't exactly a bug, this was made to test scrolling but so many people asked about it so i fixed it anyway)</li>
+              </ul>
+          </section>
+        </content>
+      </div>        
         <script src="/js/mobilenav.js"></script>
-        <script src="/js/navbar.js"></script>
     </body>
 </html>
