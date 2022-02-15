@@ -626,8 +626,17 @@ img.logo {
     .albumCol#albumCap {
       position: relative;
       border-color: black;
+      transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
     }
   
+    .albumCol#albumCap img{
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
+    }
+
     .albumCol#albumCap .title {
       display: flex;
       position: absolute;
@@ -639,7 +648,6 @@ img.logo {
       height: fit-content;
       z-index: 10;
       opacity: 0;
-      transition: all 0.8s ease;
       font-family: "MARKPRO-BOLD";
       font-weight: bold;
       font-style: normal;
@@ -647,6 +655,9 @@ img.logo {
       text-shadow: 1px 1px 10px black, -1px -1px 10px black;
       align-items: center;
       vertical-align: middle;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
     }
     .album a {
       width: 100px;
@@ -657,19 +668,19 @@ img.logo {
       margin: 0;		
       color: white;
       text-align: center;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
     }
   
     .albumCol#albumCap:hover .title, .albumCol#albumCap:active .title{
+      opacity: 1;
       transition:all 0.4s ease-in-out;
       -moz-transition:all 0.4s ease-in-out;
       -webkit-transition:all 0.4s ease-in-out;
-      opacity: 1;
     }
   
     .albumCol#albumCap:hover img, .albumCol#albumCap:active img{
-      transition:all 0.4s ease-in-out;
-      -moz-transition:all 0.4s ease-in-out;
-      -webkit-transition:all 0.4s ease-in-out;
       /*/I'd like to do a nice gradient overlay that swipes up, but I can take care of that once the website is done, first it needs to fully function/*/
      -webkit-filter: blur(3px)hue-rotate(10deg)grayscale(25%);
       box-shadow: 0 0 15px 3px #333333;
@@ -721,30 +732,30 @@ img.logo {
       position: absolute;
       z-index: 30;
       opacity: 100%;
-      transition:all 0.4s ease-in-out;
-      -moz-transition:all 0.4s ease-in-out;
-      -webkit-transition:all 0.4s ease-in-out;
     }
     #slideCover a {
       position:absolute;
       width: 100px;
       height: 100px;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
     }
     #slideCover a img {
       width: 100px;
       height: 100px;
+      opacity: 100%;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
     }
     #slideCover a img:hover {
       opacity: 20%;
-      transition:all 0.4s ease-in-out;
-      -moz-transition:all 0.4s ease-in-out;
-      -webkit-transition:all 0.4s ease-in-out;
+      transition:all 0.4s ease-in;
     }
     #slideCover a:hover {
       box-shadow: 0 0 15px 3px #333333;
-      transition:all 0.4s ease-in-out;
-      -moz-transition:all 0.4s ease-in-out;
-      -webkit-transition:all 0.4s ease-in-out;
+      transition:all 0.4s ease-in;
     }
   }
   #section1 p {

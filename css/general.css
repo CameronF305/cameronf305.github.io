@@ -63,19 +63,7 @@ body {
     margin-bottom: auto;
   }
 
-  img.logofoot{
-    width: 369px;
-    height: 115px;
-    max-height: 50%;
-    max-width: 50%;
-    position: left;
-    top: 0;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    float: left;
-    margin:absolute;
-  }
+
   #footer a p{
     font-family: "BAHNSCHRIFT";
     font-weight: normal;

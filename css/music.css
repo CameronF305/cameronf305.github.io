@@ -1,6 +1,38 @@
 /*/ Music Page /*/
 
+/*/ Footer for Albums/Songs /*/
+.musFooter {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: auto;
+}
 
+.musFDiv{
+    width: 60%;
+    background-color: white;
+    height: 1px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+#footerMus a p{
+    font-family: "BAHNSCHRIFT";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+@media only screen and (min-width: 888px){
+    
+}
+
+@media only screen and (max-width: 887px){
+    
+}
 
 /*/ Projects Page /*/
 .projHead {
