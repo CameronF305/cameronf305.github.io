@@ -6,6 +6,7 @@
     padding: 10px;
     text-align: center;
     margin-bottom: auto;
+    width: 100%;
 }
 
 .musFDiv{
@@ -142,4 +143,33 @@
 .albumElement {
     opacity: 0;
     transition: 0.3s opacity;
+}
+
+/*/---Song Pages---/*/
+
+/* General */
+.proj-container {
+    margin: 15px 15px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.art-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    border
+}
+
+.art-border img{
+    width: 350px;
+    height: 350px;
+}
+
+/* UGLY */
+.ugly {
+    background-color: #444444;
+    color: white;
 }
