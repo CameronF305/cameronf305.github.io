@@ -10,8 +10,7 @@ li{
   list-style: none;
 }
 .content {
-  padding: 16px;
-  margin: auto auto 0 auto;
+  padding: 1px;
 }
 
 .sticky {
