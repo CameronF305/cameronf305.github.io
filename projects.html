@@ -203,11 +203,12 @@
         </div>
         <script src="/js/mobilenav.js"></script>
         <script src="/js/navbar.js"></script>
+        <script src="/js/loadSeq.js"></script>
         <script>
-          $(function() {
-	$('#albumElement').each(function(i) {
-	$(this).delay((i++) * 500).fadeTo(1000, 1); })
+          document.addEventListener("DOMContentLoaded", () => {
+  fadin('.albumElement', { delay: 100 })
 });
         </script>
+        <script src="https://unpkg.com/fadin"></script>
     </body>
 </html>
