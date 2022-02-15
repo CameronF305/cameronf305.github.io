@@ -44,17 +44,18 @@
   .projHead p {
     text-align: center;
   }
+  
   .albumContainer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: auto 3%;
   }
   .projArt{
-    padding: 10px 10px 5px;
+    padding: 7px 7px 5px;
     width: 550px;
     height: 550px;
-    margin: 15px 15px;
     display: inline-block;
   }
   .projCover {
