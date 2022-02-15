@@ -4,5 +4,5 @@
 //<script src="https://unpkg.com/fadin"></script>
 
 document.addEventListener("DOMContentLoaded", () => {
-    fadin('.fade', { delay: 200 })
+    fadin('.albumElement', { delay: 100 })
   });

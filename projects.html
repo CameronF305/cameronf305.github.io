@@ -35,6 +35,7 @@
                 <span class="bar"></span>
               </div>
             </nav>
+          </div>
           </header>
         <content>
           <section class=projHead>
@@ -210,5 +211,19 @@
 });
         </script>
         <script src="https://unpkg.com/fadin"></script>
+        <script>
+          window.onscroll = function() {stickNavBar()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function stickNavBar() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+        </script>
     </body>
 </html>
