@@ -26,13 +26,6 @@
     color: white;
     text-align: center;
 }
-@media only screen and (min-width: 888px){
-    
-}
-
-@media only screen and (max-width: 887px){
-    
-}
 
 /*/ Projects Page /*/
 .projHead {
@@ -47,7 +40,7 @@
     text-align: center;
     padding-bottom: 5px;
   }
-  /* give more room on the "projCover" class so that text fits snug and the grid looks proper. */
+  
   .projHead p {
     text-align: center;
   }
@@ -132,3 +125,21 @@
     -webkit-transition:all 0.4s ease-in-out;
 }
 
+/*/ Mobile Optimizations /*/
+
+/* will complete when page is 100% */
+
+/*/ So all the items load in by fading instead of just popping into existence /*/
+
+@keyframes albumLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#albumElement {
+    opacity: 0;
+}
