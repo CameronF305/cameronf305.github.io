@@ -172,6 +172,7 @@
 .proj-headings h1{
   text-decoration: underline;
   font-size: 35px;
+  padding-top: 2px;
 }
 .default-projTitle {
   font-family: "facile_sansregular";
@@ -180,7 +181,6 @@
   color: white;
 }
 .proj-headings h2{
-  padding-top: 2px;
   font-family: "BAHNSCHRIFT";
   font-weight: normal;
   font-style: normal;
@@ -198,7 +198,7 @@
   border:1px solid aliceblue;
   border-radius: 2px;
   color: aliceblue;
-  width: 84%;
+  width: 86%;
   margin: 30px 0 15px;
   margin-left: 7%;
   margin-right: 7%;
@@ -206,10 +206,70 @@
 }
 
 .stream-head {
-  margin: 15px 15px;
-  height: 100px;
+  margin: 15px 15px 25px;
+  height: 50px;
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+.stream-head h1 {
+  text-align: center;
+  font-family: "MARKPRO-BOLD";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 40px;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
+.dsp-container {
+  margin: 0 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dsp-column {
+  margin: 0 10px;
+}
+.dsp-element {
+  margin: 15px;
+  width: 330px;
+  height: 80px;
+  background-color: #dbdbdb;
+  border-width: 2px;
+  border-color: #7c7c7c;
+  border-radius: 5px;
+  border-style: solid;
+}
+.dsp-element img {
+  width: 125px;
+  height: 40px;
+}
+.mv-head {
+  margin: 10px 15px 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mv-head h1 {
+  text-align: center;
+  font-family: "MARKPRO-BOLD";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
+
+.video-container {
+  margin: 0 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.music-video {
+  padding: 15px 15px;
 }
 
 /* UGLY */
