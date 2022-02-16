@@ -22,6 +22,14 @@
     font-style: normal;
 
   }
+  @font-face {
+    font-family: "AssassinNinja";
+    src: url("fonts/AssassinNinja.woff") format("woff"),
+    url("/fonts/AssassinNinja.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+  }
 
 .error h1{
     font-family: "MARKPRO-BOLD";
