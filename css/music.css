@@ -11,8 +11,8 @@
 
 .musFDiv{
     width: 60%;
-    background-color: white;
-    height: 1px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 3px;
@@ -150,22 +150,59 @@
 /* General */
 .proj-container {
     margin: 15px 15px;
-    height: 400px;
+    height: 435px;
     display: flex;
     justify-content: center;
+
 }
 
-.art-border {
+.proj-border {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 375px;
-    border
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 1px 1px 4px 4px #222222;
+}
+.proj-headings {
+  text-align: center;
+  width: 375px;
+  height: 60px;
+}
+.proj-headings h1{
+  font-family: "facile_sansregular";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  text-decoration: underline;
+  font-size: 35px;
+}
+.proj-headings h2{
+  padding-top: 2px;
+  font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(216, 216, 216);
+  font-size: 20px;
+}
+.proj-border img{
+    width: 348px;
+    align-self: center;
+    height: 348px;
 }
 
-.art-border img{
-    width: 350px;
-    height: 350px;
+.proj-div {
+  background-color: aliceblue;
+  border:1px solid aliceblue;
+  border-radius: 2px;
+  color: aliceblue;
+  width: 84%;
+  margin: 20px;
+  margin-left: 7%;
+  margin-right: 7%;
+  box-shadow: 1px 1px 1px 1px snow;
 }
 
 /* UGLY */
