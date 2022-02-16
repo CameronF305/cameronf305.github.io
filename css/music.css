@@ -1,3 +1,6 @@
+* {
+  text-decoration: none;
+}
 /*/ Music Page /*/
 
 /*/ Footer for Albums/Songs /*/
@@ -228,21 +231,50 @@
   justify-content: center;
 }
 .dsp-column {
-  margin: 0 10px;
+  margin: 0 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.dsp-element {
+.dsp-element a {
   margin: 15px;
   width: 330px;
   height: 80px;
   background-color: #dbdbdb;
   border-width: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-color: #7c7c7c;
   border-radius: 5px;
   border-style: solid;
+  position: relative;
 }
-.dsp-element img {
+.dsp-element a img {
   width: 125px;
   height: 40px;
+  display: flex;
+  margin: 0 15px;
+  justify-self: left;
+}
+.dsp-button {
+  display: block;
+  align-items: right;
+  padding: 3px 6px;
+  margin-right: 15px;
+  margin-left: 80px;
+  height: 30px;
+  background-color: rgb(201, 201, 201);
+  text-align: right;
+  font-size: 16px;
+  transition: 0.3s;
+  border-radius: 5px;
+  float: right;
+}
+.dsp-button p {
+  color: rgb(73, 73, 73);
+
 }
 .mv-head {
   margin: 10px 15px 5px;
