@@ -30,6 +30,14 @@
     font-style: normal;
 
   }
+  @font-face {
+    font-family: "FUTURA";
+    src: url("fonts/FUTURA") format("woff"),
+    url("/fonts/FUTURA.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+  }
 
 .error h1{
     font-family: "MARKPRO-BOLD";
