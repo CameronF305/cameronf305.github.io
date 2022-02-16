@@ -217,7 +217,7 @@
 }
 
 .stream-head {
-  margin: 30px 15px 25px;
+  margin: 35px 15px 25px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -412,7 +412,7 @@
 }
 
 .stream-head-vw {
-  margin: 30px 15px 25px;
+  margin: 35px 15px 25px;
   height: 90px;
   display: flex;
   align-items: center;
@@ -425,6 +425,6 @@
   font-weight: bold;
   font-style: normal;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   text-shadow: 3px 2px 14px #3B3B3B;
 }
