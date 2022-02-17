@@ -197,6 +197,18 @@
     align-self: center;
     height: 348px;
 }
+.stream-head h1 {
+  text-align: center;
+  font-family: "MARKPRO-BOLD";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 40px;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
+.stream-head-ost h1 {
+  font-size: 35px;
+}
   .music-video iframe{
     width: 512px;
     height: 288px;
@@ -223,15 +235,7 @@
   align-items: center;
   justify-content: center;
 }
-.stream-head h1 {
-  text-align: center;
-  font-family: "MARKPRO-BOLD";
-  font-weight: bold;
-  font-style: normal;
-  color: white;
-  font-size: 40px;
-  text-shadow: 3px 2px 14px #3B3B3B;
-}
+
 .dsp-container {
   margin: 0 20px 30px;
   display: flex;
@@ -369,6 +373,18 @@
     align-self: center;
     height: 297px;
 }
+.stream-head h1 {
+  text-align: center;
+  font-family: "MARKPRO-BOLD";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
+.stream-head-ost h1 {
+  font-size: 25px;
+}
   .music-video iframe{
     width: 320px;
     height: 180px;
@@ -389,13 +405,19 @@
   font-weight: normal;
   font-style: normal;
   color: white;
-  font-size: 25px;
+  font-size: 35px;
+  padding-bottom: 15px;
   }
   .tracklist li{
     list-style: decimal;
+    font-family: "BAHNSCHRIFT";
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 17px;
   }
   .list-container {
     margin: 15px 15px;
+    padding-left: 15px;
     height: 435px;
     display: flex;
     justify-content: center;
@@ -404,14 +426,18 @@
     display: flex;
     flex-direction: column;
     width: 375px;
-    border-color: white;
-    border-style: solid;
-    border-width: 3px;
-    box-shadow: 1px 1px 4px 4px #222222;
+
   }
 }
 /* Disables Tracklist for Mobile */
 @media only screen and (max-width: 887px){
+  .tl-title {
+    font-family: "FUTURA";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 0px;
+  }
   .tracklist {
     opacity: 0;
     margin: 0px 0px;
@@ -458,27 +484,9 @@
   font-weight: normal;
   font-style: normal;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 5px;
   padding-bottom: 7x;
-}
-
-.stream-head-vw {
-  margin: 35px 15px 25px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.stream-head-vw h1 {
-  text-align: center;
-  font-family: "MARKPRO-BOLD";
-  font-weight: bold;
-  font-style: normal;
-  color: white;
-  font-size: 25px;
-  text-shadow: 3px 2px 14px #3B3B3B;
 }
 
 /* General Yandere */
@@ -486,10 +494,39 @@
 .yandere-proj {
   background-color: #e96ec0;
 }
+@media only screen and (min-width:887px){
+  .yandere-title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width:888px){
+  .yandere-title {
+    font-size: 20px;
+  }
+}
 .yandere-title {
   font-family: "FUTURA";
   font-weight: normal;
   font-style: normal;
   color: white;
-  font-size: 25px;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
+
+/* OST */
+
+.stream-head-ost {
+  margin: 35px 15px 25px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stream-head-ost h1 {
+  text-align: center;
+  font-family: "MARKPRO-BOLD";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  text-shadow: 3px 2px 14px #3B3B3B;
 }
