@@ -32,8 +32,10 @@ img.logo {
 
 /* Content */
 
-#welcome {
+.welcome {
   background-color: whitesmoke;
+}
+#welcome {
   padding: 25px 10px;
   max-width: auto;
   text-decoration: none;
@@ -50,13 +52,15 @@ img.logo {
 /*/ Section 1 /*/
 #section1 {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #636363;
 }
 #section1 p {
   padding: 10px;
 }
 .projectHead {
   font-family: "MARKPRO-BOLD";
+  color: white;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
   text-align: center;
   font-size: 30px;
 }
@@ -109,7 +113,7 @@ img.logo {
   -webkit-transition:all 0.4s ease-in-out;
   /*/I'd like to do a nice gradient overlay that swipes up, but I can take care of that once the website is done, first it needs to fully function/*/
  -webkit-filter: blur(0)hue-rotate(0deg)grayscale(0%);
-  box-shadow: 0 0 0px 0px #33333300;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.623);
 }
 .albumCol#albumCap:hover .title, .albumCol#albumCap:active .title{
   transition:all 0.4s ease-in-out;
@@ -165,6 +169,7 @@ img.logo {
   transition:all 0.4s ease-out;
   -moz-transition:all 0.4s ease-out;
   -webkit-transition:all 0.4s ease-out;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.623);
 }
 #slideCover a img:hover {
   opacity: 20%;
