@@ -204,6 +204,7 @@
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
+  margin-top: 7px;
 }
 
 .proj-border img{
@@ -241,6 +242,7 @@
   margin-right: 7%;
   box-shadow: 1px 1px 1px 1px snow;
 }
+
 
 .stream-head {
   margin: 35px 15px 25px;
@@ -426,6 +428,7 @@
   color: white;
   font-size: 35px;
   padding-bottom: 15px;
+  text-shadow: 3px 2px 14px #3B3B3B;
   }
   .tracklist li{
     list-style: decimal;
@@ -433,6 +436,21 @@
     text-align: left;
     padding-bottom: 5px;
     font-size: 17px;
+  }
+  .top-tracklist li{
+    list-style: none;
+    font-family: "BAHNSCHRIFT";
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .top-tracklist-vol2 li{
+    list-style: none;
+    font-family: "BAHNSCHRIFT";
+    text-align: left;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
   }
   .list-container {
     margin: 15px 15px;
@@ -458,6 +476,18 @@
   font-size: 0px;
   }
   .tracklist {
+    opacity: 0;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-size: 0px;
+  }
+  .top-tracklist {
+    opacity: 0;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-size: 0px;
+  }
+  .top-tracklist-vol2 {
     opacity: 0;
     margin: 0px 0px;
     padding: 0px 0px;
@@ -523,6 +553,9 @@
   .abc-title {
     font-size: 24px;
   }
+  .vol-title {
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width:888px){
   .yandere-title {
@@ -530,6 +563,9 @@
   }
   .abc-title {
     font-size: 20px;
+  }
+  .vol-title {
+    font-size: 19px;
   }
 }
 .yandere-title {
@@ -565,9 +601,37 @@
   color: white;
   text-shadow: 3px 2px 14px #3B3B3B;
 }
+.vol-title {
+  font-family: "FUTURA";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
 
 /* ABC Killer */
 
 .abc-body {
   background-color: #3B3B3B;
+}
+
+/* OST 2021 */
+
+.ost-vol1 {
+  background-color: #65c9e7;
+}
+.volume-1 {
+  background-color: #65c9e7;
+}
+.volume-2 {
+  background-color: #b60000;
+}
+.vol-div {
+  background-color: aliceblue;
+  border:1px solid aliceblue;
+  border-radius: 2px;
+  color: aliceblue;
+  width: 100%;
+  margin: 30px 0 15px;
+  box-shadow: 1px 1px 1px 1px snow;
 }
