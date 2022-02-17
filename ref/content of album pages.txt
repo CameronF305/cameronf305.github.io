@@ -1,22 +1,44 @@
-<content>
-  <section> <!--Album Heading-->
-    <div class="proj-container">
-      <div class="proj-border">
-        <img src="images/covers/1.png" alt="UGLY">
-        <div class="proj-headings">
-          <h1 class="default-projTitle">UGLY</h1>
-          <h2>CameronF305</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-  <hr class="proj-div">
-  <section> <!--Streaming Links-->
-    <div class="stream-head">
-      <h1>Stream the Single "UGLY" by CameronF305</h1>
-    </div>
-    <div class="dsp-container">
-      <div class="dsp-column">
+<div class="content">    
+        <content>
+          <section> <!--Album Heading-->
+          <div class="album-head-container">
+            <div class="proj-container">
+              <div class="proj-border">
+                <img src="images/covers/3.png" alt="Yandere Simulator Original Soundtrack 2020">
+                <div class="proj-headings">
+                  <h1 class="yandere-title">Yandere Simulator Original Soundtrack 2020</h1>
+                  <h2>CameronF305</h2>
+                </div>
+              </div>
+            </div>
+            <div class="list-container">
+              <div class="list-border">
+                <div class="proj-headings">
+                  <h1 class="tl-title">Tracklist</h1>
+                  <ul class="tracklist">
+                    <li>Schoolday 9 (OLD 2020 Edition)</li>
+                    <li>Schoolday 9 (Low Sanity)[OLD 2020 Edition]</li>
+                    <li>Schoolday 9 (Low Atmosphere)[OLD 2020 Edition]</li>
+                    <li>Schoolday 9 (Low Atmosphere, Low Sanity)[OLD 2020 Edition]</li>
+                    <li>Schoolday 5 (OLD 2020 Edition)</li>
+                    <li>Schoolday 5 (Low Sanity)[OLD 2020 Edition]</li>
+                    <li>Schoolday 5 (Low Atmosphere)[OLD 2020 Edition]</li>
+                    <li>Schoolday 5 (Low Atmosphere, Low Sanity)[OLD 2020 Edition]</li>
+                    <li>Schoolday 9 Vaporwave Edition (Yandere Simulator Original Soundtrack)</li>
+                    <li>Sakura Love Confessions (feat. Only Wednesday)</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <hr class="proj-div">
+          <section> <!--Streaming Links-->
+            <div class="stream-head">
+              <h1>Stream the Album "Yandere Simulator Original Soundtrack 2020" by CameronF305</h1>
+            </div>
+            <div class="dsp-container">
+              <div class="dsp-column">
                 <div class="dsp-element">
                     <a href="">
                       <img src="images/dsplogos/logo_spotify.svg" alt="Spotify">
@@ -29,56 +51,57 @@
                       <span class="dsp-button">Listen</span>
                     </a>
                 </div>
-                        <div class="dsp-element">
-                          <a href="">
-                            <img src="images/dsplogos/logo_amazonmusic.svg" alt="Amazon Music">
-                            <span class="dsp-button">Listen</span>
-                          </a>
-                        </div>
-                        <div class="dsp-element">
-                          <a href="">
-                            <img src="images/dsplogos/logo_itunes.svg" alt="iTunes">
-                            <span class="dsp-button">Buy</span>
-                          </a>
-                        </div>
-                        <div class="dsp-element">
-                          <a href="">
-                            <img src="images/dsplogos/logo_tidal.svg" alt="Tidal">
-                            <span class="dsp-button">Listen</span>
-                          </a>
-                        </div>
-                        <div class="dsp-element">
-                          <a href="">
-                            <img src="images/dsplogos/YT_Music.svg" alt="YouTube Music">
-                            <span class="dsp-button">Listen</span>
-                          </a>
-                        </div>
-                        <div class="dsp-element">
-                          <a href="">
-                            <img src="images/dsplogos/logo_deezer.svg" alt="Deezer">
-                            <span class="dsp-button">Listen</span>
-                          </a>
-                        </div>
-                        <div class="dsp-element">
-                          <a href="projects">
-                            <img src="images/dsplogos/CameronF305.png" alt="CameronF305">
-                            <span class="dsp-button">More Projects</span>
-                          </a>
-                        </div>
+                <div class="dsp-element">
+                  <a href="">
+                      <img src="images/dsplogos/logo_amazonmusic.svg" alt="Amazon Music">
+                      <span class="dsp-button">Listen</span>
+                  </a>
+                </div>
+                <div class="dsp-element">
+                    <a href="">
+                        <img src="images/dsplogos/logo_itunes.svg" alt="iTunes">
+                        <span class="dsp-button">Buy</span>
+                    </a>
+                </div>
+                <div class="dsp-element">
+                    <a href="">
+                        <img src="images/dsplogos/logo_tidal.svg" alt="Tidal">
+                        <span class="dsp-button">Listen</span>
+                    </a>
+                </div>
+                <div class="dsp-element">
+                    <a href="">
+                        <img src="images/dsplogos/YT_Music.svg" alt="YouTube Music">
+                        <span class="dsp-button">Listen</span>
+                    </a>
+                </div>
+                <div class="dsp-element">
+                    <a href="">
+                        <img src="images/dsplogos/logo_deezer.svg" alt="Deezer">
+                        <span class="dsp-button">Listen</span>
+                    </a>
+                </div>
+                <div class="dsp-element">
+                    <a href="projects">
+                      <img src="images/dsplogos/CameronF305.png" alt="CameronF305">
+                      <span class="dsp-button">More Projects</span>
+                    </a>
+                </div>
                       
               </div>
-
-    </div>
-  </section>
-  <hr class="proj-div">
-  <section> <!--Music Videos-->
-    <div class="mv-head">
-      <h1>Music Video</h1>
-    </div>
-    <div class="video-container">
-      <div class="music-video">
-        <iframe src="https://www.youtube.com/embed/CNh4ii9dw6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>              
-    </div>
-  </section>
-</content>
+        
+            </div>
+          </section>
+          <hr class="proj-div">
+          <section> <!--Music Videos-->
+            <div class="mv-head">
+              <h1>Official Videos</h1>
+            </div>
+            <div class="video-container">
+              <div class="music-video">
+                <iframe src="https://www.youtube.com/embed/CNh4ii9dw6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>              
+            </div>
+          </section>
+        </content>
+      </div>
