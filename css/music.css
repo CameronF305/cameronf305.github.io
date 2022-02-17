@@ -152,6 +152,15 @@
 
 /* General */
 
+.proj-headings h1 {
+  color: white;
+}
+.proj-headings h2 {
+  color: rgb(216, 216, 216);
+}
+.proj-headings h3 {
+  color: rgb(53, 53, 53);
+}
 
 @media only screen and (min-width: 888px) {
   .proj-container {
@@ -183,15 +192,20 @@
   font-family: "facile_sansregular";
   font-weight: normal;
   font-style: normal;
-  color: white;
 }
 .proj-headings h2{
   font-family: "BAHNSCHRIFT";
   font-weight: normal;
   font-style: normal;
-  color: rgb(216, 216, 216);
   font-size: 20px;
 }
+.proj-headings h3{
+  font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+
 .proj-border img{
     width: 348px;
     align-self: center;
@@ -365,7 +379,12 @@
   font-family: "BAHNSCHRIFT";
   font-weight: normal;
   font-style: normal;
-  color: rgb(216, 216, 216);
+  font-size: 15px;
+}
+.proj-headings h3{
+  font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-style: normal;
   font-size: 15px;
 }
 .proj-border img{
@@ -494,6 +513,9 @@
 .yandere-proj {
   background-color: #e96ec0;
 }
+.schoolday-proj {
+  background-color: #ff76d1;
+}
 @media only screen and (min-width:887px){
   .yandere-title {
     font-size: 25px;
@@ -524,6 +546,7 @@
   color: white;
   text-shadow: 3px 2px 14px #3B3B3B;
 }
+
 /* OST */
 
 .stream-head-ost {
