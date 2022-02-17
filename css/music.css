@@ -498,9 +498,15 @@
   .yandere-title {
     font-size: 25px;
   }
+  .abc-title {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width:888px){
   .yandere-title {
+    font-size: 20px;
+  }
+  .abc-title {
     font-size: 20px;
   }
 }
@@ -511,7 +517,13 @@
   color: white;
   text-shadow: 3px 2px 14px #3B3B3B;
 }
-
+.abc-title {
+  font-family: "FUTURA";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
 /* OST */
 
 .stream-head-ost {
@@ -529,4 +541,10 @@
   font-style: normal;
   color: white;
   text-shadow: 3px 2px 14px #3B3B3B;
+}
+
+/* ABC Killer */
+
+.abc-body {
+  background-color: #3B3B3B;
 }
