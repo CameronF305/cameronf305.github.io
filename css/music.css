@@ -244,6 +244,22 @@
     display: flex;
     justify-content: center;
 }
+.news-head {
+  margin: 10px 15px 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-head h1 {
+  text-align: center;
+  font-family: "MARKPRO-BOLD";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  text-shadow: 3px 2px 14px #3B3B3B;
+}
 .news-border {
     display: flex;
     justify-content: center;
@@ -390,22 +406,6 @@
   font-size: 30px;
   text-shadow: 3px 2px 14px #3B3B3B;
 }
-.news-head {
-  margin: 10px 15px 15px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.news-head h1 {
-  text-align: center;
-  font-family: "MARKPRO-BOLD";
-  font-weight: bold;
-  font-style: normal;
-  color: white;
-  font-size: 30px;
-  text-shadow: 3px 2px 14px #3B3B3B;
-}
 
 
 .dsp-element a:hover {
@@ -517,6 +517,22 @@
     border-style: solid;
     border-width: 3px;
     box-shadow: 1px 1px 4px 4px #222222;
+}
+.news-head {
+  margin: 15px 15px 15px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-head h1 {
+  text-align: center;
+  font-family: "MARKPRO-BOLD";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 25px;
+  text-shadow: 3px 2px 14px #3B3B3B;
 }
 .news-headings {
   text-align: center;
@@ -649,8 +665,8 @@
     font-size: 0px;
   }
   .list-container {
-    margin: 15px 15px;
-    height: 371px;
+    margin: 0px 0px;
+    height: 0px;
     display: flex;
     justify-content: center;
   }
