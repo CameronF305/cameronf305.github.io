@@ -232,6 +232,7 @@
 }
 .stream-head-ost h1 {
   font-size: 40px;
+  margin: 0 55px;
 }
   .music-video iframe{
     width: 512px;
@@ -488,6 +489,7 @@
 }
 .stream-head-ost h1 {
   font-size: 25px;
+  margin: 0 40px;
 }
   .music-video iframe{
     width: 320px;
@@ -732,7 +734,7 @@
 /* OST */
 
 .stream-head-ost {
-  margin: 35px 15px 25px;
+  margin: 35px 0 25px;
   height: 90px;
   display: flex;
   align-items: center;
