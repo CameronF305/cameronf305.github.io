@@ -147,7 +147,6 @@ img.logo {
   to{opacity: 0.0;}
 }
 #slideCover {
-  margin: auto;
   position: absolute;
   z-index: 30;
   opacity: 100%;
@@ -270,7 +269,7 @@ img.logo {
     padding: 10px;
   }
   .album-container {
-    padding: 5px 5%;
+    padding: 5px 5px;
   }
   .album{
     padding: 10px 10px;
@@ -297,9 +296,8 @@ img.logo {
 
   /*/ Slideshow /*/
   #slider {
-    margin: auto;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
   }
   #slider a img {
@@ -315,8 +313,8 @@ img.logo {
     padding: 10px 10px;
   }
   #slideCover {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
   #slideCover a {
     width: 250px;
@@ -349,7 +347,6 @@ img.logo {
     /*/ Album Title Reveal /*/
   
     .albumCol#albumCap .title {
-      margin: auto auto;
       min-width: 175px;
       min-height: 175px;
       max-width: 200px;
@@ -362,11 +359,9 @@ img.logo {
   
     /*/ Slideshow /*/
     #slider {
-      margin: auto;
       width: 200px;
       height: 200px;
       position: relative;
-      
     }
 
     #slider a img {
@@ -489,7 +484,6 @@ img.logo {
   
     /*/ Slideshow /*/
     #slider {
-      margin: auto;
       width: 175px;
       height: 175px;
       position: relative;
@@ -527,6 +521,7 @@ img.logo {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       padding: 2% 3%;
     }
     .album{
@@ -557,7 +552,6 @@ img.logo {
   
     /*/ Slideshow /*/
     #slider {
-      margin: auto;
       width: 100px;
       height: 100px;
       position: relative;
@@ -592,7 +586,7 @@ img.logo {
       display :inline-block;
       width: 100px;
       height: 100px;
-      padding: 5px 5px;
+      padding: 2.5px 2.5px;
     }
     #slideCover {
       width: 100px;
