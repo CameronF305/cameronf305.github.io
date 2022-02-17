@@ -43,18 +43,17 @@ img.logo {
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
   text-align: center;
 }
-.section-one-container {
-  padding: 1px;
-}
 .section-container {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 1px;
 }
 /*/ Section 1 /*/
 #section1 {
   width: 100%;
   background-color: #636363;
 }
+#section1 p {
+  padding: 10px;
+ }
 .projectHead {
   font-family: "MARKPRO-BOLD";
   color: white;
@@ -184,19 +183,19 @@ img.logo {
 /*/ Section 2 /*/
 
 #section2 {
-  margin-top: 25px;
   width: 100%;
 }
 #section2 h1{
   font-family: "MARKPRO-BOLD";
   font-size: 40px;
+  padding: 10px;
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
 }
 #section2 p {
+  padding: 10px;
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
-  text-align: center;
 }
 #section2 p a{
   color: rgb(169, 192, 255);
@@ -210,16 +209,17 @@ img.logo {
 /*/ Section 3 /*/
 
 #section3 {
-  margin-top: 25px;
   width: 100%;
 }
 #section3 h1{
   font-family: "MARKPRO-BOLD";
+  font-size: 40px;
+  padding: 10px;
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
-  margin: 10px;
 }
 #section3 p {
+  padding: 10px;
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
 }
@@ -231,31 +231,15 @@ img.logo {
   color: rgb(84, 161, 212);
   text-shadow: 1px 1px 10px black;
 }
-.latest-video{
-  box-shadow: 0 0 8px 3px #333333;
-}
 
 @media only screen and (min-width: 888px){
   .section-container {
-    justify-content: center;
-    align-items: center;
+    margin: auto;
   }
 
-  .section-child-1 {
-    margin-right: 25px;
-    width: 440px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section-child-2 {
-    margin-left: 25px;
-    width: 440px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .section-child {
+    width: 50%;
+    float: left;
   }
   #section1 {
     padding: 10px 50px;
@@ -399,57 +383,35 @@ img.logo {
   /*/ Section 2 /*/
 
   #section2 {
-    padding: 0 105px;
+    padding: 10px 50px;
   }
   #section2 h1 {
-    text-align: center;
+    text-align: left;
+    margin-left: 25%;
   }
-
-
-  /*/ Section 3 /*/
-
+  #section2 p {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
   #section3 {
-    padding: 0 105px;
+    padding: 10px 50px;
   }
   #section3 h1 {
-    text-align: center;
-    font-size: 45px;
+    text-align: right;
+    margin-left: 25%;
   }
   #section3 p {
-    text-align: right;
-  }
-  .latest-video {
-    width: 426px;
-    height: 240px;
-  }
-  .latest-video iframe{
-    width: 426px;
-    height: 240px;
-    display: block;
-    justify-self: center;
-    align-self: center;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 10%;
   }
 }
 
 /*/ Mobile Content /*/
 @media only screen and (max-width: 887px){
-  .section-container {
-    justify-content: center;
-    align-items: center;
-  }
-  .section-child-1 {
-    width: 442px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section-child-2 {
-    width: 442px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .section-child {
+    width: 100%;
   }
   #section1 {
     padding: 10px 25px;
@@ -620,33 +582,28 @@ img.logo {
     margin: 5%;
   }
   #section2 {
+    padding: 10px 25px;
     width: 100%;
   }
   #section2 h1 {
     text-align: center;
+    margin: 5%;
+  }
+  #section2 p {
+    text-align: center;
+    margin: 5%;
   }
   #section3 {
+    padding: 10px 25px;
     width: 100%;
-    height: fit-content;
-    padding: 0 50px;
   }
   #section3 h1 {
     text-align: center;
-    font-size: 30px;
+    margin: 5%;
   }
   #section3 p {
     text-align: center;
-  }
-  .latest-video {
-    width: 320px;
-    height: 180px;
-  }
-  .latest-video iframe{
-    width: 320px;
-    height: 180px;
-    display: block;
-    justify-self: center;
-    align-self: center;
+    margin: 5%;
   }
 }
 

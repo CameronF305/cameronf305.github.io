@@ -119,21 +119,22 @@ hr {
 
 .long-div {
   width:100%;
-  border: 2px solid #202020;
-  background-color: #202020;
+  background-color: aliceblue;
+  border:1px solid aliceblue;
   border-radius: 2px;
-  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+  color: aliceblue;
+  box-shadow: 1px 1px 1px 1px snow;
 }
 
 .short-div {
-  border: 2px solid #202020;
-  background-color: #202020;
+  background-color: aliceblue;
+  border:1px solid aliceblue;
   border-radius: 2px;
-  color: 202020;
+  color: aliceblue;
   width: 86%;
   margin: 30px 0 15px;
   margin-left: 7%;
   margin-right: 7%;
-  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px 1px snow;
 }
 
