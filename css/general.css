@@ -112,7 +112,28 @@ body {
 
 hr {
     width:100%;
-    border: 2px solid #202020;
+    border: 1px solid #202020;
     background-color: #202020;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+}
+
+.long-div {
+  width:100%;
+  border: 2px solid #202020;
+  background-color: #202020;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+}
+
+.short-div {
+  border: 2px solid #202020;
+  background-color: #202020;
+  border-radius: 2px;
+  color: 202020;
+  width: 86%;
+  margin: 30px 0 15px;
+  margin-left: 7%;
+  margin-right: 7%;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
 }
 
