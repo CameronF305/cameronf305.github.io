@@ -50,10 +50,7 @@ img.logo {
 /*/ Section 1 /*/
 #section1 {
   width: 100%;
-}
-#section1 h1 {
-  font-family: "MARKPRO-BOLD";
-  font-size: 20px;
+  background-color: #f1f1f1;
 }
 #section1 p {
   padding: 10px;
