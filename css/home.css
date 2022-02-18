@@ -6,6 +6,18 @@ body {
     margin: 10px;
     position: relative;
   }
+  .homehead {
+    background-image: url("images/OrangeHeading.png");
+    background-color: coral;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover cover;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    max-width: auto;
+}
 img.logo {
     width: 497px;
     height: 190.4px;
@@ -200,10 +212,12 @@ img.logo {
 #section2 p a{
   color: rgb(169, 192, 255);
   text-shadow: 1px 1px 10px black;
+  text-decoration: none;
 }
 #section2 p a:hover{
   color: rgb(84, 161, 212);
   text-shadow: 1px 1px 10px black;
+  text-decoration: underline;
 }
 
 /*/ Section 3 /*/
@@ -224,15 +238,48 @@ img.logo {
 }
 #section3 p a{
   color: rgb(169, 192, 255);
+  text-decoration: none;
   text-shadow: 1px 1px 10px black;
 }
 #section3 p a:hover{
   color: rgb(84, 161, 212);
   text-shadow: 1px 1px 10px black;
+  text-decoration: underline;
 }
 .latest-video{
   box-shadow: 0 0 8px 3px #333333;
 }
+
+/*/ Section 4 /*/
+
+/*/ Section 5 /*/
+
+#section5 {
+  margin-top: 25px;
+  width: 100%;
+}
+#section5 h1{
+  font-family: "MARKPRO-BOLD";
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+}
+#section5 p {
+  color: white;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  text-align: center;
+}
+#section5 p a{
+  color: rgb(169, 192, 255);
+  text-shadow: 1px 1px 10px black;
+  text-decoration: none;
+}
+#section5 p a:hover{
+  color: rgb(84, 161, 212);
+  text-shadow: 1px 1px 10px black;
+  text-decoration: underline;
+}
+
 
 @media only screen and (min-width: 888px){
   .section-container {
