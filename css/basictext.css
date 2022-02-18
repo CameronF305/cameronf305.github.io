@@ -4,7 +4,6 @@
     url("/fonts/facile_sans-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
   }
   @font-face {
     font-family: "MARKPRO-BOLD";
@@ -12,15 +11,13 @@
     url("/fonts/MARKPRO-BOLD.woff") format("woff");
     font-weight: bold;
     font-style: normal;
-
   }
   @font-face {
     font-family: "BAHNSCHRIFT";
-    src: url("fonts/BAHNSCHRIFT") format("woff"),
+    src: url("fonts/BAHNSCHRIFT.woff") format("woff"),
     url("/fonts/BAHNSCHRIFT.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
   }
   @font-face {
     font-family: "AssassinNinja";
@@ -28,15 +25,27 @@
     url("/fonts/AssassinNinja.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
   }
   @font-face {
     font-family: "FUTURA";
-    src: url("fonts/FUTURA") format("woff"),
+    src: url("fonts/FUTURA.woff") format("woff"),
     url("/fonts/FUTURA.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
+  }
+  @font-face {
+    font-family: "Domine-Regular";
+    src: url("fonts/Domine-Regular.woff") format("woff"),
+    url("/fonts/Domine-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Domine-Bold";
+    src: url("fonts/Domine-Bold.woff") format("woff"),
+    url("/fonts/Domine-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
   }
 
 .error h1{

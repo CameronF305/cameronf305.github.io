@@ -195,8 +195,7 @@ img.logo {
 /*/ Section 2 /*/
 
 #section2 {
-  margin-top: 25px;
-  width: 100%;
+  margin: 25px;
 }
 #section2 h1{
   font-family: "MARKPRO-BOLD";
@@ -223,8 +222,8 @@ img.logo {
 /*/ Section 3 /*/
 
 #section3 {
-  margin-top: 25px;
-  width: 100%;
+  margin: 25px;
+
 }
 #section3 h1{
   font-family: "MARKPRO-BOLD";
@@ -254,27 +253,53 @@ img.logo {
 
 /*/ Section 5 /*/
 
+.news-container {
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+.news-headings h1 {
+  font-family: "Domine-Regular";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  text-shadow: 3px 2px 6px #2b2b2b;
+}
+.article-container {
+  background-color: #797979;
+}
 #section5 {
-  margin-top: 25px;
+  width: 100%;
+  background-color: #636363;
+}
+/*/ Section 6 /*/
+
+/*/ Section 7 /*/
+
+#section7 {
+  margin: 25px;
   width: 100%;
 }
-#section5 h1{
+#section7 h1{
   font-family: "MARKPRO-BOLD";
   font-size: 40px;
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
 }
-#section5 p {
+#section7 p {
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
   text-align: center;
 }
-#section5 p a{
+#section7 p a{
   color: rgb(169, 192, 255);
   text-shadow: 1px 1px 10px black;
   text-decoration: none;
 }
-#section5 p a:hover{
+#section7 p a:hover{
   color: rgb(84, 161, 212);
   text-shadow: 1px 1px 10px black;
   text-decoration: underline;
@@ -441,7 +466,6 @@ img.logo {
   /*/ Section 2 /*/
 
   #section2 {
-    padding: 0 105px;
   }
   #section2 h1 {
     text-align: center;
@@ -451,7 +475,6 @@ img.logo {
   /*/ Section 3 /*/
 
   #section3 {
-    padding: 0 105px;
   }
   #section3 h1 {
     text-align: center;
@@ -470,6 +493,59 @@ img.logo {
     display: block;
     justify-self: center;
     align-self: center;
+  }
+
+  /*/ Section 5 /*/
+
+  .article-container {
+    margin: 10px 15px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+  }
+  .news-border {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 1px 1px 4px 4px #222222;
+}
+.news-headings {
+  text-align: center;
+  width: 375px;
+  height: 60px;
+}
+.news-headings h1{
+  text-decoration: underline;
+  color: white;
+  font-size: 22px;
+}
+.default-news-head {
+  font-family: "facile_sansregular";
+  font-weight: normal;
+  font-style: normal;
+}
+  .news-headings h3{
+    font-family: "BAHNSCHRIFT";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    margin: 2px;
+  }
+
+  .news-border img{
+      width: 350px;
+      align-self: center;
+      height: 350px;
+      padding-top: 20px;
+  }
+  .news-border a{
+    width: 350px;
+    align-self: center;
+    height: 350px;
   }
 }
 
@@ -495,6 +571,57 @@ img.logo {
   }
   #section1 {
     padding: 10px 25px;
+  }
+  .article-container {
+    margin: 10px 15px;
+    height: 381px;
+    display: flex;
+    justify-content: center;
+}
+.news-border {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 321px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 1px 1px 4px 4px #222222;
+}
+.news-headings {
+  text-align: center;
+  width: 321px;
+  height: 60px;
+}
+.news-headings h1{
+  text-decoration: underline;
+  padding-top: 2px;
+  color: white;
+  font-size: 22px;
+}
+.default-news-head {
+  font-family: "facile_sansregular";
+  font-weight: normal;
+  font-style: normal;
+}
+  .news-headings h3{
+    font-family: "BAHNSCHRIFT";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+
+  .news-border img{
+      width: 300px;
+      align-self: center;
+      height: 300px;
+      padding-top: 15px;
+  }
+  .news-border a{
+    width: 300px;
+    align-self: center;
+    height: 300px;
   }
   @media only screen and (max-width: 887px) and (min-width:551px){
     .projectHead {
@@ -661,15 +788,12 @@ img.logo {
     margin: 5%;
   }
   #section2 {
-    width: 100%;
   }
   #section2 h1 {
     text-align: center;
   }
   #section3 {
-    width: 100%;
     height: fit-content;
-    padding: 0 50px;
   }
   #section3 h1 {
     text-align: center;
