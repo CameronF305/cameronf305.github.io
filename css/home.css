@@ -7,7 +7,6 @@ body {
     position: relative;
   }
   .homehead {
-    background-image: url("images/OrangeHeading.png");
     background-color: coral;
     background-attachment: fixed;
     background-position: center center;
@@ -329,8 +328,8 @@ img.logo {
 
   .albumCol#albumCap .title {
     margin: auto auto;
-    min-width: 245px;
-    min-height: 245px;
+    width: 250px;
+    height: 250px;
     max-width: 250px;
     max-height: 250px;				
   }
@@ -352,9 +351,6 @@ img.logo {
 
   /*/ Reveal Slideshow on Hover /*/
   .slides {
-    display :inline-block;
-    width: 250px;
-    height: 250px;
     padding: 10px 10px;
   }
   #slideCover {
@@ -416,9 +412,6 @@ img.logo {
   
     /*/ Reveal Slideshow on Hover /*/
     .slides {
-      display :inline-block;
-      width: 200px;
-      height: 200px;
       padding: 5px 5px;
     }
     #slideCover {
@@ -643,9 +636,6 @@ img.logo {
   
     /*/ Reveal Slideshow on Hover /*/
     .slides {
-      display :inline-block;
-      width: 175px;
-      height: 175px;
       padding: 5px 5px;
     }
     #slideCover {
@@ -687,8 +677,8 @@ img.logo {
     }
 
     .albumCol#albumCap .title {
-      min-width: 99px;
-      min-height: 99px;
+      width: 100px;
+      height: 100px;
       max-width: 100px;
       max-height: 100px;				
     }
@@ -730,9 +720,6 @@ img.logo {
   
     /*/ Reveal Slideshow on Hover /*/
     .slides {
-      display :inline-block;
-      width: 100px;
-      height: 100px;
       padding: 2.5px 2.5px;
     }
     #slideCover {
