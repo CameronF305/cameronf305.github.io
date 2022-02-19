@@ -47,24 +47,168 @@ img.logo {
     margin: auto;
     }
 
-  
+  /*/ Footer /*/
 
   .footer {
     background-color: black;
-    padding: 20px;
+    width: 100%;
+  }
+  .footer-container {
     text-align: center;
-    margin-bottom: auto;
+    display: flex;
+    width: 100%;
+  }
+  .foot-socials {
+    float: left;
   }
 
+.foot-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  #footer a p{
+ .foot-text a p{
     font-family: "BAHNSCHRIFT";
     font-weight: normal;
     font-style: normal;
-    font-size: 15px;
       color: white;
       text-align: center;
   }
+
+@media only screen and (min-width:888px) {
+  .footer {
+    margin-bottom: auto;
+    height: 75px;
+  }
+  .footer-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+  }
+  .foot-socials {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+    display: block;
+    width: fit-content;
+  }
+
+.foot-text {
+  height: 70px;
+  width: fit-content;
+}
+
+ .foot-text a p{
+      font-size: 20px;
+  }
+
+  /* Social Icons */
+  .bi {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+  }
+}
+@media only screen and (max-width:887px) {
+  .footer {
+    margin-bottom: auto;
+    height: fit-content;
+  }
+  .footer-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: auto 25px;
+  }
+  .foot-socials {
+    padding: 10px 10px;
+    height: 50px;
+    display: block;
+    width: fit-content;
+  }
+
+.foot-text {
+  height: 70px;
+  width: fit-content;
+  padding: 0 10px;
+}
+
+ .foot-text a p{
+      font-size: 15px;
+  }
+
+  /* Social Icons */
+  .bi {
+    padding: 5px;
+    font-size: 25px;
+    width: 25px;
+  }
+}
+
+  /* Social Icons */
+.bi {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.bi-youtube {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.bi-twitter {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.bi-instagram {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.bi-spotify {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.bi-discord {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.bi-twitch {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.bi-youtube:hover {
+  background: #FF0000;
+  color: white;
+}
+.bi-twitter:hover {
+  background: #00acee;
+  color: white;
+}
+.bi-instagram:hover {
+  background: #C13584;
+  color: white;
+}
+.bi-spotify:hover {
+  background: #1DB954;
+  color: white;
+}
+.bi-discord:hover {
+  background: #7289DA;
+  color: white;
+}
+.bi-twitch:hover {
+  background: #6441a5;
+  color: white;
+}
+
 
   @font-face {
     font-family: "facile_sansregular";
