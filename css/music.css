@@ -31,22 +31,30 @@
     text-align: center;
 }
 
-/*/ Projects Page /*/
-.projHead {
-    margin: 1%;
+/*/ Projects Page /*/ 
+  .projHead {
+    background-color: #797979;
   }
-  
   .projHead h1 {
     font-size: 40px;
+    text-decoration: underline;
     font-weight: bold;
-    font-style: normal;
     font-family: "MARKPRO-BOLD";
+    color: white;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
     text-align: center;
-    padding-bottom: 2px;
+    padding: 15px;
   }
   
   .projHead p {
     text-align: center;
+    padding: 0 0 15px;
+    color: white;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  }
+
+  .proj-head-div {
+    margin-bottom: 15px;
   }
   
   .albumContainer {
