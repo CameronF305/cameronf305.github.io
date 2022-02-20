@@ -130,6 +130,7 @@
   }
   
   .project-logo-container a img{
+    width: auto;
     height: 200px;
   }
 }
@@ -152,7 +153,8 @@
   }
   
   .project-logo-container a img{
-    height: 200px;
+    height: auto;
+    width: 350px;
   }
 }
 
