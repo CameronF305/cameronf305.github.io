@@ -117,7 +117,7 @@ img.logo {
 
   /* Social Icons */
   .bi {
-    padding: 10px;
+    padding: 10px 10px;
     font-size: 30px;
     width: 30px;
   }
@@ -143,7 +143,8 @@ img.logo {
 .foot-text {
   height: 70px;
   width: fit-content;
-  padding: 0 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
  .foot-text a p{
@@ -152,8 +153,9 @@ img.logo {
 
   /* Social Icons */
   .bi {
-    padding: 5px;
+    padding: 5px 5px;
     font-size: 25px;
+    height: 25px;
     width: 25px;
   }
 }

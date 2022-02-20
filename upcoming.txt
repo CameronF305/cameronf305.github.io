@@ -1,2 +1,3 @@
 Expand music page - more in depth after launch
 Add an email box (subject email body so clients can send email)
+Add normal and podcast logo that hyperlinks to channel pages at bottom of video page
