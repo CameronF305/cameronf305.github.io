@@ -4,16 +4,16 @@
 /*/ Music Page /*/
 
 .music-body {
-  background-color: #797979;
+  background-color: #636363;
 }
 .music-page-select {
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5%;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 10px 5%;
+  background-color: #797979;
 }
 .produced-it {
   width: 444px;
@@ -64,10 +64,13 @@
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
   text-align: center;
+  font-size: 30px;
+  padding: 20px;
 }
 .producedHead h3 {
   font-family: "BAHNSCHRIFT";
   font-weight: normal;
+  font-size: 20px;
 }
 .prod-contact p{
   color: white;
@@ -92,10 +95,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 5px;
 }
 
 .demo-reel {
-
+  padding: 15px;
   height: fit-content;
 }
 .demo-text h2{
@@ -113,13 +117,7 @@
 }
 
 @media only screen and (min-width:888px) {
-  .producedHead {
-    font-size: 30px;
-    padding: 15px;
-  }
-  .producedHead h3 {
-    font-size: 20px;
-  }
+
   .prod-contact {
     font-size: 20px;
     padding: 10px;
@@ -136,13 +134,6 @@
 }
 
 @media only screen and (max-width:887px) {
-  .producedHead {
-    font-size: 30px;
-    padding: 15px;
-  }
-  .producedHead h3 {
-    font-size: 20px;
-  }
   .prod-contact {
     font-size: 20px;
     padding: 10px;
@@ -163,12 +154,34 @@
 #artist305 {
   background-color: #636363;
 }
+.art-305-head {
+  font-family: "MARKPRO-BOLD";
+  color: white;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+}
+.art-305-head h3 {
+  font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-size: 20px;
+  padding: 5px;
+}
 .projectHead {
   font-family: "MARKPRO-BOLD";
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
   text-align: center;
   font-size: 30px;
+}
+.art-vid-head {
+  font-family: "MARKPRO-BOLD";
+  color: white;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
 }
 .album-container {
   display: flex;
