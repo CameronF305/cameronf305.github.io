@@ -106,3 +106,30 @@ p{
   font-size: 20px;
   padding: 5px;
 }
+.center-head-body {
+  color: white;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  text-align: center;
+}
+.center-head {
+  font-size: 30px;
+  padding: 10px;
+  font-family: "MARKPRO-BOLD";
+}
+.center-body p{
+  font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: white;
+}
+.center-body p a{
+  color: rgb(169, 192, 255);
+  text-shadow: 1px 1px 10px black;
+  text-decoration: none;
+}
+.center-body p a:hover{
+  color: rgb(84, 161, 212);
+  text-shadow: 1px 1px 10px black;
+  text-decoration: underline;
+}
