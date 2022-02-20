@@ -7,7 +7,7 @@
   background-color: #797979;
 }
 .music-page-select {
-  height: max-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,10 +16,9 @@
   padding: 10px;
 }
 .produced-it {
-  width: 40%;
-  height: 400px;
-  margin-right: 2%;
-  margin-left: 8%;
+  width: 444px;
+  height: 300px;
+  margin: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,32 +26,39 @@
   flex-wrap: wrap;
 }
 .produced-img {
-  width: 90%;
-  margin: 0 5%;
+  width: 400px;
   border: 3px solid#222222;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
 }
 .artist-305 {
-  width: 40%;
-  height: 400px;
-  margin-left: 2%;
-  margin-right: 8%;
+  width: 444px;
+  height: 300px;
+  margin: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   flex-wrap: wrap;
 }
-
 .music-text-box {
   height: fit-content;
+  height: 40px;
+  width: 444px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
 }
 .music-text-box p {
   text-align: center;
   color:white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+}
+
+@media only screen and (min-width:888px){
+  
 }
 
 /* Produced Section */

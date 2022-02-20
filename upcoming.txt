@@ -1,0 +1,2 @@
+Expand music page - more in depth after launch
+Add an email box (subject email body so clients can send email)
