@@ -409,3 +409,7 @@ hr {
       }
   }
   
+  /*/ Contact Page /*/
+  .contact-body {
+    background-color: #797979;
+  }

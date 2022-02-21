@@ -50,3 +50,48 @@
     text-shadow: 1px 1px 10px black;
     text-decoration: underline;
   }
+  .channel-heading {
+    font-family: "MARKPRO-BOLD";
+    color: white;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width: 100%;
+}
+  .channels {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 10px 10px;
+    justify-content: center;
+    align-items:flex-end;
+  }
+  .vid-channel {
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+  }
+  .vid-channel h3 {
+    height: fit-content;
+  }
+  .chan-sub {
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    font-family: "BAHNSCHRIFT";
+    font-weight: normal;
+    font-size: 20px;
+  }
+  @media only screen and (min-width:888px){
+    .vid-channel img {
+      width: 400px;
+    }
+    .vid-channel {
+      width: 420px;
+    }
+  }
+  @media only screen and (max-width:887px){
+    .vid-channel img {
+      width: 200px;
+    }
+  }
