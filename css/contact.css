@@ -1,3 +1,7 @@
+.contact-body {
+  background-color: #797979;
+}
+
 .contact-box {
     display: flex;
     flex-wrap: wrap;

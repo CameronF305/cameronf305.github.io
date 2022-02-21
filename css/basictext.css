@@ -100,6 +100,12 @@ p{
   font-size: 30px;
   padding: 15px;
 }
+.head2-w-sub h2 {
+  font-family: "MARKPRO-BOLD";
+  font-weight: normal;
+  font-size: 25px;
+  padding: 5px;
+}
 .head2-w-sub h3 {
   font-family: "BAHNSCHRIFT";
   font-weight: normal;
@@ -146,7 +152,7 @@ p{
 
 .heading-general {
   font-size: 30px;
-  padding: 10px;
+  padding: 20px;
   font-family: "MARKPRO-BOLD";
   color: white;
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
