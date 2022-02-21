@@ -342,7 +342,15 @@ hr {
   text-shadow: 1px 1px 10px black;
   text-decoration: underline;
 }
-.aimg-sub {
+.article-child p a{
+  color: rgb(169, 192, 255);
+  text-shadow: 1px 1px 10px black;
+  text-decoration: none;
+}
+.article-child p a:hover{
+  color: rgb(84, 161, 212);
+  text-shadow: 1px 1px 10px black;
+  text-decoration: underline;
   font-style: italic;
   color: rgb(221, 221, 221);
   font-family: "BAHNSCHRIFT";
@@ -413,3 +421,4 @@ hr {
   .contact-body {
     background-color: #797979;
   }
+

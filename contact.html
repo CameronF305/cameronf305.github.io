@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/navbar.css">
         <link rel="stylesheet" type="text/css" href="css/basictext.css">
         <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         
     </head>
@@ -47,6 +48,70 @@
             <section>
                 <h1 id="welcome">Contact</h1>
                 <hr class="long-div">
+              </section>
+              <section> <!--Content-->
+                  <div class="heading-general">
+                    <h1>There are a few ways to contact Cameron</h1>
+                    <p>Feel free to contact Cameron using any of the methods below or the <a href=#contact-box>contact box</a> at the bottom of the page</p>
+                  </div>
+                  <hr class="short-div">
+                  <div class="contact-option">
+                    <div class="head2-w-sub">
+                        <h1>Email</h1>
+                        <h3><a href=mailto:fmcameronf305@gmail.com>fmcameronf305@gmail.com</a></h3>
+                        <h3>Emails are best suited for professional discussions such as comissions, buisness inquiries, and commissions.</h3>
+                    </div>
+                    <hr class="shorter-div">
+                    <div class="head2-w-sub">
+                        <h1>Twitter Messages</h1>
+                        <h3><a href=https://www.twitter.com/cameronf305></a>CameronF305 on Twitter</a></h3>
+                        <h3>Best suited for more casual discussions, fan-works, or questions.</h3>
+                    </div>
+                    <hr class="shorter-div">
+                    <div class="head2-w-sub">
+                        <h1>Discord</h1>
+                        <h3><a href=https://discord.gg/PV7nKzz></a>CameronF305 Discord Server</a></h3>
+                        <h3>"CameronF305#6977"</h3>
+                        <h3>Best suited for any type of inquiry, a more direct way of contact for buisness or casual discussions.</h3>
+                    </div>
+                    <hr class="shorter-div">
+                    <div id="contact-box">
+                        <div class="contact-box">
+                            <div id="email-status" class="error">Message Successfully Sent!</div>
+                            <form action="contact-form-handler.php" method="post" enctype="multipart/form-data" name="EmailForm">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name.." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email" placeholder="example@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reason">Reason For Contact</label>
+                                    <select id="reason" name="reason" required>
+                                        <option value="buisness-inquiry">Buisness Inquiry</option>
+                                        <option value="commission">Commission</option>
+                                        <option value="question">Question</option>
+                                        <option value="fan-works">Fan-works</option>
+                                        <option value="other">Other...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" placeholder="Write something..." style="height:200px" required></textarea>
+                                </div>
+
+                                <input type="submit" value="Submit">
+                            
+                              </form>
+                        </div>
+                    </div>
+                  </div>
               </section>
         </content>
       </div>        
