@@ -44,7 +44,12 @@ li{
     justify-content: space-between;
     align-items: center;
   }
-  
+  .navlogo {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .navlogo img {
+    transition: all 0.3s ease-in-out;
+  }
 .navbar ul li a {
   font-family: "facile_sansregular";
     font-weight: normal;
@@ -89,14 +94,7 @@ li{
     background-color: rgb(31,31,31);
     color: white;
   }
-  .navlogo img {
-    width: 300px;
-    height: 100px;
-    position: absolute;
-    margin-top: auto;
-    margin-left: 15px;
-    float: left;
-  }
+
 .hamburger{
   display: none;
   cursor: pointer;
@@ -183,4 +181,38 @@ li{
     left: 0;
   }
 }
+@media only screen and (min-width: 1106px){
+  #navlogo {
+    position: absolute;
+  }
+  .navlogo {
+    width: 206px;
+    height: 65.333px;
+    display: inline-block;
+    max-block-size: 100% 70px;
+    max-height: 68px;
+    margin: 0 20px;
+  }
+  .navlogo img {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 206px;
+    height: 65.333px;
+  }
+}
 
+@media only screen and (max-width: 1105px) {
+  .navlogo{
+    width: 0px;
+    height: 0px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    opacity: 0;
+  }
+  .navlogo img {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+}
