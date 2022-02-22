@@ -487,6 +487,7 @@ h3.aimg-sub a:hover{
     width: 60px;
     height: 60px;
     padding: 12.5px;
+    opacity: 80%;
   }
 }
 @media only screen and (max-width:887px){
@@ -499,11 +500,11 @@ h3.aimg-sub a:hover{
     width: 45px;
     height: 45px;
     padding: 12.5px;
+    opacity: 50%;
   }
 }
 #stt {
   background-color: black;
-  opacity: 80%;
   text-align: center;
   text-decoration: none;
   -webkit-border-radius: 50%;
