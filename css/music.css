@@ -16,30 +16,28 @@
   background-color: #797979;
 }
 .produced-it {
-  width: 444px;
-  height: 300px;
+  width: 400px;
+  height: 320px;
   margin: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   flex-wrap: wrap;
 }
 .produced-img {
-  width: 400px;
+  width: 350px;
   border: 3px solid#222222;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
 }
 .artist-305 {
-  width: 444px;
-  height: 300px;
+  width: 400px;
+  height: 320px;
   margin: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   flex-wrap: wrap;
 }
 .music-text-box {
@@ -881,7 +879,8 @@
 }
 .stream-head-ost h1 {
   font-size: 40px;
-  margin: 0 55px;
+  margin-left: 55px;
+  margin-right: 55px;
 }
   .music-video iframe{
     width: 512px;
@@ -977,7 +976,7 @@
 
 
 .stream-head {
-  margin: 35px 15px 25px;
+  margin: 37px 15px 25px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -1144,8 +1143,9 @@
   text-shadow: 3px 2px 14px #3B3B3B;
 }
 .stream-head-ost h1 {
-  font-size: 25px;
-  margin: 0 40px;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
   .music-video iframe{
     width: 320px;
