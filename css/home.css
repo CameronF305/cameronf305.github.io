@@ -38,7 +38,9 @@ img.logo {
 }
 
 /* Content */
-
+.welcome {
+  padding-top: 5px;
+}
 .section-one-container {
   padding: 1px;
 }
