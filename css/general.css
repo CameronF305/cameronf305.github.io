@@ -359,6 +359,14 @@ hr {
   text-shadow: 1px 1px 5px black;
   text-align: center;
 }
+.aimg-sub{
+  font-weight: normal;
+  font-family: "BAHNSCHRIFT";
+  text-decoration: none;
+  font-style: italic;
+  font-size: 17px;
+  color: rgb(221, 221, 221);
+}
 .aimg-sub a{
   text-decoration: none;
   font-style: italic;

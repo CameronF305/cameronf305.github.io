@@ -1,7 +1,6 @@
 .contact-body {
   background-color: #797979;
 }
-
 .contact-box {
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +8,18 @@
     align-items: center;
     padding: 20px;
     flex-direction: column;
+  }
+  @media only screen and (min-width:888px){
+    form{
+        width: 75%;
+        padding: 0 40px;
+    }
+  }
+  @media only screen and (max-width:887px){
+    form{
+        width: 90%;
+        padding: 0 20px;
+    }
   }
   .form-group {
       width: 100%;
