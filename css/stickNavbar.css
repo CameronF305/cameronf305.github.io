@@ -188,6 +188,16 @@ li{
   .nav-menu.active{
     left: 0;
   }
+  .btn {
+    border: none;
+    padding: 16px 32px;
+    margin: 4px 2px;
+  }
+  .activebtn {
+    border: none;
+    padding: 16px 32px;
+    margin: 4px 2px;
+  }
 }
 @media only screen and (min-width: 1106px){
   #navlogo {
