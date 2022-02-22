@@ -326,10 +326,6 @@ hr {
   color: rgb(84, 161, 212);
   text-shadow: 1px 1px 10px black;
   text-decoration: underline;
-  font-weight: normal;
-  font-size: 20px;
-  text-shadow: 1px 1px 5px black;
-  text-align: center;
 }
 .aimg-sub{
   font-weight: normal;
