@@ -224,23 +224,5 @@
         <script src="js/mobilenav.js"></script>
         <script src="js/stickNavbar.js"></script>
         <script src="js/backtotop.js"></script>
-            <!-- Navbar, can remove when final -->
-        <script>
-          window.onscroll = function() {stickNavBar()};
-          
-          var navbar = document.getElementById("navbar");
-          var sticky = navbar.offsetTop;
-          
-          function stickNavBar() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-              document.getElementById("navlogo").style.opacity = "100";
-            } else {
-              navbar.classList.remove("sticky");
-              document.getElementById("navlogo").style.opacity = "0";
-            }
-          }
-          </script>
-
     </body>
 </html>
