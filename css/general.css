@@ -326,9 +326,6 @@ hr {
   color: rgb(84, 161, 212);
   text-shadow: 1px 1px 10px black;
   text-decoration: underline;
-  font-style: italic;
-  color: rgb(221, 221, 221);
-  font-family: "BAHNSCHRIFT";
   font-weight: normal;
   font-size: 20px;
   text-shadow: 1px 1px 5px black;
@@ -342,12 +339,12 @@ hr {
   font-size: 17px;
   color: rgb(221, 221, 221);
 }
-.aimg-sub a{
+h3.aimg-sub a{
   text-decoration: none;
   font-style: italic;
   color: rgb(221, 221, 221);
 }
-.aimg-sub a:hover{
+h3.aimg-sub a:hover{
   text-decoration: underline;
   font-style: italic;
   color: rgb(204, 204, 204);
