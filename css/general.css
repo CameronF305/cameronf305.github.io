@@ -115,12 +115,12 @@
     width: fit-content;
   }
 
-.foot-text {
-  height: 70px;
-  width: fit-content;
-  padding-right: 10px;
-  padding-left: 10px;
-}
+  .foot-text {
+    height: 70px;
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 
  .foot-text a p{
       font-size: 15px;
@@ -128,10 +128,10 @@
 
   /* Social Icons */
   #bi {
-    padding: 5px 5px;
-    font-size: 25px;
-    height: 25px;
-    width: 25px;
+    padding:7.5px 7.5px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
   }
 }
 
