@@ -44,12 +44,20 @@ li{
     justify-content: space-between;
     align-items: center;
   }
+  #navlogo{
+    opacity: 0;
+    transition: opacity 0.75s ease-in;
+    transition: opacity 0.3s ease-out;
+  }
   .navlogo {
     transition: opacity 0.3s ease-in-out;
   }
   .navlogo img {
     transition: all 0.3s ease-in-out;
   }
+.vislogo {
+  opacity: 100;
+}
 .navbar ul li a {
   font-family: "facile_sansregular";
     font-weight: normal;
