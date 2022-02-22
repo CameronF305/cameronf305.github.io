@@ -91,7 +91,7 @@
   }
 
   /* Social Icons */
-  .bi {
+  #bi {
     padding: 10px 10px;
     font-size: 30px;
     width: 30px;
@@ -127,7 +127,7 @@
   }
 
   /* Social Icons */
-  .bi {
+  #bi {
     padding: 5px 5px;
     font-size: 25px;
     height: 25px;
@@ -136,7 +136,7 @@
 }
 
   /* Social Icons */
-.bi {
+#bi {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -474,4 +474,34 @@ hr {
 .donate-btn:hover {
   background-color: #181818;
   color: whitesmoke;
+}
+
+/*/ BACK TO TOP /*/
+.scrollToTop {
+  transform: translateY(100px);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 40;
+}
+#stt {
+  background-color: black;
+  font-size: 35px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 12.5px;
+}
+.bi-chevron-double-up {
+  color: white;
+  background-color: #181818;
+}
+
+.showScroll {
+  opacity: 1;
+  transform: translateY(-75px);
 }
