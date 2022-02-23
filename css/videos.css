@@ -16,6 +16,7 @@
     .video iframe{
         width: 512px;
         height: 288px;
+        box-shadow: 0 0 7px 3px #161616;
     }
 }
 
@@ -23,6 +24,7 @@
     .video iframe{
         width: 320px;
         height: 180px;
+        box-shadow: 0 0 7px 3px #161616;
       }
 }
 .video-heading {

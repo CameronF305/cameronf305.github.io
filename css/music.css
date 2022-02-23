@@ -886,15 +886,16 @@
   margin-left: 55px;
   margin-right: 55px;
 }
-  .music-video iframe{
-    width: 512px;
-    height: 288px;
-  } 
-  .article-container {
-    margin: 10px 15px;
-    height: 445px;
-    display: flex;
-    justify-content: center;
+.music-video iframe{
+  width: 512px;
+  height: 288px;
+  box-shadow: 0 0 7px 3px #161616;
+} 
+.article-container {
+  margin: 10px 15px;
+  height: 445px;
+  display: flex;
+  justify-content: center;
 }
 .news-head {
   margin: 10px 15px 15px;
@@ -1154,6 +1155,7 @@
   .music-video iframe{
     width: 320px;
     height: 180px;
+    box-shadow: 0 0 7px 3px #161616;
   }
   .article-container {
     margin: 10px 15px;
