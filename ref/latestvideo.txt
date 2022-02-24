@@ -1,3 +1,0 @@
-<div style="float: left; margin:0 15px 7px 0;">
-    <iframe width="600" height="337.5" src="https://www.tubebuddy.com/quicknav/latestembed/UCRlBI2BrE0tjPTQ72m7HrDg" frameborder ="0"></iframe>
-</div>
