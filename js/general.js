@@ -35,12 +35,12 @@ observer.observe(target);
 
 //Load Sections Sequence
 document.addEventListener("DOMContentLoaded", () => {
-    fadin('.loadseq section', { delay: 100 })
+    loadin('.loadseq section', { delay: 100 })
   });
 
 ///Fade In function
 !function(t, e) {
-    "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = t || self).fadin = e()
+    "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = t || self).loadin = e()
 }(this, function() {
     "use strict";
     var n = function() {
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }()
       , r = {
         delay: 200,
-        selector: ".fadin",
+        selector: ".loadin",
         noInitalScrollEvent: !1,
         animationFunction: void 0
     }
