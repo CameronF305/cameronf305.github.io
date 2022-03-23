@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fadin('.albumElement', { delay: 100 })
+  loadin('.albumElement', { delay: 100 })
   });
