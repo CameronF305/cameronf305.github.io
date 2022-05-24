@@ -5,3 +5,10 @@ Redirect 301 "/YandereSimulator.html" "/yanderesimulator.html"
 Redirect 301 "/Ai.html" "/aiwillshockyou.html"
 
 Redirect 301 "/UGLY.html" "/ugly.html"
+
+RewriteEngine On
+
+# Force HTTPS and WWW
+RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
+RewriteCond %{https} off  
+RewriteRule ^(.*)$ https://www.cameronf305.com/$1 [R=301,L]
