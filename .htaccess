@@ -1,1 +1,7 @@
 ErrorDocument 404 /404.html
+
+Redirect 301 "/YandereSimulator.html" "/yanderesimulator.html"
+
+Redirect 301 "/Ai.html" "/aiwillshockyou.html"
+
+Redirect 301 "/UGLY.html" "/ugly.html"
