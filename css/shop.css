@@ -1,0 +1,133 @@
+* {
+    text-decoration: none;
+  }
+  /*/ Shop Heading /*/
+  
+.shop-body {
+    background-color: #ffffff;
+}
+.shop-header {
+    background-color: #636363;
+    padding: 20px 10px;
+    max-width: auto;
+}
+.shop-header h1 {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "MARKPRO-BOLD";
+    color: white;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    text-align: center;
+}
+.shop-header h2 {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "BAHNSCHRIFT";
+    color: white;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    text-align: center;
+}
+.shop-countdown-head {
+    background: #8f8f8f;
+    display: grid;
+    min-height: 100%;
+}
+.head-countdown-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+}
+#hatTimer h1{
+    font-family: "BAHNSCHRIFT";
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top :10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+}
+#hatTimer {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "BAHNSCHRIFT";
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.days, .hours, .minutes, .seconds {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 9px;
+    width: 80px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background: #5e0000;
+    box-shadow: 0 0 7px 1px #252525;
+  }
+  .numbers {
+      font-size: 25px;
+      color: #ffffff;
+      font-family: "MARKPRO-BOLD";
+      font-weight: bold;
+  }
+
+  /*/ Shop Content /*/
+
+  #merch1 {
+    text-align: center;
+  }
+  #merch1 .product {
+      width: 35%;
+      min-width: 300px;
+      padding: 12px 16px;
+      border: 1px solid #f5deb4;
+      border-radius: 25px;
+  }
+  #merch1 .product img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+  }
+
+  /*/ Navbar Changes /*/
+
+  .navcart {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+    width: fit-content;
+    position: absolute;
+    display: inline-block;
+    right: 30px;
+  }
+
+  #cartIcon {
+    padding: 10px 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+
+  #cartIcon:hover .bi-cart,
+  #cartIcon .bi-cart-fill {
+      display: none;
+  }
+  #cartIcon:hover .bi-cart-fill {
+      display: inline;
+  }
+  .bi-cart-fill {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .bi-cart {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
