@@ -94,7 +94,7 @@
     padding: 10px;
     padding-top: 0px;
   }
-  #merch1 p {
+  #merch1 .products-section-desc {
     text-decoration: none;
     font-size: 20px;
     font-weight: normal;
@@ -149,8 +149,17 @@
   #merch1 .product .desc h5 {
     padding-top: 5px;
     font-family: "MARKPRO-BOLD";
+    font-weight: bold;
+    text-transform: uppercase;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
+  }
+  #merch1 .product .desc h6 {
+    padding-top: 5px;
+    font-family: "MARKPRO-BOLD";
+    font-weight: normal;
+    color: rgb(70, 70, 70);
+    font-size: 15px;
   }
   #merch1 .product .desc h4 {
     padding-top: 7px;
