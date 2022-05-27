@@ -108,20 +108,13 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 10px 50px;
       margin-top: 0px;
   }
   #merch1 .product {
-      width: 30%;
-      min-width: 250px;
-      max-width: 450px;
-      padding: 10px 15px;
       border: 1px solid #f5deb4;
       border-radius: 25px;
       cursor: pointer;
       box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.02);
-      margin: 25px 50px;
-      margin-bottom: 10px;
       transition: 0.3s ease;
       position: relative;
   }
@@ -131,8 +124,6 @@
   }
 
   #merch1 .product img {
-      width: 100%;
-      min-width: 100px;
       border-radius: 20px;
   }
 
@@ -162,18 +153,18 @@
     font-size: 15px;
   }
   #merch1 .product .desc h4 {
-    padding-top: 7px;
+    padding-top: 5px;
     font-family: "MONT-HEAVYDEMO";
-    font-weight: normal;
+    font-weight: bold;
     font-size: 25px;
     color: #088178;
   }
 
   #merch1 .product .add-cart {
-      font-size: 25px;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
       background-color: #daffe2;
       border-radius: 50px;
       font-weight: 500;
@@ -189,6 +180,60 @@
         background-color: #dee9e1;
         color: #0db34c;
     }
+  @media only screen and (min-width: 888px){
+    #merch1 .product {
+      min-width: 250px;
+      max-width: 450px;
+      padding: 10px 15px;
+      margin: 25px 2%;
+      margin-bottom: 10px;
+    }    
+  }
+  @media only screen and (min-width: 1140px){
+    .product-container {
+      margin: 10px 75px;
+    }
+    #merch1 .product {
+      width: 30%;
+    }
+    #merch1 .product img {
+      width: 100%;
+      min-width: 100px;
+    }
+  }
+  @media only screen and (max-width: 1139px) and (min-width: 888px){
+    .product-container {
+      margin: 10px 40px;
+    }
+    #merch1 .product {
+      width: 45%;
+    }
+    #merch1 .product img {
+      width: 100%;
+      min-width: 100px;
+    }
+  }
+
+  /*/ Mobile Changes /*/
+
+  @media only screen and (max-width: 887px){
+    .product-container {
+      margin: 10px 25px;
+    }
+    #merch1 .product {
+      width: 50%;
+      min-width: 300px;
+      max-width: 450px;
+      padding: 10px 15px;
+      margin: 20px 2%;
+      margin-bottom: 10px;
+    }
+    #merch1 .product img {
+      width: 100%;
+      min-width: 150px;
+      max-width: fit-content;
+    }
+  }
 
   /*/ Navbar Changes /*/
 
