@@ -47,6 +47,41 @@
     font-weight: bold;
     font-style: normal;
   }
+  @font-face {
+    font-family: "ebrima";
+    src: url("fonts/ebrima.woff") format("woff"),
+    url("/fonts/ebrima.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ebrimabd";
+    src: url("fonts/ebrimabd.woff") format("woff"),
+    url("/fonts/ebrimabd.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "MONT-EXTRALIGHTDEMO";
+    src: url("fonts/MONT-EXTRALIGHTDEMO.woff") format("woff"),
+    url("/fonts/MONT-EXTRALIGHTDEMO.woff") format("woff");
+    font-weight: lighter;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "MONT-HEAVYDEMO";
+    src: url("fonts/MONT-HEAVYDEMO.woff") format("woff"),
+    url("/fonts/MONT-HEAVYDEMO.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "THEBOLDFONT";
+    src: url("fonts/THEBOLDFONT.woff") format("woff"),
+    url("/fonts/THEBOLDFONT.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
 
 .error h1{
     font-family: "MARKPRO-BOLD";
