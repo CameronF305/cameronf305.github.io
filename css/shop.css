@@ -84,7 +84,6 @@
     margin: 25px 0;
   }
   #merch1 h2 {
-    font-weight: none;
     font-family: "BEBASNEUE";
     color: black;
     text-shadow: 1px 1px 10px rgb(255, 255, 255), -1px -1px 10px rgb(255, 255, 255);
@@ -179,6 +178,7 @@
     }
   @media only screen and (min-width: 888px){
     #merch1 h2 {
+      font-weight: none;
       font-size: 100px;
       letter-spacing: 2px;
     }
@@ -220,6 +220,7 @@
   @media only screen and (max-width: 887px){
     #merch1 h2 {
       font-size: 50px;
+      font-weight: none;
       letter-spacing: normal;
     }
     .product-container {
