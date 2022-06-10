@@ -277,4 +277,88 @@
     transition: all 0.3s ease-in-out;
   }
 
+  /*/ Shop Footer /*/
+
+  .shop-footer {
+    background-color: black;
+    width: 100%;
+  }
+
+  .foot-text-shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shop-copyright{
+      font-family: "BAHNSCHRIFT";
+      font-weight: normal;
+      font-style: normal;
+      color: white;
+      text-align: center;
+  }
+  .footer-c {
+    margin-top: 15px;
+    position: relative;
+  }
+  .footer-terms {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .terms-foot{
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: rgb(184, 184, 184);
+    transition: all 0.2s ease-in-out;
+  }
+  .terms-foot:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+  }
+  @media only screen and (min-width:888px) {
+    .shop-footer {
+      margin-bottom: auto;
+      height: 90px;
+    }
+
+    .foot-text-shop {
+      height: 75px;
+      width: 200px;
+    }
+    
+    .shop-copyright{
+          font-size: 20px;
+      }
+  }
+  @media only screen and (max-width:887px) {
+    .shop-footer {
+      margin-bottom: auto;
+      height: fit-content;
+    }
+    .foot-text-shop {
+      height: 70px;
+      width: 225px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    .shop-copyright{
+      font-size: 15px;
+    }
+  }
+
   /*/ Animations/Sleek Design /*/
+
+  /*/ Policy Pages /*/
+.terms-body{
+  margin: 20px 40px;
+}
+.table-of-contents li{
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: decimal;
+  }
