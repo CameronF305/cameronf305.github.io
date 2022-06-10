@@ -357,6 +357,45 @@
 .terms-body{
   margin: 20px 40px;
 }
+.term-section {
+  text-align: left;
+}
+.term-section h2 {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "MARKPRO-BOLD";
+  padding: 20px 10px;
+  color: black;
+}
+.term-section h3 {
+  color: #252525;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "MARKPRO-BOLD";
+  padding: 0 10px;
+}
+.term-section p {
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: none;
+  text-decoration: none;
+}
+.term-section ul {
+  padding: 10px;
+  display: block;
+}
+.term-section ul li{
+  color: black;
+  font-size: 15px;
+  padding: 0 10px;
+  font-weight: none;
+  list-style-position: inside;
+  list-style-type: disc;
+  text-decoration: none;
+}
 .table-of-contents li{
     display: list-item;
     list-style-position: inside;
