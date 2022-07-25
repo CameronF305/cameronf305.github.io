@@ -1036,8 +1036,28 @@
   text-align: center;
   font-size: 20px;
   font-family: "BAHNSCHRIFT";
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
+  transition: 0.3s;
+  border-radius: 5px;
+  float: right;
+  color: rgb(73, 73, 73);
+}
+.dsp-button-pre {
+  display: block;
+  align-items: right;
+  padding: 3px 5px;
+  margin-right: 10px;
+  margin-left: 65px;
+  height: auto;
+  width: auto;
+  max-height: 60px;
+  background-color: rgb(201, 201, 201);
+  text-align: center;
+  font-size: 18px;
+  font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-style: normal;
   transition: 0.3s;
   border-radius: 5px;
   float: right;
@@ -1067,6 +1087,10 @@
 }
 
 .dsp-button:hover {
+  background-color: #181818;
+  color: whitesmoke;
+}
+.dsp-button-pre:hover {
   background-color: #181818;
   color: whitesmoke;
 }
