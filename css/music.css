@@ -844,6 +844,10 @@
   width: 375px;
   height: 60px;
 }
+#trackHead {
+  width:405px;
+  padding-left: 30px;
+}
 .proj-headings h1{
   text-decoration: underline;
   padding-top: 2px;
@@ -1277,6 +1281,7 @@
   font-style: normal;
   color: white;
   font-size: 35px;
+  text-align: center;
   padding-bottom: 15px;
   text-shadow: 3px 2px 14px #3B3B3B;
   }
@@ -1284,8 +1289,9 @@
     list-style: decimal;
     font-family: "BAHNSCHRIFT";
     text-align: left;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     font-size: 17px;
+    padding-left: 5px;
   }
   .top-tracklist li{
     list-style: none;
@@ -1308,12 +1314,18 @@
     height: 435px;
     display: flex;
     justify-content: center;
+    
   }
   .list-border {
     display: flex;
     flex-direction: column;
-    width: 375px;
-
+    width: 405px;
+  }
+  #li2022 {
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 1px 1px 4px 4px #ffffff;
   }
 }
 /* Disables Tracklist for Mobile */
@@ -1497,4 +1509,17 @@
 }
 .deli-body h1 {
   text-shadow: 3px 2px 14px #ff0000;
+}
+
+/* OST 2022 */
+
+.ost2022-body {
+  background-color: #ffa9ea;
+}
+
+.ost2022-body h3 {
+  color: #535353;
+}
+.ost2022-body h1 {
+  text-shadow: 3px 2px 14px #3a3a3a;
 }
