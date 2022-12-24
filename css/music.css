@@ -846,7 +846,10 @@
 }
 #trackHead {
   width:405px;
+}
+#trackHead ul{
   padding-left: 30px;
+  width: 395px;
 }
 .proj-headings h1{
   text-decoration: underline;
@@ -1289,9 +1292,8 @@
     list-style: decimal;
     font-family: "BAHNSCHRIFT";
     text-align: left;
-    padding-bottom: 8px;
     font-size: 17px;
-    padding-left: 5px;
+    padding-bottom: 8px;
   }
   .top-tracklist li{
     list-style: none;
