@@ -1525,3 +1525,16 @@
 .ost2022-body h1 {
   text-shadow: 3px 2px 14px #3a3a3a;
 }
+
+/* UNDERSTAND ME */
+.unders {
+  background-color: #444444;
+  color: white;
+}
+.undersTitle {
+font-family: "VINYL";
+font-weight: normal;
+font-style: normal;
+color: white;
+font-size: 35px;
+}
