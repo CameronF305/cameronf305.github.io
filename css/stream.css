@@ -6,6 +6,7 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     background-color: rgb(0, 0, 0);
+    border: "0";
 }
 
 .stream-container {
@@ -15,13 +16,27 @@ body {
 }
 
 #ytStream {
-
+    width: auto;
+    display: table-cell;
+    height: 100%;
 }
 
 #twitchStream {
-
+    width: auto;
+    display: table-cell;
+    height: 100%;
 }
 
 #chat {
-    
+    width: 300;
+    height: 100%;
+    display: table-cell;
+}
+
+*html #ytStream {
+    float: right;
+}
+
+*html #twitchStream {
+    float: right;
 }
