@@ -1288,6 +1288,17 @@
   padding-bottom: 15px;
   text-shadow: 3px 2px 14px #3B3B3B;
   }
+  .trl-title {
+    font-family: "BAHNSCHRIFT";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 15px;
+  text-shadow: 3px 2px 14px #3B3B3B;
+  }
+  
   .tracklist li{
     list-style: decimal;
     font-family: "BAHNSCHRIFT";
@@ -1329,10 +1340,31 @@
     border-width: 3px;
     box-shadow: 1px 1px 4px 4px #ffffff;
   }
+  .tracklist-liars li{
+    list-style: decimal;
+    font-family: "BAHNSCHRIFT";
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  #defaultTL {
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 1px 1px 4px 4px #ffffff;
+  }
 }
 /* Disables Tracklist for Mobile */
 @media only screen and (max-width: 887px){
   .tl-title {
+    font-family: "FUTURA";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 0px;
+  }
+  .trl-title {
     font-family: "FUTURA";
   font-weight: normal;
   font-style: normal;
@@ -1369,6 +1401,12 @@
     width: 0px;
     border-width: 0px;
     box-shadow: 0px 0px 0px 0px #222222;
+  }
+  .tracklist-liars {
+    opacity: 0;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-size: 0px;
   }
 }
 
