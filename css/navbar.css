@@ -96,6 +96,18 @@ li{
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+.simple-nav{
+  top: 0px;
+  padding: 0 24px;
+  min-height: 70px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: black;
+}
 .content {
     padding-top: 70px;
   }
@@ -216,6 +228,23 @@ li{
     height: 0px;
     opacity: 0;
   }
+}
+
+#sNavLogo {
+  position: absolute;
+}
+
+.s-navlogo {
+  width: 206px;
+  height: 65.333px;
+  display: inline-block;
+  max-height: 68px;
+}
+.s-navlogo img {
+  position: absolute;
+  display: block;
+  width: 206px;
+  height: 65.333px;
 }
 
 @font-face {
