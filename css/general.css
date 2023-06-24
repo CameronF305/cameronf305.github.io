@@ -162,10 +162,8 @@
   font-weight: normal;
   text-decoration: none;
 }
-i .ci {
+a {
   text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
 }
   /* Social Icons */
 #bi {
