@@ -101,11 +101,21 @@
     padding: 10px 10px;
     font-size: 30px;
     width: 30px;
+    height: 30px;
   }
   #ci {
     padding: 10px 10px;
     font-size: 40.74px;
     width: 30px;
+    height: 30px;
+  }
+  .foot-socials a {
+    max-height: 50.29px;
+    max-width: 50.29px;
+  }
+  .foot-socials a i{
+    max-height: 50.29px;
+    max-width: 50.29px;
   }
 }
 @media only screen and (max-width:887px) {
@@ -120,9 +130,9 @@
   }
   .foot-socials {
     padding: 10px 10px;
-    height: 50px;
     display: block;
     width: fit-content;
+    justify-content: center
   }
 
   .foot-text {
@@ -147,6 +157,14 @@
     font-size: 27.2px;
     height: 30px;
     width: 30px;
+  }
+  .foot-socials a {
+    max-height: 35px;
+    max-width: 35px;
+  }
+  .foot-socials a i{
+    max-height: 35px;
+    max-width: 35px;
   }
 }
 
