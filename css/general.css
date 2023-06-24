@@ -207,6 +207,7 @@ i .ci {
   background: #5a5a5a;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 .bi-twitch {
   background: #5a5a5a;
