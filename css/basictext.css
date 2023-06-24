@@ -96,6 +96,13 @@
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: "SocialShapes";
+    src: url("fonts/SocialShapes.woff") format("woff"),
+    url("/fonts/SocialShapes.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
 
 .error h1{
     font-family: "MARKPRO-BOLD";

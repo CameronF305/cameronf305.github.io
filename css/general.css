@@ -156,6 +156,10 @@
   }
 }
 
+.ci {
+  font-family: "SocialShapes";
+}
+
   /* Social Icons */
 #bi {
   text-align: center;
@@ -192,7 +196,7 @@
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
-.bi-kick {
+.ci-kick {
   background: #5a5a5a;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
@@ -228,7 +232,7 @@
   background: #7289DA;
   color: white;
 }
-.bi-kick:hover {
+.ci-kick:hover {
   background: #00E701;
   color: white;
 }
