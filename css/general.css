@@ -162,7 +162,11 @@
   font-weight: normal;
   text-decoration: none;
 }
-
+i .ci {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
   /* Social Icons */
 #bi {
   text-align: center;
