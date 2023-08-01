@@ -23,6 +23,56 @@
   }
 
 /*/ General Settings /*/
+:root {
+  --background-primary: #797979;
+  --background-secondary: #636363;
+  --color-primary: white;
+  --divider-primary: aliceblue;
+  --divider-secondary: snow;
+  --shadow-primary: black;
+  --bshadow-secondary:  rgba(43, 43, 43, 0.4);
+  --hshadow-primary: rgba(0, 0, 0, 0.8);
+  --link-primary: rgb(169, 192, 255);
+  --link-secondary: rgb(84, 161, 212);
+}
+
+html[data-theme='light'] {
+  --background-primary: #ffffff;
+  --background-secondary: whitesmoke;
+  --color-primary: rgb(8, 8, 8);
+  --divider-primary: rgb(52, 54, 56);
+  --divider-secondary: rgb(94, 92, 92);
+  --shadow-primary: white;
+  --bshadow-secondary:  rgba(214, 214, 214, 0.4);
+  --hshadow-primary: rgba(236, 236, 236, 0.8);
+  --link-primary: rgb(79, 116, 216);
+  --link-secondary: rgb(0, 135, 224);
+}
+/* 
+  var(--background-primary)
+  var(--background-secondary)
+  var(--color-primary)
+  var(--divider-primary)
+  var(--divider-secondary)
+  var(--shadow-primary)
+  var(--bshadow-secondary)
+  var(--hshadow-primary)
+  var(--link-primary)
+  var(--link-secondary)
+
+
+*/
+html {
+  transition: color 300ms, background-color 300ms;
+  background: var(--background-primary);
+  color: var(--color-primary);
+}
+
+h1, h2, p {
+  color: var(--color-primary);
+}
+
+
 #welcome {
   padding: 25px 10px;
   max-width: auto;
@@ -30,8 +80,8 @@
   font-size: 60px;
   font-weight: bold;
   font-family: "MARKPRO-BOLD";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
 }
   /*/ Footer /*/
@@ -221,6 +271,11 @@
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
+.ci-x {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
 .ci-patreon {
   background: #5a5a5a;
   color: #ffffff;
@@ -255,6 +310,10 @@
 }
 .ci-kick:hover {
   background: #00E701;
+  color: white;
+}
+.ci-x:hover {
+  background: #00acee;
   color: white;
 }
 .ci-patreon:hover {
@@ -313,42 +372,42 @@ hr {
     width:100%;
     border: 1px solid #202020;
     background-color: #202020;
-    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px 1px var(--shadow-primary);
 }
 
 .long-div {
   width:100%;
-  background-color: aliceblue;
-  border:1px solid aliceblue;
+  background-color: var(--divider-primary);
+  border:1px solid var(--divider-primary);
   border-radius: 2px;
-  color: aliceblue;
-  box-shadow: 1px 1px 1px 1px snow;
+  color: var(--divider-primary);
+  box-shadow: 1px 1px 1px 1px var(--divider-secondary);
 }
 
 .short-div {
-  background-color: aliceblue;
-  border:1px solid aliceblue;
+  background-color: var(--divider-primary);
+  border:1px solid var(--divider-primary);
   border-radius: 2px;
-  color: aliceblue;
+  color: var(--divider-primary);
   width: 86%;
   margin-left: 7%;
   margin-right: 7%;
-  box-shadow: 1px 1px 1px 1px snow;
+  box-shadow: 1px 1px 1px 1px var(--divider-secondary);
 }
 .shorter-div {
-  background-color: aliceblue;
-  border:1px solid aliceblue;
+  background-color: var(--divider-primary);
+  border:1px solid var(--divider-primary);
   border-radius: 2px;
-  color: aliceblue;
+  color: var(--divider-primary);
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  box-shadow: 1px 1px 1px 1px snow;
+  box-shadow: 1px 1px 1px 1px var(--divider-secondary);
 }
 
 /*/ About Page /*/
 .about-body {
-  background-color: #797979;
+  background-color: var(--background-primary);
 }
 
 .textimg-article-container {
@@ -358,8 +417,8 @@ hr {
 }
 .timg-article-head {
   font-family: "MARKPRO-BOLD";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
   font-size: 25px;
   padding-bottom: 10px;
@@ -369,30 +428,30 @@ hr {
 }
 
 .article-child p {
-    color: white;
-    text-shadow: 1px 1px 10px black;
+    color: var(--color-primary);
+    text-shadow: 1px 1px 10px var(--shadow-primary);
     font-family: "BAHNSCHRIFT";
     font-weight: normal;
     font-size: 20px;
 }
 .article-child p a{
-  color: rgb(169, 192, 255);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: none;
 }
 .article-child p a:hover{
-  color: rgb(84, 161, 212);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-secondary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
 .article-child p a{
-  color: rgb(169, 192, 255);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: none;
 }
 .article-child p a:hover{
-  color: rgb(84, 161, 212);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-secondary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
 .aimg-sub{
@@ -464,7 +523,7 @@ h3.aimg-sub a:hover{
 /*/ Donate Page /*/
 
 .donate-body {
-  background-color: #797979;
+  background-color: var(--background-primary);
 }
 
 #donate-element {
@@ -529,7 +588,7 @@ h3.aimg-sub a:hover{
 .donate-button a:hover {
   box-shadow: transparent;
   text-shadow: none;
-  box-shadow: 0 7px 7px rgba(43, 43, 43, 0.4);
+  box-shadow: 0 7px 7px var(--bshadow-secondary);
 }
 
 .donate-btn:hover {
@@ -578,9 +637,9 @@ h3.aimg-sub a:hover{
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 0px;
-  -moz-box-shadow: rgba(0,0,0,0.8) 0 0 0px;
-  box-shadow: rgba(0,0,0,0.8) 0 0 0px;
+  -webkit-box-shadow: var(--hshadow-primary) 0px 0 0px;
+  -moz-box-shadow: var(--hshadow-primary) 0 0 0px;
+  box-shadow: var(--hshadow-primary) 0 0 0px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -599,9 +658,9 @@ h3.aimg-sub a:hover{
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
-  -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
-  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  -webkit-box-shadow: var(--hshadow-primary) 0px 0 10px;
+  -moz-box-shadow: var(--hshadow-primary) 0 0 10px;
+  box-shadow: var(--hshadow-primary) 0 0 10px;
 }
 
 .loadseq section {
