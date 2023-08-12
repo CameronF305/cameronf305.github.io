@@ -1,3 +1,7 @@
+* {
+  transition: 0.2s;
+}
+
 /*/ -- Custom Scrollbar -- /*/
 /* width */
 ::-webkit-scrollbar {
@@ -696,14 +700,14 @@ h3.aimg-sub a:hover{
   width: 20%;
 }
 
-#checkbox {
+#themeToggle {
   display: none;
 }
 
-.switch {
+.theme-switch {
   position: relative;
-  width: 6.0rem;
-  height: 6.0rem;
+  width: 5.0rem;
+  height: 5.0rem;
   background-color: rgb(99, 99, 99);
   border-radius: 50%;
   z-index: 1;
@@ -711,37 +715,68 @@ h3.aimg-sub a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(126, 126, 126);
   box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
 }
 
-.powersign {
-  position: relative;
-  width: 30%;
-  height: 30%;
-  border: .4rem solid rgb(48, 48, 48);
+
+
+.span-toggle {
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-primary);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 
+    inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: 1s;
+}
+#themeToggle:checked ~ .span-toggle {
+  background-color: var(--background-secondary);
 }
 
-.powersign::before {
-  content: "";
-  width: .8rem;
-  height: 100%;
-  background-color: rgb(99, 99, 99);
-  position: absolute;
-  top: -60%;
-  z-index: 2;
+#darkMoon {
+  font-size: 30px;
+  color: var(--color-primary);
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: all ease 1s;
+  transform: rotate(0deg);
+  transform: scale(1);
 }
 
-.powersign::after {
-  content: "";
-  width: 4px;
-  height: 100%;
-  background-color: rgb(48, 48, 48);
+#themeToggle:checked ~ #darkMoon {
+  transform: rotate(360deg);
+  transform: scale(0);
+  -o-transform: rotate(360deg);
+  -o-transform: scale(0);
+  -ms-transform: rotate(360deg);
+  -ms-transform: scale(0);
+  -webkit-transform: rotate(360deg);
+  -webkit-transform: scale(0);
+  transition: all ease 1s;
+}
+
+#lightSun {
   position: absolute;
-  top: -60%;
-  z-index: 3;
+  font-size: 30px;
+  color: var(--color-primary);
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: all ease 1s;
+  transform: rotate(0deg);
+  transform: scale(0);
+}
+
+#themeToggle:checked ~ #lightSun {
+  transform: rotate(360deg);
+  transform: scale(1);
+  -o-transform: rotate(360deg);
+  -o-transform: scale(1);
+  -ms-transform: rotate(360deg);
+  -ms-transform: scale(1);
+  -webkit-transform: rotate(360deg);
+  -webkit-transform: scale(1);
+  transition: all ease 1s;
 }

@@ -232,69 +232,51 @@ window.dataLayer = window.dataLayer || [];
 
 const htmlDoc = document;
 const button = htmlDoc.querySelector('.toogleBtn');
-const htmlEl = document.getElementsByTagName('html')[0];
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-let lightModeState = false;
-
-if (currentTheme) {
-    htmlEl.dataset.theme = currentTheme;
-}
+const toggle = document.getElementById("themeToggle");
+const currentTheme = localStorage.getItem("theme");
 
 // MediaQueryList object
-const useLight = window.matchMedia("(prefers-color-scheme: light)");
 
-// Toggles the "light-mode" class
-function toggleLightMode(state) {
-//    document.documentElement.classList.toggle("light-mode", state);
-    htmlEl.dataset.theme = light;
-    lightModeState = state;  
-}
+const useLight = !window.matchMedia("(prefers-color-scheme: dark)");
+const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-// For local Storage
-function setLightModeLocalStorage(state) {
-    localStorage.setItem('light', state)
-}
-
-// Initial Settings
-toggleLightMode(useLight.matches);
-//toggleLightMode(localStorage.getItem("light-mode") == "true");
-toggleLightMode(currentTheme = 'light');
-
-// Listen for changes in the OS settings.
-useLight.addListener((evt) => toggleLightMode(evt.matches));
-
-// Toggles the "light" theme on click and sets localStorage state
-button.addEventListener("click",() => {
-    lightModeState = !lightModeState;
-
-  toggleLightMode(lightModeState);
-  setLightModeLocalStorage(lightModeState);
+// Toggle
+toggle.addEventListener("change", (e) => {
+    if (!e.target.checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        theme = "dark";
+    }
+    else {
+        document.documentElement.setAttribute("data-theme", "light");
+        theme = "light";
+    }
+    localStorage.setItem("theme", theme);
 });
 
 
+// Initial Settings (Does user prefer light or dark normally)
+initLight(useLight.matches);
+initLight(localStorage.getItem("theme") == "light");
+
+initDark(useDark.matches);
+initDark(localStorage.getItem("theme") == "dark");
 
 
-//const htmlEl = document.getElementsByTagName('html')[0];
-//const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-//var lightButton = document.getElementById("lightToggle");
-//var darkButton = document.getElementById("darkToggle");
+// Set based on initial user preference
+function initLight() {
+    document.documentElement.setAttribute("data-theme", "light");
+    theme = "light";
+}
 
-//if (currentTheme) {
-//    htmlEl.dataset.theme = currentTheme;
-//}
+function initDark() {
+    document.documentElement.setAttribute("data-theme", "dark");
+    theme = "dark";
+}
 
-// When the user changes the theme, we need to save the new value on local storage
-//const toggleTheme = (theme) => {
-//    htmlEl.dataset.theme = theme;
-//    localStorage.setItem('theme', theme);
-//}
-
-//if (currentTheme = 'light') {
-//    darkButton.style.display = "block";
-//    lightButton.style.display = "none";
-//}
-//else if (currentTheme = 'dark') {
-//    lightButton.style.display = "block";
-//    darkButton.style.display = "none";
-//}
+if (currentTheme == "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+}
+else {
+    document.documentElement.setAttribute("data-theme", "light");
+    toggle.checked = true;
+}
