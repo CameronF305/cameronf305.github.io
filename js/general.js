@@ -257,12 +257,12 @@ function setLightModeLocalStorage(state) {
 }
 
 // Initial Settings
-toggleLightMode(!useDark.matches);
+toggleLightMode(useLight.matches);
 //toggleLightMode(localStorage.getItem("light-mode") == "true");
 toggleLightMode(currentTheme = 'light');
 
 // Listen for changes in the OS settings.
-useDark.addListener((evt) => toggleLightMode(!evt.matches));
+useLight.addListener((evt) => toggleLightMode(evt.matches));
 
 // Toggles the "light" theme on click and sets localStorage state
 button.addEventListener("click",() => {
