@@ -731,6 +731,7 @@ h3.aimg-sub a:hover{
 }
 .theme-switch:hover {
   color: var(--theme-text-hover);
+  transition: all ease 0.2s;
 }
 
 
