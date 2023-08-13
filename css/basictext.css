@@ -121,7 +121,6 @@ p{
     font-style: normal;
     font-size: 20px;
     text-decoration : none;
-    color: black;
 }
 .buglist {
   font-size: large;
@@ -170,8 +169,8 @@ p{
 }
 .head2-w-sub {
   font-family: "MARKPRO-BOLD";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
   font-size: 30px;
   padding: 15px;
@@ -189,8 +188,8 @@ p{
   padding: 5px;
 }
 .center-head-body {
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
 }
 .center-head {
@@ -203,26 +202,26 @@ p{
   font-weight: normal;
   font-size: 20px;
   padding-bottom: 10px;
-  color: white;
+  color: var(--color-primary);
 }
 .center-body p a{
-  color: rgb(169, 192, 255);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: none;
 }
 .center-body p a:hover{
-  color: rgb(84, 161, 212);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-secondary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
 .heading-general p a{
-  color: rgb(169, 192, 255);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: none;
 }
 .heading-general p a:hover{
-  color: rgb(84, 161, 212);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-secondary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
 
@@ -230,8 +229,8 @@ p{
   font-size: 30px;
   padding: 20px;
   font-family: "MARKPRO-BOLD";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
 }
 
@@ -239,25 +238,25 @@ p{
   font-size: 35px;
   padding: 10px;
   font-family: "MARKPRO-BOLD";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
 }
 .heading-general p {
   font-size: 20px;
   padding: 5px;
   font-family: "BAHNSCHRIFT";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
 }
 .head2-w-sub a{
-  color: rgb(169, 192, 255);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: none;
 }
 .head2-w-sub a:hover{
-  color: rgb(84, 161, 212);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-secondary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }

@@ -1,5 +1,5 @@
 .contact-body {
-  background-color: #797979;
+  background: var(--background-primary);
 }
 .contact-box {
     display: flex;
@@ -30,8 +30,8 @@
       font-style: normal;
       font-family: "BAHNSCHRIFT";
       font-weight: normal;
-      color: white;
-      text-shadow: 1px 1px 10px black;
+      color: var(--color-primary);
+      text-shadow: 1px 1px 10px var(--shadow-primary);
   }
 
   input[type=text],input[type=email], select, textarea {

@@ -1,9 +1,8 @@
 body {
-  background-color: #797979;
+  background: var(--background-primary);
 }
 .homehead {
   width: 100%;
-  overflow: hidden;
   margin-top: auto;
   background-color: #ffc342;
   max-width: auto;
@@ -52,12 +51,11 @@ img.logo {
 /*/ Section 1 /*/
 #section1 {
   width: 100%;
-  background-color: #636363;
+  background: var(--background-secondary);
 }
 .projectHead {
   font-family: "MARKPRO-BOLD";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
   font-size: 30px;
 }
@@ -187,22 +185,22 @@ img.logo {
 #section2 h1{
   font-family: "MARKPRO-BOLD";
   font-size: 40px;
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
 }
 #section2 p {
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
 }
 #section2 p a{
-  color: rgb(169, 192, 255);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: none;
 }
 #section2 p a:hover{
-  color: rgb(84, 161, 212);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-secondary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
 
@@ -214,22 +212,22 @@ img.logo {
 }
 #section3 h1{
   font-family: "MARKPRO-BOLD";
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   margin: 10px;
 }
 #section3 p {
-  color: white;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
 }
 #section3 p a{
-  color: rgb(169, 192, 255);
+  color: var(--link-primary);
   text-decoration: none;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px var(--shadow-primary);
 }
 #section3 p a:hover{
-  color: rgb(84, 161, 212);
-  text-shadow: 1px 1px 10px black;
+  color: var(--link-secondary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
 .latest-video{
@@ -252,15 +250,15 @@ img.logo {
   font-family: "Domine-Regular";
   font-weight: normal;
   font-style: normal;
-  color: white;
+  color: var(--color-primary);
   text-shadow: 3px 2px 6px #2b2b2b;
 }
 .article-container {
-  background-color: #797979;
+  background: #797979;
 }
 #section5 {
   width: 100%;
-  background-color: #636363;
+  background: var(--background-secondary);
 }
 /*/ Section 6 /*/
 

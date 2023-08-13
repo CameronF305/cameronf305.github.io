@@ -38,6 +38,12 @@
   --hshadow-primary: rgba(0, 0, 0, 0.8);
   --link-primary: rgb(169, 192, 255);
   --link-secondary: rgb(84, 161, 212);
+
+
+  --moon-transform: rotate(0deg) scale(1);
+  --sun-transform: rotate(0deg) scale(0);
+  --theme-hover: rgb(15, 23, 68);
+  --theme-text-hover: rgb(255, 244, 180);
 }
 
 html[data-theme='light'] {
@@ -51,6 +57,11 @@ html[data-theme='light'] {
   --hshadow-primary: rgba(236, 236, 236, 0.8);
   --link-primary: rgb(79, 116, 216);
   --link-secondary: rgb(0, 135, 224);
+
+  --moon-transform: rotate(360deg) scale(0);
+  --sun-transform: rotate(360deg) scale(1);
+  --theme-hover: rgb(56, 199, 255);
+  --theme-text-hover: rgb(255, 217, 0);
 }
 /* 
   var(--background-primary)
@@ -734,6 +745,8 @@ h3.aimg-sub a:hover{
   z-index: -1;
   transition: 1s;
 }
+
+
 #themeToggle:checked ~ .span-toggle {
   background-color: var(--background-secondary);
 }
@@ -743,20 +756,12 @@ h3.aimg-sub a:hover{
   color: var(--color-primary);
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
   transition: all ease 1s;
-  transform: rotate(0deg);
-  transform: scale(1);
+  transform: var(--moon-transform);
 }
 
-#themeToggle:checked ~ #darkMoon {
-  transform: rotate(360deg);
-  transform: scale(0);
-  -o-transform: rotate(360deg);
-  -o-transform: scale(0);
-  -ms-transform: rotate(360deg);
-  -ms-transform: scale(0);
-  -webkit-transform: rotate(360deg);
-  -webkit-transform: scale(0);
-  transition: all ease 1s;
+#darkMoon:hover {
+  color: var(--theme-text-hover);
+  transition: all ease 0.2s;
 }
 
 #lightSun {
@@ -765,18 +770,18 @@ h3.aimg-sub a:hover{
   color: var(--color-primary);
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
   transition: all ease 1s;
-  transform: rotate(0deg);
-  transform: scale(0);
+  transform: var(--sun-transform);
 }
 
-#themeToggle:checked ~ #lightSun {
-  transform: rotate(360deg);
-  transform: scale(1);
-  -o-transform: rotate(360deg);
-  -o-transform: scale(1);
-  -ms-transform: rotate(360deg);
-  -ms-transform: scale(1);
-  -webkit-transform: rotate(360deg);
-  -webkit-transform: scale(1);
-  transition: all ease 1s;
+#lightSun:hover {
+  color: var(--theme-text-hover);
+  filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0.1));
+  transition: all ease 0.2s;
+}
+
+#lightSun:hover~.span-toggle {
+  background-color: var(--theme-hover);
+}
+#darkMoon:hover~.span-toggle {
+  background-color: var(--theme-hover);
 }
