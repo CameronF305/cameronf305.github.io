@@ -280,3 +280,18 @@ else {
     document.documentElement.setAttribute("data-theme", "light");
     toggle.checked = true;
 }
+
+//alert box
+
+var closeBtn = document.getElementsByClassName("ys-alert-closebtn");
+var alertStatus;
+var alertBox = document.getElementsByClassName("ys-alert");
+var alertBoxContainer = document.getElementsByClassName("ys-alert-container");
+
+for (alertStatus = 0; alertStatus < closeBtn.length; alertStatus++) {
+    closeBtn[alertStatus].onclick = function(){
+        alertBox.style.opacity = "0";
+        alertBox.style.height = "0px";
+        setTimeout(function(){ alertBoxContainer.style.display = "none"; }, 600);
+    }
+}

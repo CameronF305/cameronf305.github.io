@@ -703,7 +703,7 @@
       text-align: center;
       padding: 5px 5px;
       font-size: 15px;
-      color: #686868
+      color: var(--release-text-primary);
     }
   
     /*/ Record Spin on Hover /*/
@@ -1576,4 +1576,59 @@ font-style: normal;
 color: white;
 font-size: 35px;
 padding-bottom: 3px;
+}
+
+/* Yandere Sim Notice */
+.ys-alert-container {
+  margin: 0 auto;
+  opacity: 1;
+  max-width: 1250px;
+}
+
+.ys-alert {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 98%;
+  opacity: 1;
+  background-color: var(--alertbck-primary);
+  box-shadow: 1px 1px 30px 1px var(--alertshadow-primary);
+}
+
+.ys-alert-icon {
+  display: flex;
+  align-items: center;
+
+}
+
+.ys-alert-text {
+  margin-left: 1em;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "FUTURA";
+  text-shadow: 1px 1px 20px var(--alerttextshadow-primary);
+}
+.ys-alert-text a1{
+  font-weight: 500;
+  font-family: "MARKPRO-BOLD";
+  text-decoration: underline;
+}
+
+.ys-alert-text a{
+  text-decoration: none;
+  color: var(--alertlink-primary);
+}
+
+.ys-alert-text a:hover{
+  text-decoration: underline;
+  color: var(--alertlink-secondary);
+}
+
+.ys-alert-closebtn {
+  cursor: pointer;
+  transition: 0.3s;
+  float: right;
+  margin-right: 1em;
 }
