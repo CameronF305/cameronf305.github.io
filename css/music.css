@@ -1580,19 +1580,24 @@ padding-bottom: 3px;
 
 /* Yandere Sim Notice */
 .ys-alert-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0 auto;
   opacity: 1;
   max-width: 1250px;
+  align-items: center;
 }
 
 .ys-alert {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   padding: 1em;
   box-sizing: border-box;
   border-radius: 5px;
   width: 98%;
   opacity: 1;
+  transition: all 0.9s;
   background-color: var(--alertbck-primary);
   box-shadow: 1px 1px 30px 1px var(--alertshadow-primary);
 }
@@ -1600,14 +1605,19 @@ padding-bottom: 3px;
 .ys-alert-icon {
   display: flex;
   align-items: center;
-
+  font-size: 25px;
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 
 .ys-alert-text {
   margin-left: 1em;
   font-size: 25px;
+  opacity: 1;
+  transition: opacity 0.2s;
   font-weight: 300;
   font-family: "FUTURA";
+  color: var(--alerttext-primary);
   text-shadow: 1px 1px 20px var(--alerttextshadow-primary);
 }
 .ys-alert-text a1{
@@ -1627,8 +1637,12 @@ padding-bottom: 3px;
 }
 
 .ys-alert-closebtn {
-  cursor: pointer;
-  transition: 0.3s;
   float: right;
-  margin-right: 1em;
+  padding-left: 29%;
+  font-weight: bold;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: var(--alerttext-primary);
+  cursor: pointer;
 }

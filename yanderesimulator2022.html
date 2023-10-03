@@ -51,6 +51,22 @@
       <div class="content">     
         <content>
           <section>
+            
+      <!-- YANDERE SIMULATOR ALERT -->
+      <div class="ys-alert-container">
+        <div class="ys-alert">
+          <div class="ys-alert-icon">
+            <i class="bi bi-info-circle"></i>
+          </div>
+          <div class="ys-alert-text">
+            <a1>NOTE</a1> -- As of 9/26/23, I have <a href="https://x.com/CameronF305/status/1706782796545769724?s=20">suspended my work with Yandere Simulator</a> until <a href="https://x.com/CameronF305/status/1706871364030742823?s=20">further notice.</a>
+          </div>
+          <button class="ys-alert-closebtn" type="button">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+      </div>
+      <!-- END ALERT -->
             <section> <!--Album Heading-->
             <div class="album-head-container">
               <div class="proj-container">
@@ -198,17 +214,6 @@
             </a>
           </div>
         </content>
-      </div>
-      <div class="ys-alert-container">
-        <div class="ys-alert">
-          <div class="ys-alert-icon">
-            <i class="bi bi-info-circle"></i>
-          </div>
-          <div class="ys-alert-text">
-            <a1>NOTE</a1> -- As of 9/26/23, I have <a href="https://x.com/CameronF305/status/1706782796545769724?s=20">suspended my work with Yandere Simulator</a> until <a href="https://x.com/CameronF305/status/1706871364030742823?s=20">further notice.</a>
-          </div>
-          <span class="ys-alert-closebtn">&times;</span>
-        </div>
       </div>     
         <footer class="musFooter">
           <div id="footerMus">
@@ -220,5 +225,19 @@
           </div>
         </footer>
         <script src="js/general.js"></script>
+        <!-- For Yandere Pages Only -->
+        <script>
+          var closeBtn = document.getElementsByClassName("ys-alert-closebtn");
+          var i;
+
+          for (i = 0; i < closeBtn.length; i++) {
+            closeBtn[i].onclick = function(){
+            var alertBox = this.parentElement;
+            alertBox.style.opacity = "0";
+            var alertBoxContainer = alertBox.parentElement
+            setTimeout(function(){ alertBoxContainer.style.display = "none"; }, 600);
+          }
+        }
+        </script>
     </body>
 </html>
