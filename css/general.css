@@ -354,6 +354,11 @@ h1, h2, p {
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
+.ci-bc {
+  background: #5a5a5a;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
 .ci-patreon {
   background: #5a5a5a;
   color: #ffffff;
@@ -392,6 +397,11 @@ h1, h2, p {
 }
 .ci-x:hover {
   background: #00acee;
+  color: white;
+}
+
+.ci-bc:hover {
+  background: #0fa1c5;
   color: white;
 }
 .ci-patreon:hover {
