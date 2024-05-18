@@ -629,6 +629,12 @@
     align-items: center;
     justify-content: center;
   }
+
+  .projRelease
+  {
+    color: var(--release-text-primary);
+  }
+
   @media only screen and (min-width: 888px) {
     .albumContainer {
       margin: auto 3%;
@@ -703,7 +709,6 @@
       text-align: center;
       padding: 5px 5px;
       font-size: 15px;
-      color: var(--release-text-primary);
     }
   
     /*/ Record Spin on Hover /*/
@@ -786,7 +791,6 @@
     text-align: center;
     padding: 5px 5px;
     font-size: 15px;
-    color: #686868
   }
 
 }
