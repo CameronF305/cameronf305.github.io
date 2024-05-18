@@ -128,6 +128,14 @@ h1, h2, p {
     float: left;
   }
 
+  
+  .foot-light-dark {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-width: 64px;
+  }
+
 .foot-text {
   display: flex;
   justify-content: center;
@@ -141,21 +149,36 @@ h1, h2, p {
       color: white;
       text-align: center;
   }
-
+@media only screen and (min-width: 3030px) and (max-width: 889px)
+{
+  
+  .foot-text {
+    height: 75px;
+    width: fit-content;
+    padding-right: 17%;
+    padding-left: 29%;
+  }
+}
 @media only screen and (min-width:888px) {
+  .foot-text {
+    height: 75px;
+    width: fit-content;
+    padding-right: 16%;
+    padding-left: 34%;
+  }
   .footer {
     margin-bottom: auto;
     height: 75px;
   }
   .footer-container {
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 150px;
+    justify-content: center;
+/*    padding: 0px 150px; */
   }
   #footContSimple {
     justify-content: center;
     align-items: center;
-    padding: 0px 150px;
+/*    padding: 0px 150px; */
   }
 
   .foot-socials {
@@ -166,6 +189,8 @@ h1, h2, p {
 .foot-text {
   height: 75px;
   width: fit-content;
+  padding-right: 17%;
+  padding-left: 29%;
 }
 
  .foot-text a p{
@@ -187,6 +212,20 @@ h1, h2, p {
   .ci img {
     height: 30px;
     width: 30px;
+  }
+
+  #darkMoon
+  {
+    font-size: 30px;
+  }
+
+  #lightSun
+  {
+    font-size: 30px;
+  }
+  .theme-switch
+  {
+    height: 4rem;
   }
 }
 @media only screen and (max-width:887px) {
@@ -229,6 +268,16 @@ h1, h2, p {
   .ci img {
     width: 20px;
     height: 20px;
+  }
+
+  .toogle-btn
+  {
+    height: 35px;
+    width: 35px;
+  }
+  .theme-switch
+  {
+    height: 2rem;
   }
 }
 
@@ -722,7 +771,7 @@ h3.aimg-sub a:hover{
 .toogle-btn{
   display: flex;
   justify-content: flex-end;
-  width: 10%;
+  /* width: 10%; */
 }
 
 #themeToggle {
@@ -732,7 +781,7 @@ h3.aimg-sub a:hover{
 .theme-switch {
   position: relative;
   width: 4rem;
-  height: 4rem;
+/*  height: 4rem; */
   background-color: rgb(99, 99, 99);
   border-radius: 50%;
   z-index: 1;
@@ -770,7 +819,6 @@ h3.aimg-sub a:hover{
 }
 
 #darkMoon {
-  font-size: 30px;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
   transition: all ease 1s;
   transform: var(--moon-transform);
@@ -783,7 +831,6 @@ h3.aimg-sub a:hover{
 
 #lightSun {
   position: absolute;
-  font-size: 30px;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
   transition: all ease 1s;
   transform: var(--sun-transform);
