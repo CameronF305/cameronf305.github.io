@@ -39,10 +39,14 @@ img.logo {
 
 /* Content */
 .welcome {
-  padding-top: 5px;
 }
 .section-one-container {
   padding: 1px;
+  padding-bottom: 10px;
+}
+.section-three-container {
+  padding: 1px;
+  padding-bottom: 10px;
 }
 .section-container {
   display: flex;
@@ -79,8 +83,6 @@ img.logo {
 .albumCol#albumCap .title {
   display: flex;
   position: absolute;
-  width: fit-content;
-  height: fit-content;
 	z-index: 10;
   opacity: 0;
   font-family: "MARKPRO-BOLD";
@@ -286,17 +288,10 @@ img.logo {
     align-items: center;
     justify-content: center;
   }
-  #section1 {
-    padding: 10px 50px;
-  }
   #section1 p {
     text-align: left;
     margin-left: 5%;
     margin-right: 10%;
-  }
-  .projectHead {
-    margin: 10;
-    padding: 10px;
   }
   .album-container {
     padding: 5px 5px;
@@ -451,7 +446,7 @@ img.logo {
 
   .article-container {
     margin: 10px 15px;
-    height: 450px;
+    max-height: 500px;
     display: flex;
     justify-content: center;
   }
@@ -467,8 +462,8 @@ img.logo {
 }
 .news-headings {
   text-align: center;
+  padding: 5px;
   width: 375px;
-  height: 60px;
 }
 .news-headings h1{
   text-decoration: underline;
@@ -485,14 +480,14 @@ img.logo {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
-    margin: 2px;
+    margin: 1px;
   }
 
   .news-border img{
       width: 350px;
       align-self: center;
       height: 350px;
-      padding-top: 20px;
+      padding: 10px;
   }
   .news-border a{
     width: 350px;
@@ -543,7 +538,6 @@ img.logo {
 .news-headings {
   text-align: center;
   width: 321px;
-  height: 60px;
 }
 .news-headings h1{
   text-decoration: underline;

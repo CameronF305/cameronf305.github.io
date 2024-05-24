@@ -1,42 +1,19 @@
-*{
-  padding:0;
-  margin: 0;
-  box-sizing: border-box;
-}
-header{
-  background-color: black;
-}
-li{
-  list-style: none;
-}
-.content {
-  padding: 1px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 70px;
-}
-
-
 #navbar {
-  z-index: 9999;
+  z-index: 99;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
 }
-.navbar{
-  top: 0px;
+.navbar
+{
   padding: 0 24px;
   min-height: 70px;
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999;
   overflow: hidden;
+  list-style: none;
   background-color: black;
 }
 .nav-menu{
@@ -139,6 +116,10 @@ li{
     justify-content: center;
     align-items: center;
   }
+  .navbar ul
+  {
+    list-style: none;
+  }
   .navbar ul li a {
     float: left;
     display: block;
@@ -159,6 +140,10 @@ li{
 
 }
 @media only screen and (max-width: 887px){
+  .navbar ul
+  {
+    list-style: none;
+  }
   .hamburger{
     display: block;
   }

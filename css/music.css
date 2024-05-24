@@ -729,7 +729,9 @@
       -webkit-transition:all 0.4s ease-in-out;
   }
   }
-
+  .news-headings {
+    text-align: center;
+  }
 /*/ Mobile Optimizations /*/
 @media only screen and (max-width: 887px) {
   .projArt{
@@ -828,8 +830,6 @@
 
 @media only screen and (min-width: 888px) {
   .proj-container {
-    margin: 15px 15px;
-    height: 435px;
     display: flex;
     justify-content: center;
 }
@@ -846,7 +846,6 @@
 .proj-headings {
   text-align: center;
   width: 375px;
-  height: 60px;
 }
 #trackHead {
   width:405px;
@@ -857,7 +856,6 @@
 }
 .proj-headings h1{
   text-decoration: underline;
-  padding-top: 2px;
 }
 .default-projTitle {
   font-family: "facile_sansregular";
@@ -875,13 +873,14 @@
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
-  margin-top: 7px;
 }
 
 .proj-border img{
     width: 348px;
     align-self: center;
     height: 348px;
+    padding: 10px;
+    margin-top: 10px;
 }
 .stream-head h1 {
   text-align: center;
@@ -897,6 +896,11 @@
   margin-left: 55px;
   margin-right: 55px;
 }
+.ys-vinyl-head h1 {
+  font-size: 50px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
 .music-video iframe{
   width: 512px;
   height: 288px;
@@ -904,7 +908,7 @@
 } 
 .article-container {
   margin: 10px 15px;
-  height: 445px;
+  max-height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -933,11 +937,6 @@
     border-style: solid;
     border-width: 3px;
     box-shadow: 1px 1px 4px 4px #222222;
-}
-.news-headings {
-  text-align: center;
-  width: 375px;
-  height: 60px;
 }
 .news-headings h1{
   text-decoration: underline;
@@ -968,7 +967,7 @@
       width: 350px;
       align-self: center;
       height: 350px;
-      padding-top: 20px;
+      padding: 10px;
   }
   .news-border a{
     width: 350px;
@@ -984,7 +983,6 @@
   border-radius: 2px;
   color: aliceblue;
   width: 86%;
-  margin: 30px 0 15px;
   margin-left: 7%;
   margin-right: 7%;
   box-shadow: 1px 1px 1px 1px snow;
@@ -1187,6 +1185,11 @@
   margin-left: 40px;
   margin-right: 40px;
 }
+.ys-vinyl-head h1 {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
   .music-video iframe{
     width: 320px;
     height: 180px;
@@ -1224,11 +1227,7 @@
   font-size: 25px;
   text-shadow: 3px 2px 14px #3B3B3B;
 }
-.news-headings {
-  text-align: center;
-  width: 321px;
-  height: 60px;
-}
+
 .news-headings h1{
   text-decoration: underline;
   padding-top: 2px;
@@ -1270,8 +1269,10 @@
 
 .album-head-container {
   display: flex;
-  height: 435px;
+  align-items: center;
   justify-content: center;
+  height: auto;
+  margin: 20px 0 20px;
 }
 .news-container {
   display: flex;
@@ -1289,7 +1290,6 @@
   color: white;
   font-size: 35px;
   text-align: center;
-  padding-bottom: 15px;
   text-shadow: 3px 2px 14px #3B3B3B;
   }
   .trl-title {
@@ -1299,7 +1299,6 @@
   color: white;
   font-size: 35px;
   text-align: center;
-  padding-bottom: 15px;
   text-shadow: 3px 2px 14px #3B3B3B;
   }
   
@@ -1308,27 +1307,26 @@
     font-family: "BAHNSCHRIFT";
     text-align: left;
     font-size: 17px;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
   }
   .top-tracklist li{
     list-style: none;
     font-family: "BAHNSCHRIFT";
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     font-size: 20px;
   }
   .top-tracklist-vol2 li{
     list-style: none;
     font-family: "BAHNSCHRIFT";
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     color: white;
     font-size: 20px;
   }
   .list-container {
     margin: 15px 15px;
     padding-left: 15px;
-    height: 435px;
     display: flex;
     justify-content: center;
     
@@ -1507,6 +1505,19 @@
   color: white;
   text-shadow: 3px 2px 14px #3B3B3B;
 }
+.ys-vinyl-head {
+  align-items: center;
+  justify-content: center;
+}
+
+.ys-vinyl-head h1 {
+  text-align: center;
+  font-family: "FUTURA";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  text-shadow: 3px 2px 14px #9999996b;
+}
 .vol-title {
   font-family: "FUTURA";
   font-weight: normal;
@@ -1565,6 +1576,17 @@
   color: #535353;
 }
 .ost2022-body h1 {
+  text-shadow: 3px 2px 14px #3a3a3a;
+}
+
+.ysfinal-body {
+  background-color: #ffa4c7;
+}
+
+.ysfinal-body h3 {
+  color: #535353;
+}
+.ysfinal-body h1 {
   text-shadow: 3px 2px 14px #3a3a3a;
 }
 
@@ -1649,4 +1671,138 @@ padding-bottom: 3px;
   border: none;
   color: var(--alerttext-primary);
   cursor: pointer;
+}
+
+
+/* shop vinyl */
+.vinyl-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ys-vinyl-promo{
+  margin: 0;
+  background-color: #9b536e;
+  padding: 20px;
+  background-image: url("../shop/vinyl/AlbumCoverAllSides.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vinyl-info p{
+  text-shadow: 0px 0px 9px #000000;
+}
+
+.vinyl-info h3{
+  font-family: "FUTURA";
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  text-shadow: 0px 0px 15px #000000;
+  padding: 0;
+  margin: 0;
+}
+.vinyl-info h2{
+  font-family: "FUTURA";
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  text-shadow: 0px 0px 15px #000000;
+  padding: 0;
+  margin: 0;
+}
+.vinyl-info emphasis{
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.vinyl-info button
+{
+  background-color: rgb(255, 121, 204);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.vinyl-info button a
+{
+  background-color: rgb(255, 121, 204);
+  font-family: "FUTURA";
+  font-size: 22px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  padding: 15px 32px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.vinyl-info button:hover
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.vinyl-info button a:hover
+{
+  text-shadow: 0px 0px 15px #ffffff;
+}
+.slideshow-container {
+  position: relative;
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+
+@media only screen and (min-width: 888px){
+  
+
+.vinyl-info {
+  min-width: 25%;
+  max-width: 45%;
+}
+  .vinyl-image img {
+    height: 100%;
+    width: 100%;
+  }
+  .slideshow-container {
+    width: 500px;
+    height: 500px;
+  }
+  .vinyl-info h3{
+    font-size: 30px;
+  }
+  .vinyl-info h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 887px){
+  
+  .vinyl-image img {
+    width: 100%;
+  }
+  .slideshow-container {
+    width: 300px;
+    height: 300px;
+  }
+  .vinyl-info h3{
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .vinyl-info h2 {
+    font-size: 20px;
+  }
+  .vinyl-info p {
+    font-size: 10px;
+  }
+  .vinyl-info{
+    max-width: 45%;
+  }
 }

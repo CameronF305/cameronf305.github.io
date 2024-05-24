@@ -1,20 +1,6 @@
 * {
   transition: 0.2s;
 }
-*, ::after, ::before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 /*/ -- Custom Scrollbar -- /*/
 /* width */
@@ -113,14 +99,11 @@ html {
 
 h1, h2, p {
   color: var(--color-primary);
-  margin: .8em 0;
 }
 
-div {
-  display: block;
-  unicode-bidi: isolate;
-}
+
 #welcome {
+  padding: 25px 10px;
   max-width: auto;
   text-decoration: none;
   font-size: 60px;
@@ -136,17 +119,16 @@ div {
     background-color: black;
     width: 100%;
   }
-  /* evenly spaced footer */
   .footer-container {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    display: flex;
     width: 100%;
   }
-  .footer-container > div:nth-child(2)
-  {
-    text-align: center;
+  .foot-socials {
+    float: left;
   }
+
+  
   .foot-light-dark {
     justify-content: center;
     align-items: center;
@@ -156,8 +138,8 @@ div {
 
 .foot-text {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
  .foot-text a p{
@@ -167,29 +149,30 @@ div {
       color: white;
       text-align: center;
   }
-@media only screen and (min-width:1122px)
+@media only screen and (min-width: 3030px) and (max-width: 889px)
 {
-  .footer-container > div {
-    flex: 1 0 0;
-  }
-}
-@media only screen and (max-width:1121px){
   
-  .footer-container > div {
-    flex: auto;
+  .foot-text {
+    height: 75px;
+    width: fit-content;
+    padding-right: 17%;
+    padding-left: 29%;
   }
-  
 }
 @media only screen and (min-width:888px) {
   .foot-text {
     height: 75px;
     width: fit-content;
+    padding-right: 16%;
+    padding-left: 34%;
   }
   .footer {
     margin-bottom: auto;
     height: 75px;
   }
   .footer-container {
+    align-items: center;
+    justify-content: center;
 /*    padding: 0px 150px; */
   }
   #footContSimple {
@@ -206,6 +189,8 @@ div {
 .foot-text {
   height: 75px;
   width: fit-content;
+  padding-right: 17%;
+  padding-left: 29%;
 }
 
  .foot-text a p{
@@ -243,27 +228,7 @@ div {
     height: 4rem;
   }
 }
-
 @media only screen and (max-width:887px) {
-    /* evenly spaced footer */
-    .footer-container {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-    }
-    .footer-container > div {
-      flex:auto;
-    }
-    .footer-container > div:nth-child(2)
-    {
-      text-align: center;
-    }
-    .foot-light-dark
-    {
-      padding: 10px;
-    }
   .footer {
     margin-bottom: auto;
     height: fit-content;
@@ -325,6 +290,9 @@ div {
   }
 }
 @media only screen and (max-width:413px) {
+  .footer-container {
+    align-items:start;
+  }
   .foot-text {
     height: 35px;
   }
@@ -493,8 +461,6 @@ hr {
     border: 1px solid #202020;
     background-color: #202020;
     box-shadow: 1px 1px 1px 1px var(--shadow-primary);
-    margin-bottom: 2px;
-    margin-top: 0px;
 }
 
 .long-div {
