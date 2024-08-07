@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/uvy3jjxle3np/public_html #Add /<sub_folder> if required
+    - export DEPLOYPATH=/home/cameronf/public_html #Add /<sub_folder> if required
     - /bin/cp -r * $DEPLOYPATH
