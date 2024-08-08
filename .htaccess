@@ -8,3 +8,14 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
 RewriteCond %{https} off  
 RewriteRule ^(.*)$ https://www.cameronf305.com/$1 [R=301,L]
+
+[cameronf@cp41-ga public_html]$ head -8 .htaccess
+RewriteEngine on
+
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+[cameronf@cp41-ga public_html]$
