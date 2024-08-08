@@ -523,7 +523,6 @@ img.logo {
   }
   .article-container {
     margin: 10px 15px;
-    height: 381px;
     display: flex;
     justify-content: center;
 }
