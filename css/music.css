@@ -997,6 +997,11 @@
   justify-content: center;
 }
 
+.filter-black {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
 .dsp-container {
   margin: 0 20px 30px;
   display: flex;
