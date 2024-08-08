@@ -5,7 +5,7 @@
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $email_from = 'contact@cameronf305.com'; //might change if this doesn't work since its a made up email
+    $email_from = 'contact@cameronf305.com'; 
 
     $email_subject = 'New Email From Contact Page';
 
@@ -14,7 +14,7 @@
                         "User Reason: $reason.\n".
                             "User Subject: $subject.\n".
                                 "User Message: $message.\n";
-    $to = "fmcameronf305@gmail.com";
+    $to = "contact@cameronf305.com";
 
     $headers = "From: $email_from \r\n";
 
