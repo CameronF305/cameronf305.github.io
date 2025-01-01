@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cameronf/public_html/ #Add /<sub_folder> if required
+    - /bin/cp -R $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp css/general.css $DEPLOYPATH
