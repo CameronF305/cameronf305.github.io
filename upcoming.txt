@@ -1,4 +1,0 @@
-Expand music page - more in-depth after launch
-custom email for custom email box
-
-make one main javascript file for general stuff like analytics, loading, and mobile navbar.
