@@ -54,12 +54,27 @@
     transition:box-shadow 0.3s ease-in-out;
     flex-direction: row;
   }
+  hand {
+    margin-left: 5px;
+    font-family: "BAHNSCHRIFT";
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration : none;
+  }
   .link-element a img {
     width: 125px;
     height: 40px;
     display: flex;
     margin-left: 15px;
     float: left;
+  }
+  .link-element a imgh {
+    width: 125px;
+    height: 40px;
+    display: flex;
+    float: left;
+    align-items: center;
   }
   .twit-link {
     width: 40px;
@@ -162,3 +177,19 @@
   text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
 }
+
+@font-face {
+    font-family: "ROBOTO";
+    src: url("fonts/ROBOTO-REGULAR.woff") format("woff"),
+    url("/fonts/ROBOTO-REGULAR.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "ROBOTO";
+    src: url("fonts/ROBOTO-BOLD.woff") format("woff"),
+    url("/fonts/ROBOTO-BOLD.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
