@@ -35,6 +35,10 @@
     margin-bottom: 30px;
     font-size: 13px;
   }
+  .link-column ps a{
+    color: rgb(133, 167, 203);
+    font-size: 13px;
+  }
   .link-element {
     width: 100%;
     max-width: 800px;
@@ -55,11 +59,12 @@
     flex-direction: row;
   }
   hand {
-    margin-left: 5px;
-    font-family: "BAHNSCHRIFT";
-    font-weight: lighter;
+    margin-left: 10px;
+    font-family: "ROBOTO";
+    font-weight: bold;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
+    color: rgb(28, 28, 28);
     text-decoration : none;
   }
   .link-element a img {
