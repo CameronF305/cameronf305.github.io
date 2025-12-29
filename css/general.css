@@ -650,6 +650,10 @@ h3.aimg-sub a:hover{
   background-color: var(--background-primary);
 }
 
+#donateContent {
+  display: none;
+}
+
 #donate-element {
   display: flex;
   justify-content: center;
