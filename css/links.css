@@ -39,6 +39,17 @@
     color: rgb(133, 167, 203);
     font-size: 13px;
   }
+  
+  .link-column p a{
+    display: flex;
+    color: rgb(157, 204, 255);
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
   .link-element {
     width: 100%;
     max-width: 800px;
