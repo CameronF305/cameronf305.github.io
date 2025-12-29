@@ -19,9 +19,21 @@
   }
   .link-column p{
     display: flex;
-    color: white;
+    color: rgb(225, 225, 225);
     text-align: center;
-    margin: 10px;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 0px;
+    font-size: 18px;
+  }
+  .link-column ps{
+    display: flex;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 13px;
   }
   .link-element {
     width: 100%;
@@ -50,14 +62,14 @@
     float: left;
   }
   .twit-link {
-    width: 125px;
+    width: 40px;
     height: 40px;
     display: flex;
-    margin-left: 15px;
+    margin-left: 0px;
     float: left;
   }
   .twit-link img{
-    width: 125px;
+    width: 50px;
     height: 40px;
     margin: 0px;
     padding: 0px;
@@ -117,3 +129,36 @@
     color: whitesmoke;
   }
   
+  /* text */
+
+.heading-lnk {
+  font-size: 30px;
+  padding: 10px 0px;
+  font-family: "MARKPRO-BOLD";
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
+  text-align: center;
+}
+
+.heading-lnk h3 {
+  font-size: 30px;
+  padding: 0px;
+  margin-block-start: 15px;
+  margin-block-end: 5px;
+}
+
+.heading-lnk h1 {
+  font-size: 40px;
+  padding: 10px;
+  font-family: "MARKPRO-BOLD";
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
+  text-align: center;
+}
+.heading-lnk p {
+  font-size: 20px;
+  font-family: "BAHNSCHRIFT";
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
+  text-align: center;
+}
