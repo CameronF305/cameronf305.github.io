@@ -47,7 +47,7 @@
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
 
-input[type=submit] {
+button[type=submit] {
   background-color: #000000;
   color: white;
   padding: 12px 20px;
@@ -58,7 +58,7 @@ input[type=submit] {
   font-family: "facile_sansregular";
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: white;
   color: black;
 }

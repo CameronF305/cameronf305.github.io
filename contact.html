@@ -9,7 +9,7 @@
         <meta http-equiv="content-language" content="en-us">
         <meta charset="utf-8" />
         <meta name="DC.Language" content="en-us">
-        <meta name="keywords" content="commission, contact, work, hire, e-mail, email, discord, composer, cameronf305, cameron, fields, yandere, simulator, composer, music, original, soundtrack, contact, 305, produced, it, official, albums, songs, website, links, streaming, services, platforms, booking, book, freelance, f305, yanderedev, engineer, audio, sound, track, tracklist, artist">
+        <meta name="keywords" content="commission, contact, work, hire, e-mail, email, discord, composer, cameronf305, cameron, fields, composer, music, original, soundtrack, contact, 305, produced, it, official, albums, songs, website, links, streaming, services, platforms, booking, book, freelance, f305, engineer, audio, sound, track, tracklist, artist">
         <meta name="description" content="Contact CameronF305"> 
         <meta name="DC.description" content="Contact CameronF305"> 
         <meta property="og:description" content="Contact CameronF305"> 
@@ -87,35 +87,46 @@
                             <h3>This is the easiest way to begin contacting me!</h3>
                         </div>
                         <div class="contact-box">
-                            <form action="https://formsubmit.co/fmcameronf305@gmail.com" method="post" name="contact_form">
+                            <form
+                              action="https://formspree.io/f/mdaobnwg"
+                              method="post">
                                 <div class="form-group">
                                     <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your name.." required>
+                                    <input
+                                      type="text"
+                                      name="name"
+                                      id="name"
+                                      placeholder="Your Name"
+                                      required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                                    <input
+                                      type="email"
+                                      id="email"
+                                      placeholder="your@email.com"
+                                      required>
                                 </div>
                                 <div class="form-group">
                                     <label for="reason">Reason For Contact</label>
                                     <select id="reason" name="reason" required>
-                                        <option value="business-inquiry">Business Inquiry</option>
-                                        <option value="commission">Commission</option>
-                                        <option value="question">Question</option>
-                                        <option value="fan-works">Fan-works</option>
                                         <option value="other">Other...</option>
+                                        <option value="business-inquiry">Business Inquiry</option>
+                                        <option value="commission">Music Commission</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" name="subject" placeholder="Subject">
-                                </div>
-                                <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea id="message" name="message" placeholder="Write something..." style="height:200px" required></textarea>
+                                    <textarea
+                                      name="message"
+                                      id="message"
+                                      rows="5"
+                                      placeholder="Enter message here..."
+                                      required
+                                    ></textarea>
                                 </div>
-
-                                <input type="submit" value="Submit">
+                                <input type="text" name="_nospam" style="display: none;"  />
+                                <button type="submit">Submit</button>
                             
                               </form>
                         </div>
