@@ -264,7 +264,8 @@ div {
     }
     .foot-light-dark
     {
-      padding: 10px;
+      /*padding: 10px; */
+      padding-top: 5px;
     }
   .footer {
     margin-bottom: auto;
@@ -820,7 +821,8 @@ h3.aimg-sub a:hover{
 /* Toogle dark mode */
 .toogle-btn{
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   /* width: 10%; */
 }
 
