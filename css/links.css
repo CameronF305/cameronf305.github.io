@@ -29,6 +29,7 @@
   .link-column ps{
     display: flex;
     color: rgb(200, 200, 200);
+    font-family: "BAHNSCHRIFT";
     text-align: center;
     font-style: italic;
     margin-top: 0px;

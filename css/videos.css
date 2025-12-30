@@ -100,7 +100,7 @@
     box-shadow: none;
   }
   .vid-channel img:hover {
-    box-shadow: var(--color-primary) 0 0 15px;
+    box-shadow: #ff0000 0 0 15px;
   }
   @media only screen and (min-width:888px){
   }
