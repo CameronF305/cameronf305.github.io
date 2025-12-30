@@ -1616,6 +1616,11 @@ padding-bottom: 3px;
   opacity: 1;
   max-width: 1250px;
   align-items: center;
+  z-index: 30;
+  position: fixed;
+  float: none;
+  right: 10%;
+  left: 10%;
 }
 
 .ys-alert {
@@ -1668,7 +1673,7 @@ padding-bottom: 3px;
 
 .ys-alert-closebtn {
   float: right;
-  padding-left: 29%;
+  padding-left: 20px;
   font-weight: bold;
   font-size: 25px;
   background: none;
