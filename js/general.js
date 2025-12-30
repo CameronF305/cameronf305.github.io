@@ -237,8 +237,8 @@ const currentTheme = localStorage.getItem("theme");
 
 // MediaQueryList object
 
-const useLight = !window.matchMedia("(prefers-color-scheme: dark)");
-const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+//const useLight = !window.matchMedia("(prefers-color-scheme: dark)");
+//const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 // Toggle
 toggle.addEventListener("change", (e) => {
@@ -255,11 +255,11 @@ toggle.addEventListener("change", (e) => {
 
 
 // Initial Settings (Does user prefer light or dark normally)
-initLight(useLight.matches);
-initLight(localStorage.getItem("theme") == "light");
+//initLight(useLight.matches);
+//initLight(localStorage.getItem("theme") == "light");
 
-initDark(useDark.matches);
-initDark(localStorage.getItem("theme") == "dark");
+//initDark(useDark.matches);
+//initDark(localStorage.getItem("theme") == "dark");
 
 
 // Set based on initial user preference
@@ -273,12 +273,13 @@ function initDark() {
     theme = "dark";
 }
 
-if (currentTheme == "dark") {
-    document.documentElement.setAttribute("data-theme", "dark");
-}
-else {
+if (currentTheme == "light") {
     document.documentElement.setAttribute("data-theme", "light");
     toggle.checked = true;
+}
+else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    toggle.checked = false;
 }
 
 //alert box
