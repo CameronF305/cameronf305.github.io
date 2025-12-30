@@ -443,6 +443,14 @@ img.logo {
     justify-self: center;
     align-self: center;
   }
+  .video-cont {
+    width: 426px;
+    height: 240px;
+  }
+  .video-cont iframe{
+    width: 426px;
+    height: 240px;
+  }
 
   /*/ Section 5 /*/
 
@@ -754,11 +762,43 @@ img.logo {
     justify-self: center;
     align-self: center;
   }
+  
+  .video-cont {
+    width: 320px;
+    height: 180px;
+  }
+  .video-cont iframe{
+    width: 320px;
+    height: 180px;
+  }
 }
 
+.video-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  width: fit-content;
+  padding: 0 25px;
+}
+
+.video-cont iframe {
+  box-shadow: 0 0 8px 3px #333333;
+    display: block;
+}
 
 #scrollText {
   margin: auto auto;
   padding: 10px 10px;
   word-wrap: normal;
+}
+
+
+.latest-vids-sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto 5%;
 }
