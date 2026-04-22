@@ -70,15 +70,6 @@
     transition:box-shadow 0.3s ease-in-out;
     flex-direction: row;
   }
-  hand {
-    margin-left: 10px;
-    font-family: "ROBOTO";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 15px;
-    color: rgb(28, 28, 28);
-    text-decoration : none;
-  }
   .link-element a img {
     width: 125px;
     height: 40px;
@@ -88,10 +79,39 @@
   }
   .link-element a imgh {
     width: 125px;
-    height: 40px;
     display: flex;
     float: left;
     align-items: center;
+  }
+  hand {
+    font-family: "ROBOTO";
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(28, 28, 28);
+    text-decoration : none;
+  }
+  @media only screen and (min-width:490px){
+    hand {
+      margin-left: 10px;
+      font-size: 15px;
+    }
+    .link-element a imgh {
+      height: 40px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+  }
+  @media only screen and (max-width:489px){
+    hand {
+      margin-left: 15px;
+      font-size: 10px;
+    }
+    .link-element a imgh {
+      height: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+    }
   }
   .twit-link {
     width: 40px;
