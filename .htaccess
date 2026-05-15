@@ -1,5 +1,9 @@
 ErrorDocument 404 ../404.html
 
+<Files "emotes.json">
+    Header set Access-Control-Allow-Origin "*"
+</Files>
+
 Redirect 301 "/YandereSimulator.html" "/yanderesimulator.html"
 
 RewriteEngine On
