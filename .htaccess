@@ -1,9 +1,11 @@
 RewriteEngine On
 
-# Force HTTPS and WWW
-RewriteCond %{HTTPS} off [OR]
+# Check if the forwarded protocol is not HTTPS, OR host doesn't have WWW
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ https://cameronf305.com [L,R=301]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.*)$ [NC]
+RewriteRule ^(.*)$ https://www.%1/$1 [L,R=301]
+
 
 [cameronf@cp41-ga public_html]$ head -8 .htaccess
 RewriteEngine on
