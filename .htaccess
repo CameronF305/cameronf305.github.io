@@ -16,6 +16,12 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 [cameronf@cp41-ga public_html]$
 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
 <Files "emotes.json">
     Header set Access-Control-Allow-Origin "*"
 </Files>
