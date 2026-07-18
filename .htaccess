@@ -1,11 +1,5 @@
 RewriteEngine On
 
-# Force HTTPS & WWW
-RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteCond %{HTTP_HOST} ^(?:www\.)?(.*)$ [NC]
-RewriteRule ^(.*)$ https://www.%1/$1 [L,R=301]
-
 [cameronf@cp41-ga public_html]$ head -8 .htaccess
 RewriteEngine on
 
