@@ -1,10 +1,9 @@
 RewriteEngine On
 
-# Force HTTPS & WWW
-RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+# Force HTTPS and WWW
+RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteCond %{HTTP_HOST} ^(?:www\.)?(.*)$ [NC]
-RewriteRule ^(.*)$ https://www.%1/$1 [L,R=301]
+RewriteRule ^(.*)$ https://cameronf305.com [L,R=301]
 
 [cameronf@cp41-ga public_html]$ head -8 .htaccess
 RewriteEngine on
@@ -15,12 +14,6 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 [cameronf@cp41-ga public_html]$
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
 
 <Files "emotes.json">
     Header set Access-Control-Allow-Origin "*"
