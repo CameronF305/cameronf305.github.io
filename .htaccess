@@ -1,20 +1,3 @@
-ErrorDocument 404 /404.html
-
-<Files "emotes.json">
-    Header set Access-Control-Allow-Origin "*"
-</Files>
-
-# Redirects
-Redirect 301 /YandereSimulator /yanderesimulatorfinal
-Redirect 301 /yandere /yanderesimulatorfinal
-Redirect 301 /vinyl "https://cameronf305.bandcamp.com/merch"
-Redirect 301 /yanderesim /yanderesimulatorfinal
-Redirect 301 /yanderesim2021 /yanderesimulator2021
-Redirect 301 /yanderesim2022 /yanderesimulator2022
-Redirect 301 /yanderesimfinal /yanderesimulatorfinal
-Redirect 301 /yanderesim /yanderesimulatorfinal
-
-
 # Force HTTPS and WWW
 RewriteEngine On
 RewriteCond %{HTTPS} off [OR]
@@ -24,10 +7,38 @@ RewriteRule ^(.*)$ https://cameronf305.com [R=301,L]
 [cameronf@cp41-ga public_html]$ head -8 .htaccess
 RewriteEngine on
 
-
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 [cameronf@cp41-ga public_html]$
+
+<Files "emotes.json">
+    Header set Access-Control-Allow-Origin "*"
+</Files>
+
+# Redirects
+Redirect 301 /YandereSimulator /yanderesimulatorfinal
+Redirect 301 /yandere /yanderesimulatorfinal
+Redirect 301 /yanderesim /yanderesimulatorfinal
+Redirect 301 /yanderesim2021 /yanderesimulator2021
+Redirect 301 /ai /aiwillshockyou
+Redirect 301 /yanderesim2022 /yanderesimulator2022
+Redirect 301 /yanderesimfinal /yanderesimulatorfinal
+Redirect 301 /yanderesim /yanderesimulatorfinal
+Redirect 301 /vinyl "https://cameronf305.bandcamp.com/merch"
+
+Redirect 301 /liars /getyouout
+Redirect 301 /understand /understand-me
+Redirect 301 /understandme /understand-me
+
+Redirect 301 /home "https://www.cameronf305.com"
+Redirect 301 /youtube "https://www.youtube.com/c/CameronF305"
+
+# Redirects for Live Pages
+Redirect 301 /donate "https://www.patreon.com/CameronF305"
+Redirect 301 /tip "https://streamelements.com/cameronf305-df416/tip"
+Redirect 301 /shop "https://shop.cameronf305.com"
+
+ErrorDocument 404 /404.html
