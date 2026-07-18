@@ -35,6 +35,7 @@ observer.observe(target);
 
 //Load Sections Sequence
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent = new Date().getFullYear();
     loadin('.loadseq section', { delay: 100 })
   });
 
