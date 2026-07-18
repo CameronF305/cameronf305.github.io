@@ -48,7 +48,5 @@ Redirect 301 /donate "https://www.patreon.com/CameronF305"
 Redirect 301 /tip "https://streamelements.com/cameronf305-df416/tip"
 Redirect 301 /shop "https://shop.cameronf305.com"
 
-# Custom 404 without changing the URL in the browser
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ /404.html [L]
+# Will eventually make it so 404 isn't in url 
+ErrorDocument 404 /404.html
