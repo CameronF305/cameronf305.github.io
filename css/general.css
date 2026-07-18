@@ -645,6 +645,12 @@ h3.aimg-sub a:hover{
       }
   }
   
+/*/ Error Page /*/
+.error p
+{
+  text-shadow: 1px 1px 10px var(--shadow-primary);
+}
+
 /*/ Donate Page /*/
 
 .donate-body {

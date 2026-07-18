@@ -33,9 +33,11 @@ function callback(entries, observer) {
 let observer = new IntersectionObserver(callback);
 observer.observe(target);
 
-//Load Sections Sequence
+//Load Content
 document.addEventListener("DOMContentLoaded", () => {
+    //Load current year
     document.getElementById("year").textContent = new Date().getFullYear();
+    //Load page content in sequence
     loadin('.loadseq section', { delay: 100 })
   });
 
@@ -282,8 +284,4 @@ else {
     document.documentElement.setAttribute("data-theme", "dark");
     toggle.checked = false;
 }
-
-//Current Year
-
-document.getElementByID("year").innerHTML = new Date().getFullYear();
 
