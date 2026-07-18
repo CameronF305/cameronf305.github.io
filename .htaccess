@@ -4,7 +4,15 @@ ErrorDocument 404 /404.html
     Header set Access-Control-Allow-Origin "*"
 </Files>
 
-Redirect 301 "/YandereSimulator.html" "/yanderesimulator.html"
+# Redirects
+Redirect 301 /YandereSimulator /yanderesimulatorfinal
+Redirect 301 /yandere /yanderesimulatorfinal
+Redirect 301 /vinyl "https://cameronf305.bandcamp.com/merch"
+Redirect 301 /yanderesim /yanderesimulatorfinal
+Redirect 301 /yanderesim2021 /yanderesimulator2021
+Redirect 301 /yanderesim2022 /yanderesimulator2022
+Redirect 301 /yanderesimfinal /yanderesimulatorfinal
+Redirect 301 /yanderesim /yanderesimulatorfinal
 
 
 # Force HTTPS and WWW
