@@ -1,8 +1,9 @@
-# Force HTTPS and WWW
 RewriteEngine On
+
+# Force HTTPS and WWW
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ https://cameronf305.com [R=301,L]
+RewriteRule ^(.*)$ https://cameronf305.com [L,R=301]
 
 [cameronf@cp41-ga public_html]$ head -8 .htaccess
 RewriteEngine on
