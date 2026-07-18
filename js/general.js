@@ -282,5 +282,7 @@ else {
     toggle.checked = false;
 }
 
-//alert box
+//Current Year
+
+document.getElementByID("year").innerHTML = new Date().getFullYear();
 
