@@ -95,7 +95,6 @@
     font-size: 25px;
   }
   .vid-channel img {
-    width: 400px;
     border-radius: 50%;
     box-shadow: none;
   }
@@ -103,6 +102,12 @@
     box-shadow: #ff0000 0 0 15px;
   }
   @media only screen and (min-width:888px){
+    .vid-channel img {
+      width: 400px;
+    }
   }
   @media only screen and (max-width:887px){
+    .vid-channel img {
+      width: 300px;
+    }
   }
