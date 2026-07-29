@@ -5,7 +5,6 @@ body {
   width: 100%;
   margin-top: auto;
   background-color: #ffc342;
-  max-width: auto;
   background-attachment: fixed;
 }
 .frame {
@@ -14,8 +13,6 @@ body {
   position: relative;
 }
 img.logo {
-  width: 497px;
-  height: 190.4px;
   max-height: 100%;
   max-width: 100%;
   min-width: 248.5px;
@@ -30,6 +27,17 @@ img.logo {
   margin: auto;
   -webkit-filter: drop-shadow( 1px 1px 10px rgba(0, 0, 0, .9));
   filter: drop-shadow( 1px 1px 10px rgba(0, 0, 0, .9));
+}
+@media only screen and (min-width: 500px){
+  img.logo {
+    width: 497px;
+    height: 190.4px;
+  }
+}
+@media only screen and (max-width: 499px){
+  img.logo {
+    width: 90%;
+  }
 }
   
 .header {

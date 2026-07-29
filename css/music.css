@@ -817,6 +817,7 @@
 }
 .proj-headings h3 {
   color: rgb(53, 53, 53);
+  margin-block: 0;
 }
 .news-headings h1 {
   color: white;
@@ -1123,7 +1124,7 @@
 @media only screen and (max-width: 887px) {
   .proj-container {
     margin: 15px 15px;
-    height: 400px;
+    height: fit-content;
     display: flex;
     justify-content: center;
 }
@@ -1136,11 +1137,11 @@
     border-style: solid;
     border-width: 3px;
     box-shadow: 1px 1px 4px 4px #222222;
+    padding: 10px 0;
 }
 .proj-headings {
   text-align: center;
   width: 320px;
-  height: 60px;
 }
 .proj-headings h1{
   text-decoration: underline;
@@ -1396,10 +1397,7 @@
     font-size: 0px;
   }
   .list-container {
-    margin: 0px 0px;
-    height: 0px;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
   .list-border {
     display: flex;
@@ -1619,8 +1617,6 @@ padding-bottom: 3px;
   z-index: 30;
   position: fixed;
   float: none;
-  right: 10%;
-  left: 10%;
 }
 
 .ys-alert {
@@ -1771,12 +1767,10 @@ padding-bottom: 3px;
 }
 
 @media only screen and (min-width: 888px){
-  
-
-.vinyl-info {
-  min-width: 25%;
-  max-width: 45%;
-}
+  .vinyl-info {
+    min-width: 25%;
+    max-width: 45%;
+  }
   .vinyl-image img {
     height: 100%;
     width: 100%;
@@ -1791,9 +1785,16 @@ padding-bottom: 3px;
   .vinyl-info h2 {
     font-size: 40px;
   }
+  .ys-alert-container {
+    right: 10%;
+    left: 10%;
+  }
 }
 @media only screen and (max-width: 887px){
-  
+  .ys-alert-container {
+    right: 5%;
+    left: 5%;
+  }
   .vinyl-image img {
     width: 100%;
   }

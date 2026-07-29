@@ -123,7 +123,6 @@ div {
   unicode-bidi: isolate;
 }
 #welcome {
-  max-width: auto;
   text-decoration: none;
   font-size: 60px;
   font-weight: bold;
@@ -244,6 +243,12 @@ div {
   {
     height: 4rem;
   }
+  .footer-container {
+    align-items:center;
+  }
+  .foot-text {
+    height: 75px;
+  }
 }
 
 @media only screen and (max-width:887px) {
@@ -265,7 +270,7 @@ div {
     .foot-light-dark
     {
       /*padding: 10px; */
-      padding-top: 5px;
+      padding-top: 10px;
     }
   .footer {
     margin-bottom: auto;
@@ -277,14 +282,13 @@ div {
     padding: auto 25px;
   }
   .foot-socials {
-    padding: 10px 10px;
+    padding: 0 10px 10px;
 
   }
 
   .foot-text {
     width: fit-content;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px;
   }
 
  .foot-text a p{
@@ -317,20 +321,14 @@ div {
   {
     height: 2.2rem;
   }
-}
-
-@media only screen and (min-width:414px) {
-  .footer-container {
-    align-items:center;
-  }
-  .foot-text {
-    height: 75px;
-  }
-}
-@media only screen and (max-width:413px) {
   .foot-text {
     height: 35px;
   }
+}
+
+@media only screen and (min-width:414px) {
+}
+@media only screen and (max-width:413px) {
 }
 
   /* Social Icons */

@@ -1,11 +1,11 @@
+/* ========== Base Navbar ========== */
 #navbar {
   z-index: 99;
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
 }
-.navbar
-{
+.navbar {
   padding: 0 24px;
   min-height: 70px;
   display: -webkit-flex;
@@ -16,70 +16,72 @@
   list-style: none;
   background-color: black;
 }
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #navlogo{
-    opacity: 0;
-    transition: opacity 0.75s ease-in;
-    transition: opacity 0.3s ease-out;
-  }
-  .navlogo {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .navlogo img {
-    transition: all 0.3s ease-in-out;
-  }
-.vislogo {
-  opacity: 100;
+.navbar ul {
+  list-style: none;
 }
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ========== Logo ========== */
+#navlogo{
+  opacity: 0;
+  transition: opacity 0.75s ease-in;
+  transition: opacity 0.3s ease-out;
+}
+.navlogo {
+  transition: opacity 0.3s ease-in-out;
+}
+.navlogo img {
+  transition: all 0.3s ease-in-out;
+}
+.vislogo {
+  opacity: 1;
+}
+/* ========== Links ========== */
 .navbar ul li a {
   font-family: "facile_sansregular";
-    font-weight: normal;
-    font-style: normal;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 20px;
-    text-decoration: none;
-}
-.nav-branding{
-  font-size: 2rem;
-}
-.btn{
-  background-color: rgb(0, 0, 0);
-  color: black;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
   text-align: center;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-decoration: none;
   transition: 0.3s;
 }
-.btn:hover {
-  background-color: #5c5c5c;
-  color: white;
+.btn,
+.activebtn {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  transition: 0.3s;
 }
 .activebtn {
   background-color: rgb(31,31,31);
-  color: black;
-  text-align: center;
-  font-size: 16px;
-  transition: 0.3s;
 }
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+.btn:hover,
 .activebtn:hover {
   background-color: #5c5c5c;
   color: white;
 }
-.navbar ul li a:hover {
-    background-color: white;
-    color: black;
-  }
-    
-  .navbar ul li a.active {
-    background-color: rgb(31,31,31);
-    color: white;
-  }
-
+.navbar ul li a.active {
+  background-color: rgb(31,31,31);
+  color: white;
+}
+.nav-branding{
+  font-size: 2rem;
+}
+/* ========== Hamburger ========== */
 .hamburger{
   display: none;
   cursor: pointer;
@@ -93,13 +95,12 @@
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-
+/* ========== Display ========== */
 @media only screen and (min-width: 888px){
   .navbar {
     float: none;
     width: 100%;
     min-width: 887px;
-    max-width: auto;
     -webkit-justify-content: center;
     justify-content: center;
   }  
@@ -109,16 +110,11 @@
     list-style: none;
     gap: 10px;
   }
-  
   .nav-item {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .navbar ul
-  {
-    list-style: none;
   }
   .navbar ul li a {
     float: left;
@@ -127,31 +123,16 @@
     margin: 5px;
     padding: 15px 20px;
   }
-  .btn {
-    border: none;
-    padding: 16px 32px;
-    margin: 4px 2px;
-  }
-  .activebtn {
-    border: none;
-    padding: 16px 32px;
-    margin: 4px 2px;
-  }
-
 }
 @media only screen and (max-width: 887px){
-  .navbar ul
-  {
-    list-style: none;
-  }
   .hamburger{
     display: block;
   }
-  .hamburger.active .bar:nth-child(2){
-    opacity: 0;
-  }
   .hamburger.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
   }
   .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
@@ -159,31 +140,39 @@
   .nav-menu{
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 67px;
     gap: 0;
     flex-direction: column;
     background-color: black;
     width: 100%;
     text-align: center;
     transition: 0.3s;
-  }
-  .nav-item {
-    margin: 16px 0;
+    padding: 0;              /* kill any inherited padding */
+    margin: 0;
+    justify-content: flex-start; /* or center if you want vertical centering */
+    align-items: center;     /* critical – centers the <li>s horizontally */
+    box-sizing: border-box;
   }
   .nav-menu.active{
     left: 0;
   }
-  .btn {
-    border: none;
-    padding: 16px 32px;
-    margin: 4px 2px;
+  .nav-item {
+    margin: 16px 0;
+    width: 100%;             /* let each item take full width so the <a> can center */
+    display: flex;
+    justify-content: center; /* centers the button itself */
   }
+  .navbar ul li a,
+  .btn,
   .activebtn {
-    border: none;
-    padding: 16px 32px;
-    margin: 4px 2px;
+    display: inline-block;   /* or block if you prefer full-width buttons */
+    width: auto;             /* or 80% / max-width: 280px if you want them larger */
+    margin: 0 auto;          /* extra safety */
+    padding: 16px 32px;      /* keep your existing padding */
+    text-align: center;
   }
 }
+/* ========== Logo Visibility ========== */
 @media only screen and (min-width: 1106px){
   #navlogo {
     position: absolute;
@@ -192,7 +181,6 @@
     width: 206px;
     height: 65.333px;
     display: inline-block;
-    max-block-size: 100% 70px;
     max-height: 68px;
     margin: 0 20px;
   }
@@ -206,16 +194,12 @@
 }
 
 @media only screen and (max-width: 1105px) {
-  .navlogo{
+  .navlogo,
+  .navlogo img{
     width: 0px;
     height: 0px;
     padding: 0px 0px;
     margin: 0px 0px;
-    opacity: 0;
-  }
-  .navlogo img {
-    width: 0px;
-    height: 0px;
     opacity: 0;
   }
 }
