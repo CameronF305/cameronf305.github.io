@@ -1,6 +1,8 @@
+/* ========== Base ========== */
 body {
   background: var(--background-primary);
 }
+/* ========== Header / Logo ========== */
 .homehead {
   width: 100%;
   margin-top: auto;
@@ -68,7 +70,7 @@ img.logo {
   background: var(--background-secondary);
 }
 .projectHead {
-  font-family: "MARKPRO-BOLD";
+  font-family: "MARKPRO-BOLD", sans-serif;
   text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   text-align: center;
   font-size: 30px;
@@ -95,7 +97,7 @@ img.logo {
   position: absolute;
 	z-index: 10;
   opacity: 0;
-  font-family: "MARKPRO-BOLD";
+  font-family: "MARKPRO-BOLD", sans-serif;
   font-weight: bold;
   font-style: normal;
   text-align: center;
@@ -195,7 +197,7 @@ img.logo {
   margin: 25px;
 }
 #section2 h1{
-  font-family: "MARKPRO-BOLD";
+  font-family: "MARKPRO-BOLD", sans-serif;
   font-size: 40px;
   color: var(--color-primary);
   text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
@@ -223,7 +225,7 @@ img.logo {
 
 }
 #section3 h1{
-  font-family: "MARKPRO-BOLD";
+  font-family: "MARKPRO-BOLD", sans-serif;
   color: var(--color-primary);
   text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
   margin: 10px;
@@ -494,7 +496,7 @@ img.logo {
   font-style: normal;
 }
   .news-headings h3{
-    font-family: "BAHNSCHRIFT";
+    font-family: "BAHNSCHRIFT", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
@@ -568,7 +570,7 @@ img.logo {
   font-style: normal;
 }
   .news-headings h3{
-    font-family: "BAHNSCHRIFT";
+    font-family: "BAHNSCHRIFT", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;

@@ -24,6 +24,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 /* ========== Logo ========== */
 #navlogo{
   opacity: 0;
@@ -39,6 +40,7 @@
 .vislogo {
   opacity: 1;
 }
+
 /* ========== Links ========== */
 .navbar ul li a {
   font-family: "facile_sansregular";
@@ -81,6 +83,7 @@
 .nav-branding{
   font-size: 2rem;
 }
+
 /* ========== Hamburger ========== */
 .hamburger{
   display: none;
@@ -95,6 +98,7 @@
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+
 /* ========== Display ========== */
 @media only screen and (min-width: 888px){
   .navbar {
@@ -172,6 +176,7 @@
     text-align: center;
   }
 }
+
 /* ========== Logo Visibility ========== */
 @media only screen and (min-width: 1106px){
   #navlogo {

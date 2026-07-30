@@ -28,7 +28,7 @@
   label {
       font-size: 15px;
       font-style: normal;
-      font-family: "BAHNSCHRIFT";
+      font-family: "BAHNSCHRIFT", sans-serif;
       font-weight: normal;
       color: var(--color-primary);
       text-shadow: 1px 1px 10px var(--shadow-primary);
@@ -37,7 +37,7 @@
   input[type=text],input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
-    font-family: "BAHNSCHRIFT";
+    font-family: "BAHNSCHRIFT", sans-serif;
     font-weight: normal;
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */

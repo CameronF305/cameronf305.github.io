@@ -28,7 +28,7 @@
       }
 }
 .video-heading {
-    font-family: "MARKPRO-BOLD";
+    font-family: "MARKPRO-BOLD", sans-serif;
     color: var(--color-primary);
     text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
     text-align: center;
@@ -38,7 +38,7 @@
 .video-heading h3 {
     color: var(--color-primary);
     text-shadow: 1px 1px 10px var(--shadow-primary);
-    font-family: "BAHNSCHRIFT";
+    font-family: "BAHNSCHRIFT", sans-serif;
     font-weight: normal;
     font-size: 20px;
 }
@@ -53,7 +53,7 @@
     text-decoration: underline;
   }
   .channel-heading {
-    font-family: "MARKPRO-BOLD";
+    font-family: "MARKPRO-BOLD", sans-serif;
     color: var(--color-primary);
     text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
     text-align: center;
