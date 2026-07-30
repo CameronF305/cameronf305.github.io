@@ -27,21 +27,8 @@ img.logo {
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-filter: drop-shadow( 1px 1px 10px rgba(0, 0, 0, .9));
   filter: drop-shadow( 1px 1px 10px rgba(0, 0, 0, .9));
 }
-@media only screen and (min-width: 500px){
-  img.logo {
-    width: 497px;
-    height: 190.4px;
-  }
-}
-@media only screen and (max-width: 499px){
-  img.logo {
-    width: 90%;
-  }
-}
-  
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -49,13 +36,12 @@ img.logo {
   margin-top: auto;
 }
 
-/* Content */
-.welcome {
-}
-.section-one-container {
-  padding: 1px;
-  padding-bottom: 10px;
-}
+/*///////////////////////////////*/
+/* ========== CONTENT ========== */
+/*///////////////////////////////*/
+
+/* ========== Layout Containers ========== */
+.section-one-container,
 .section-three-container {
   padding: 1px;
   padding-bottom: 10px;
@@ -63,12 +49,15 @@ img.logo {
 .section-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-/*/ Section 1 /*/
 #section1 {
   width: 100%;
   background: var(--background-secondary);
 }
+
+/* ========== Projects / Album Display ========== */
 .projectHead {
   font-family: "MARKPRO-BOLD", sans-serif;
   text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
@@ -80,17 +69,14 @@ img.logo {
   flex-wrap: wrap;
   justify-content: center;
 }
-/*/ Album Title Reveal /*/
-.albumCol#albumCap {
+.albumCol#albumCap {    /*ALbum title reveal on hover */
   position: relative;
   transition: all .3s ease-out;
-  -moz-transition:all 0.3s ease-out;
-  -webkit-transition:all 0.3s ease-out;
 }
-.albumCol#albumCap .img {
+.albumCol#albumCap .img,
+.albumCol#albumCap .title,
+.albumCol#albumCap .title h1 {
   transition: all .3s ease-out;
-  -moz-transition:all 0.3s ease-out;
-  -webkit-transition:all 0.3s ease-out;
 }
 .albumCol#albumCap .title {
   display: flex;
@@ -104,40 +90,29 @@ img.logo {
   text-shadow: 1px 1px 10px black, -1px -1px 10px black;
   align-items: center;
   vertical-align: middle;
-  transition: all .3s ease-out;
-  -moz-transition:all 0.3s ease-out;
-  -webkit-transition:all 0.3s ease-out;
 }
-.albumCol#albumCap .title h1{
+.albumCol#albumCap .title h1 {
   margin: 0;		
   color: white;
   text-align: center;
-  transition: all .3s ease-out;
-  -moz-transition:all 0.3s ease-out;
-  -webkit-transition:all 0.3s ease-out;
 }
 .albumCol#albumCap img {
-  transition:all 0.4s ease-in-out;
-  -moz-transition:all 0.4s ease-in-out;
-  -webkit-transition:all 0.4s ease-in-out;
- -webkit-filter: blur(0)hue-rotate(0deg)grayscale(0%);
+  transition: all 0.4s ease-in-out;
+  filter: blur(0) hue-rotate(0deg) grayscale(0%);
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.623);
 }
-.albumCol#albumCap:hover .title, .albumCol#albumCap:active .title{
-  transition:all 0.4s ease-in-out;
-  -moz-transition:all 0.4s ease-in-out;
-  -webkit-transition:all 0.4s ease-in-out;
+.albumCol#albumCap:hover .title,
+.albumCol#albumCap:active .title {
   opacity: 1;
 }
-
-.albumCol#albumCap:hover img, .albumCol#albumCap:active img{
-  transition:all 0.4s ease-in-out;
-  -moz-transition:all 0.4s ease-in-out;
-  -webkit-transition:all 0.4s ease-in-out;
+.albumCol#albumCap:hover img,
+.albumCol#albumCap:active img {
   /*/I'd like to do a nice gradient overlay that swipes up, but I can take care of that once the website is done, first it needs to fully function/*/
- -webkit-filter: blur(3px)hue-rotate(10deg)grayscale(25%);
+  filter: blur(3px) hue-rotate(10deg) grayscale(25%);
   box-shadow: 0 0 15px 3px #cecece;
 }
+
+/* ========== Slideshow ========== */
 #slider a {
   position:absolute;
 }
@@ -154,45 +129,32 @@ img.logo {
   display: none;
 }
 @keyframes slideFade {
-  from{opacity: 1.0;}
-  to{opacity: 0.0;}
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 #slideCover {
   position: absolute;
   z-index: 30;
-  opacity: 100%;
+  opacity: 1;
   transition:opacity 0.4s ease-out;
-  -moz-transition:opacity 0.4s ease-out;
-  -webkit-transition:opacity 0.4s ease-out;
 }
 #slideCover a {
   position:absolute;
   transition:all 0.4s ease-out;
-  -moz-transition:all 0.4s ease-out;
-  -webkit-transition:all 0.4s ease-out;
 }
 #slideCover a img {
-  opacity: 100%;
+  opacity: 1;
   transition:all 0.4s ease-out;
-  -moz-transition:all 0.4s ease-out;
-  -webkit-transition:all 0.4s ease-out;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.623);
 }
 #slideCover a img:hover {
-  opacity: 20%;
-  transition:opacity 0.4s ease-in-out;
-  -moz-transition:opacity 0.4s ease-in-out;
-  -webkit-transition:opacity 0.4s ease-in-out;
+  opacity: .2;
 }
 #slideCover a:hover {
   box-shadow: 0 0 15px 3px #cecece;
-  transition:box-shadow 0.4s ease-in-out;
-  -moz-transition:box-shadow 0.4s ease-in-out;
-  -webkit-transition:box-shadow 0.4s ease-in-out;
 }
 
-/*/ Section 2 /*/
-
+/* ========== Section 2 ========== */
 #section2 {
   margin: 25px;
 }
@@ -209,20 +171,16 @@ img.logo {
 }
 #section2 p a{
   color: var(--link-primary);
-  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: none;
 }
 #section2 p a:hover{
   color: var(--link-secondary);
-  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
 
-/*/ Section 3 /*/
-
+/* ========== Section 3 ========== */
 #section3 {
   margin: 25px;
-
 }
 #section3 h1{
   font-family: "MARKPRO-BOLD", sans-serif;
@@ -237,53 +195,96 @@ img.logo {
 #section3 p a{
   color: var(--link-primary);
   text-decoration: none;
-  text-shadow: 1px 1px 10px var(--shadow-primary);
 }
 #section3 p a:hover{
   color: var(--link-secondary);
-  text-shadow: 1px 1px 10px var(--shadow-primary);
   text-decoration: underline;
 }
-.latest-video{
+/* ======== Video Display ======== */
+.latest-video {
   box-shadow: 0 0 8px 3px #333333;
 }
+.video-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  width: fit-content;
+  padding: 0 25px;
+}
+.video-cont iframe {
+  box-shadow: 0 0 8px 3px #333333;
+}
+.latest-video iframe,
+.video-cont iframe {
+  display: block;
+  justify-self: center;
+  align-self: center;
+}
+.latest-vids-sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto 5%;
+}
+#scrollText {
+  margin: auto;
+  padding: 10px;
+  word-wrap: normal;
+}
 
-/*/ Section 4 /*/
-
-/*/ Section 5 /*/
-
+/* ========== Section 5 + News Container ========== */
+#section5 {
+  width: 100%;
+  background: var(--background-secondary);
+}
 .news-container {
   display: flex;
   height: fit-content;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+.news-border {
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  border: 3px solid white;
+  box-shadow: 1px 1px 4px 4px #222222;
+}
+.article-container {
+  background: #797979;
 }
 .news-headings h1 {
-  font-family: "Domine-Regular";
+  font-family: "Domine-Regular", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: var(--color-primary);
   text-shadow: 3px 2px 6px #2b2b2b;
 }
-.article-container {
-  background: #797979;
+.default-news-head {
+  font-family: "facile_sansregular", sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
-#section5 {
-  width: 100%;
-  background: var(--background-secondary);
-}
-/*/ Section 6 /*/
 
-/*/ Section 7 /*/
-
-@media only screen and (min-width: 888px){
-  .section-container {
-    justify-content: center;
-    align-items: center;
+/* ========== Logo Display ========== */
+@media only screen and (min-width: 500px){
+  img.logo {
+    width: 497px;
+    height: 190.4px;
   }
+}
+@media only screen and (max-width: 499px){
+  img.logo {
+    width: 90%;
+  }
+}
 
+/* ========== Screen Display ========== */
+@media only screen and (min-width: 888px){
   .section-child-1 {
     margin-right: 25px;
     width: 440px;
@@ -306,195 +307,66 @@ img.logo {
     margin-right: 10%;
   }
   .album-container {
-    padding: 5px 5px;
+    padding: 5px;
   }
   .album{
-    padding: 10px 10px;
+    padding: 10px;
   }
-  .album img {
+  .album img,
+  .album a,
+  #slider,
+  #slider a img,
+  #slideCover,
+  #slideCover a,
+  #slideCover a img {
     width: 250px;
     height: 250px;
-    display: block;
   }
-
-  /*/ Album Title Reveal /*/
-
-  .albumCol#albumCap .title {
-    margin: auto auto;
+  .albumCol#albumCap .title { /*/ Album Title Reveal /*/
+    margin: auto;
     width: 250px;
     height: 250px;
     max-width: 250px;
     max-height: 250px;				
   }
-  .album a {
-    width: 250px;
-    height:250px;
+  .slides {   /*/ Reveal Slideshow on Hover /*/
+    padding: 10px;
   }
-
-  /*/ Slideshow /*/
-  #slider {
-    width: 250px;
-    height: 250px;
-    position: relative;
-  }
-  #slider a img {
-    width: 250px;
-    height: 250px;
-  }
-
-  /*/ Reveal Slideshow on Hover /*/
-  .slides {
-    padding: 10px 10px;
-  }
-  #slideCover {
-    width: 250px;
-    height: 250px;
-  }
-  #slideCover a {
-    width: 250px;
-    height: 250px;
-  }
-  #slideCover a img {
-    width: 250px;
-    height: 250px;
-  }
-
-  /*/ Smaller Albums for bigger screens /*/
-
-  @media only screen and (max-width: 1063px){
-    .projectHead {
-      margin: 7;
-      padding: 5px;
-    }
-    .album-container {
-      padding: 3% 5%;
-    }
-    .album{
-      padding: 5px 5px;
-    }
-    .album img {
-      width: 200px;
-      height: 200px;
-      display: block;
-    }
-  
-    /*/ Album Title Reveal /*/
-  
-    .albumCol#albumCap .title {
-      min-width: 175px;
-      min-height: 175px;
-      max-width: 200px;
-      max-height: 200px;				
-    }
-    .album a {
-      width: 200px;
-      height:200px;
-    }
-  
-    /*/ Slideshow /*/
-    #slider {
-      width: 200px;
-      height: 200px;
-      position: relative;
-    }
-
-    #slider a img {
-      width: 200px;
-      height: 200px;
-    }
-  
-    /*/ Reveal Slideshow on Hover /*/
-    .slides {
-      padding: 5px 5px;
-    }
-    #slideCover {
-      width: 200px;
-      height: 200px;
-    }
-    #slideCover a {
-      width: 200px;
-      height: 200px;
-    }
-    #slideCover a img {
-      width: 200px;
-      height: 200px;
-    }
-  
-  }
-  
-  /*/ Section 2 /*/
-
-  #section2 {
-  }
-  #section2 h1 {
+   #section2 h1 {  /*/ Section 2 /*/
     text-align: center;
   }
-
-
-  /*/ Section 3 /*/
-
-  #section3 {
-  }
-  #section3 h1 {
+  #section3 h1 {  /*/ Section 3 /*/
     text-align: center;
     font-size: 45px;
   }
   #section3 p {
     text-align: center;
   }
-  .latest-video {
+  .latest-video,
+  .latest-video iframe,
+  .video-cont iframe {
     width: 426px;
     height: 240px;
   }
-  .latest-video iframe{
-    width: 426px;
-    height: 240px;
-    display: block;
-    justify-self: center;
-    align-self: center;
-  }
-  .video-cont {
-    width: 426px;
-    height: 240px;
-  }
-  .video-cont iframe{
-    width: 426px;
-    height: 240px;
-  }
-
-  /*/ Section 5 /*/
-
-  .article-container {
+  .article-container {  /*/ Section 5 /*/
     margin: 10px 15px;
     max-height: 500px;
     display: flex;
     justify-content: center;
   }
   .news-border {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 375px;
-    border-color: white;
-    border-style: solid;
-    border-width: 3px;
-    box-shadow: 1px 1px 4px 4px #222222;
-}
-.news-headings {
-  text-align: center;
-  padding: 5px;
-  width: 375px;
-}
-.news-headings h1{
-  text-decoration: underline;
-  color: white;
-  font-size: 22px;
-}
-.default-news-head {
-  font-family: "facile_sansregular";
-  font-weight: normal;
-  font-style: normal;
-}
+  }
+  .news-headings {
+    text-align: center;
+    padding: 5px;
+    width: 375px;
+  }
+  .news-headings h1{
+    text-decoration: underline;
+    color: white;
+    font-size: 22px;
+  }
   .news-headings h3{
     font-family: "BAHNSCHRIFT", sans-serif;
     font-weight: normal;
@@ -503,32 +375,46 @@ img.logo {
     margin: 1px;
   }
 
-  .news-border img{
-      width: 350px;
-      align-self: center;
-      height: 350px;
-      padding: 10px;
-  }
-  .news-border a{
+  .news-border img,
+  .news-border a {
     width: 350px;
-    align-self: center;
     height: 350px;
+    align-self: center;
+  }
+  .news-border img {
+    padding: 10px;
   }
 }
-
-/*/ Mobile Content /*/
-@media only screen and (max-width: 887px){
-  .section-container {
-    justify-content: center;
-    align-items: center;
+@media only screen and (min-width: 888px) and (max-width: 1063px) { /*/ Smaller Albums for bigger screens /*/
+  .projectHead {
+    margin: 7;
+    padding: 5px;
   }
-  .section-child-1 {
-    width: 442px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .album-container {
+    padding: 3% 5%;
   }
+  .album{
+    padding: 5px;
+  }
+  .album img,
+  .album a,
+  #slider,
+  #slider a img,
+  #slideCover,
+  #slideCover a,
+  #slideCover a img {
+    width: 200px;
+    height: 200px;
+  }
+  .albumCol#albumCap .title { /*/ Album Title Reveal /*/
+    min-width: 175px;
+    min-height: 175px;
+    max-width: 200px;
+    max-height: 200px;				
+  }
+}
+@media only screen and (max-width: 887px){  /*/ Mobile Content /*/
+  .section-child-1,
   .section-child-2 {
     width: 442px;
     height: fit-content;
@@ -537,38 +423,47 @@ img.logo {
     justify-content: center;
   }
   #section1 {
-    padding: 10px 25px;
+    padding: 10px 25px; 
+  }
+  #section1 p {
+    text-align: center;
+    margin: 5%;
+  }
+  #section2 h1,
+  #section3 h1,
+  #section3 p {
+    text-align: center;
+  }
+  #section3 {
+    height: fit-content;
+  }
+  #section3 h1 {
+    font-size: 30px;
+  }
+  .latest-video,
+  .latest-video iframe,
+  .video-cont iframe {
+    width: 320px;
+    height: 180px
   }
   .article-container {
     margin: 10px 15px;
     display: flex;
     justify-content: center;
-}
-.news-border {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  }
+  .news-border {
     width: 321px;
-    border-color: white;
-    border-style: solid;
-    border-width: 3px;
-    box-shadow: 1px 1px 4px 4px #222222;
-}
-.news-headings {
-  text-align: center;
-  width: 321px;
-}
-.news-headings h1{
-  text-decoration: underline;
-  padding-top: 2px;
-  color: white;
-  font-size: 22px;
-}
-.default-news-head {
-  font-family: "facile_sansregular";
-  font-weight: normal;
-  font-style: normal;
-}
+  }
+  .news-headings {
+    text-align: center;
+    width: 321px;
+  }
+  .news-headings h1{
+    text-decoration: underline;
+    padding-top: 2px;
+    color: white;
+    font-size: 22px;
+  }
   .news-headings h3{
     font-family: "BAHNSCHRIFT", sans-serif;
     font-weight: normal;
@@ -576,239 +471,83 @@ img.logo {
     font-size: 15px;
     margin-top: 7px;
   }
-
-  .news-border img{
-      width: 300px;
-      align-self: center;
-      height: 300px;
-      padding-top: 15px;
-  }
-  .news-border a{
+  .news-border img,
+  .news-border a {
     width: 300px;
-    align-self: center;
     height: 300px;
-  }
-  @media only screen and (max-width: 887px) and (min-width:551px){
-    .projectHead {
-      padding: 5px;
-    }
-    .album-container {
-      padding: 3% 5%;
-    }
-    .album{
-      padding: 5px 5px;
-    }
-    .album img {
-      width: 175px;
-      height: 175px;
-      display: block;
-    }
-  
-    /*/ Album Title Reveal /*/
-  
-    .albumCol#albumCap {
-      border-color: black;
-    }
-  
-    .albumCol#albumCap .title {
-      min-width: 174px;
-      min-height: 174px;
-      max-width: 175px;
-      max-height: 175px;				
-    }
-    .album a {
-      width: 175px;
-      height:175px;
-    }
-  
-    /*/ Slideshow /*/
-    #slider {
-      width: 175px;
-      height: 175px;
-      position: relative;
-      
-    }
-    #slider a img {
-      width: 175px;
-      height: 175px;
-    }
-  
-    /*/ Reveal Slideshow on Hover /*/
-    .slides {
-      padding: 5px 5px;
-    }
-    #slideCover {
-      width: 175px;
-      height: 175px;
-    }
-    #slideCover a {
-      width: 175px;
-      height: 175px;
-    }
-    #slideCover a img {
-      width: 175px;
-      height: 175px;
-    }
-  }
-
-  /*/ Album Stuff for even smaller displays /*/
-  @media only screen and (max-width: 550px){
-    .album-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 2% 3%;
-    }
-    .album{
-      padding: 2.5px 2.5px;
-    }
-    .album img {
-      width: 100px;
-      height: 100px;
-      display: block;
-    }
-  
-    /*/ Album Title Reveal /*/
-  
-    .albumCol#albumCap {
-      border-color: black;
-    }
-
-    .albumCol#albumCap .title {
-      width: 100px;
-      height: 100px;
-      max-width: 100px;
-      max-height: 100px;				
-    }
-    .album a {
-      width: 100px;
-      height:100px;
-    }
-  
-    /*/ Slideshow /*/
-    #slider {
-      width: 100px;
-      height: 100px;
-      position: relative;
-      
-    }
-    #slider a {
-      position:absolute;
-    }
-    #slider a img {
-      width: 100px;
-      height: 100px;
-    }
-    #slider a:nth-of-type(1) {
-      animation-name: slideFade;
-      animation-delay: 4s;
-      animation-duration: 1s;
-      z-index: 20;
-    }
-    #slider a:nth-of-type(2) {
-      z-index: 10;
-    }
-    #slider a:nth-of-type(n+3) {
-      display: none;
-    }
-    @keyframes slideFade {
-      from{opacity: 1.0;}
-      to{opacity: 0.0;}
-    }
-  
-    /*/ Reveal Slideshow on Hover /*/
-    .slides {
-      padding: 2.5px 2.5px;
-    }
-    #slideCover {
-      width: 100px;
-      height: 100px;
-    }
-    #slideCover a {
-      width: 100px;
-      height: 100px;
-    }
-    #slideCover a img {
-      width: 100px;
-      height: 100px;
-    }
-    #slideCover a img:hover {
-      opacity: 20%;
-      transition:all 0.4s ease-in;
-    }
-    #slideCover a:hover {
-      box-shadow: 0 0 15px 3px #333333;
-      transition:all 0.4s ease-in;
-    }
-  }
-  #section1 p {
-    text-align: center;
-    margin: 5%;
-  }
-  #section2 {
-  }
-  #section2 h1 {
-    text-align: center;
-  }
-  #section3 {
-    height: fit-content;
-  }
-  #section3 h1 {
-    text-align: center;
-    font-size: 30px;
-  }
-  #section3 p {
-    text-align: center;
-  }
-  .latest-video {
-    width: 320px;
-    height: 180px;
-  }
-  .latest-video iframe{
-    width: 320px;
-    height: 180px;
-    display: block;
-    justify-self: center;
     align-self: center;
   }
-  
-  .video-cont {
-    width: 320px;
-    height: 180px;
-  }
-  .video-cont iframe{
-    width: 320px;
-    height: 180px;
+  .news-border img{
+    padding-top: 15px;
   }
 }
-
-.video-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: max-content;
-  width: fit-content;
-  padding: 0 25px;
+@media only screen and (min-width: 551px) and (max-width: 887px) { /* Medium sized albums for smaller displays */
+  .projectHead {
+    padding: 5px;
+  }
+  .album-container {
+    padding: 3% 5%;
+  }
+  .album {
+    padding: 5px;
+  }
+  .album img,
+  .album a,
+  #slider,
+  #slider a img,
+  #slideCover,
+  #slideCover a,
+  #slideCover a img {
+    width: 175px;
+    height: 175px;
+  }
+  .albumCol#albumCap {
+    border-color: black;
+  }
+  .albumCol#albumCap .title {
+    min-width: 174px;
+    min-height: 174px;
+    max-width: 175px;
+    max-height: 175px;
+  }
+  .slides {
+    padding: 5px;
+  }
 }
-
-.video-cont iframe {
-  box-shadow: 0 0 8px 3px #333333;
-    display: block;
-}
-
-#scrollText {
-  margin: auto auto;
-  padding: 10px 10px;
-  word-wrap: normal;
-}
-
-
-.latest-vids-sect {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: auto 5%;
+@media only screen and (max-width: 550px) { /*/ Album Stuff for even smaller displays /*/
+  .album-container {
+    align-items: center;
+    padding: 2% 3%;
+  }
+  .album{
+    padding: 2.5px;
+  }
+  .album img,
+  .album a,
+  #slider,
+  #slider a img,
+  #slideCover,
+  #slideCover a,
+  #slideCover a img {
+    width: 100px;
+    height: 100px;
+  }
+  .albumCol#albumCap {  /*/ Album Title Reveal /*/
+    border-color: black;
+  }
+  .albumCol#albumCap .title {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;				
+  }
+  .slides {  /*/ Reveal Slideshow on Hover /*/
+    padding: 2.5px;
+  }
+  #slideCover a img:hover {
+    opacity: 20%;
+  }
+  #slideCover a:hover {
+    box-shadow: 0 0 15px 3px #333333;
+  }
 }

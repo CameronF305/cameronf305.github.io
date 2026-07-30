@@ -67,7 +67,7 @@ header{
 
 /* ========== Links ========== */
 .navbar ul li a {
-  font-family: "facile_sansregular";
+  font-family: "facile_sansregular", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: white;

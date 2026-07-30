@@ -1,7 +1,26 @@
+/* ========== Fonts ========== */
+@font-face {
+  font-family: "ROBOTO";
+  src: url("fonts/ROBOTO-REGULAR.woff") format("woff"),
+       url("/fonts/ROBOTO-REGULAR.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ROBOTO";
+  src: url("fonts/ROBOTO-BOLD.woff") format("woff"),
+       url("/fonts/ROBOTO-BOLD.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ========== Base ========== */
 .video-body {
   background: var(--background-primary);
-  }
+}
 
+/* ========== Video Layout ========== */
 .video-container {
   margin: 0 20px 30px;
   display: flex;
@@ -11,103 +30,94 @@
 }
 .video {
   padding: 15px;
-} 
-@media only screen and (min-width:888px) {
-    .video iframe{
-        width: 512px;
-        height: 288px;
-        box-shadow: 0 0 7px 3px #161616;
-    }
 }
-
-@media only screen and (max-width:887px) {
-    .video iframe{
-        width: 320px;
-        height: 180px;
-        box-shadow: 0 0 7px 3px #161616;
-      }
+/* ========== Headings ========== */
+.video-heading,
+.channel-heading {
+  font-family: "MARKPRO-BOLD", sans-serif;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
 }
-.video-heading {
-    font-family: "MARKPRO-BOLD", sans-serif;
-    color: var(--color-primary);
-    text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
-    text-align: center;
-    font-size: 25px;
-    padding: 5px;
+.channel-heading {
+  width: 100%;
 }
 .video-heading h3 {
-    color: var(--color-primary);
-    text-shadow: 1px 1px 10px var(--shadow-primary);
-    font-family: "BAHNSCHRIFT", sans-serif;
-    font-weight: normal;
-    font-size: 20px;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
+  font-family: "BAHNSCHRIFT", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
 }
 .video-heading h3 a{
-    color: var(--link-primary);
-    text-shadow: 1px 1px 10px var(--shadow-primary);
-    text-decoration: none;
-  }
-  .video-heading h3 a:hover{
-    color: var(--link-secondary);
-    text-shadow: 1px 1px 10px var(--shadow-primary);
-    text-decoration: underline;
-  }
-  .channel-heading {
-    font-family: "MARKPRO-BOLD", sans-serif;
-    color: var(--color-primary);
-    text-shadow: 1px 1px 10px var(--shadow-primary), -1px -1px 10px var(--shadow-primary);
-    text-align: center;
-    font-size: 25px;
-    padding: 5px;
-    width: 100%;
+  color: var(--link-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
+  text-decoration: none;
 }
-  .channels {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    margin: 10px 10px;
-    justify-content: center;
-    align-items:flex-end;
-    
-  }
-  .vid-channel {
-    height: fit-content;
-    text-align: center;
-    padding: 10px;
-  }
-  .vid-channel h3 {
-    height: fit-content;
-  }
-  
-  .vid-channel p{
-    height: fit-content;
-    text-align: center;
-    color: var(--color-primary);
-    text-shadow: 1px 1px 10px var(--shadow-primary);
-    font-size: 20px;
-    padding: 0;
-  }
-  .chan-sub {
-    color: var(--color-primary);
-    text-shadow: 1px 1px 10px var(--shadow-primary);
-    font-family: "ROBOTO";
-    font-weight: bold;
-    font-size: 25px;
+.video-heading h3 a:hover{
+  color: var(--link-secondary);
+  text-decoration: underline;
+}
+.channels {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 10px;
+  justify-content: center;
+  align-items:flex-end;
+}
+.vid-channel {
+  height: fit-content;
+  text-align: center;
+  padding: 10px;
+}
+.vid-channel h3,
+.vid-channel p {
+  height: fit-content;
+}
+
+.vid-channel p {
+  text-align: center;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
+  font-size: 20px;
+  padding: 0;
+}
+.chan-sub {
+  color: var(--color-primary);
+  text-shadow: 1px 1px 10px var(--shadow-primary);
+  font-family: "ROBOTO", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.vid-channel img {
+  border-radius: 50%;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+.vid-channel img:hover {
+  box-shadow: #ff0000 0 0 15px;
+}
+/* ========== Display ========== */
+@media only screen and (min-width:888px){
+  .video iframe{
+    width: 512px;
+    height: 288px;
+    box-shadow: 0 0 7px 3px #161616;
   }
   .vid-channel img {
-    border-radius: 50%;
-    box-shadow: none;
+    width: 400px;
   }
-  .vid-channel img:hover {
-    box-shadow: #ff0000 0 0 15px;
+}
+@media only screen and (max-width:887px){
+  .video iframe{
+    width: 320px;
+    height: 180px;
+    box-shadow: 0 0 7px 3px #161616;
   }
-  @media only screen and (min-width:888px){
-    .vid-channel img {
-      width: 400px;
-    }
+  .vid-channel img {
+    width: 300px;
   }
-  @media only screen and (max-width:887px){
-    .vid-channel img {
-      width: 300px;
-    }
-  }
+}
