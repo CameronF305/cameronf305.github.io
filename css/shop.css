@@ -5,6 +5,7 @@
   
 .shop-body {
     background-color: #ffffff;
+    display: none;
 }
 .shop-header {
     background: var(--background-secondary);
