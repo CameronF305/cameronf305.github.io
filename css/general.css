@@ -370,7 +370,7 @@ ps {
 .footer {
   background-color: black;  /* same on both themes */
   width: 100%;
-  margin-bottom: auto;
+  margin-top: auto;
 }
 .footer-container {     /* evenly spaced footer */
   display: flex; 
