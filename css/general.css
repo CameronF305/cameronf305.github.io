@@ -10,7 +10,7 @@
 html {
   scroll-behavior: smooth;
   transition: color 300ms, background-color 300ms;
-  background: #000;
+  background: var(--background-primary);
   color: var(--color-primary);
 }
 body {
@@ -20,7 +20,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  background: var(--background-primary);
 }
 
 /* ========== Custom Scrollbar ========== */
@@ -370,7 +369,7 @@ ps {
   background-color: black;  /* same on both themes */
   width: 100%;
   margin-top: auto;
-  padding-bottom: env(safe-area-inset-bottom); /* ← helps on iPhones with home bar */
+  padding-bottom: env(safe-area-inset-bottom); 
 }
 .footer-container {     /* evenly spaced footer */
   display: flex; 
